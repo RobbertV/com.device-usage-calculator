@@ -1,7 +1,7 @@
 {
   "id": "com.dynamicEnergyCalculator",
   "version": "1.0.0",
-  "compatibility": ">=5.0.0",
+  "compatibility": ">=12.1.0",
   "sdk": 3,
   "platforms": [
     "local"
@@ -23,6 +23,6 @@
   },
   "author": {
     "name": "Robbert Vis",
-    "email": "mail@robbertvis.nl"
+    "email": "energycalculator@robbertvis.nl"
   }
 }
