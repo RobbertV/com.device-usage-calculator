@@ -8,9 +8,18 @@ export default class BaseDevice extends Homey.Device {
         this.homey.app.log('[Device] - init =>', this.getName(), this.driver.manifest.id);
 
         this.checkCapabilities();
+
+
+        this.setStoreValue('usage', []);
+        this.setStoreValue('costs', [])
+        this.setStoreValue('values', {
+            price: 0.23,
+            unit: 0.01,
+            starttime: '15:00'
+        })
     }
 
-    
+
 
     async checkCapabilities() {
         const driverManifest = this.driver.manifest;
