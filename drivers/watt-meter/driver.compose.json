@@ -1,0 +1,19 @@
+{
+  "name": {
+    "en": "Energy Meter (W)"
+  },
+  "capabilities": [
+    "measure_power",
+        "measure_monetary",
+    "measure_duration"
+  ],
+  "settings": [
+    {
+        "id": "unit",
+        "type": "label",
+        "label": { "en": "Unit" },
+        "value": "W"
+      }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

@@ -1,3 +1,489 @@
 {
-  "_comment": "This file is generated. Please edit .homeycompose/app.json instead."
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.device-usage-calculator",
+  "version": "1.0.0",
+  "compatibility": ">=12.2.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Device Usage Calculator"
+  },
+  "description": {
+    "en": "Calculate the energy costs of device usage, based on the (dynamic) energy prices."
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Robbert Vis",
+    "email": "energycalculator@robbertvis.nl"
+  },
+  "drivers": [
+    {
+      "icon": "/drivers/gas-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/gas-meter/assets/images/large.png",
+        "small": "/drivers/gas-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Gas Meter (m3)"
+      },
+      "capabilities": [
+        "meter_gas",
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "m3"
+        }
+      ],
+      "id": "gas-meter"
+    },
+    {
+      "icon": "/drivers/gj-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/gj-meter/assets/images/large.png",
+        "small": "/drivers/gj-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Central Heating Meter (GJ)"
+      },
+      "capabilities": [
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "m3"
+        }
+      ],
+      "id": "gj-meter"
+    },
+    {
+      "icon": "/drivers/kwh-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/kwh-meter/assets/images/large.png",
+        "small": "/drivers/kwh-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Energy  Meter (kWh)"
+      },
+      "capabilities": [
+        "meter_power",
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "kWh"
+        }
+      ],
+      "id": "kwh-meter"
+    },
+    {
+      "icon": "/drivers/liquid-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/liquid-meter/assets/images/large.png",
+        "small": "/drivers/liquid-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Liquid Meter (L)"
+      },
+      "capabilities": [
+        "measure_content_volume",
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "L"
+        }
+      ],
+      "id": "liquid-meter"
+    },
+    {
+      "icon": "/drivers/water-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/water-meter/assets/images/large.png",
+        "small": "/drivers/water-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Water Meter (m3)"
+      },
+      "capabilities": [
+        "meter_water",
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "m3"
+        }
+      ],
+      "id": "water-meter"
+    },
+    {
+      "icon": "/drivers/watt-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/watt-meter/assets/images/large.png",
+        "small": "/drivers/watt-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Energy Meter (W)"
+      },
+      "capabilities": [
+        "measure_power",
+        "measure_monetary",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "W"
+        }
+      ],
+      "id": "watt-meter"
+    }
+  ],
+  "capabilities": {
+    "measure_duration": {
+      "platforms": [
+        "local"
+      ],
+      "type": "number",
+      "title": {
+        "en": "Duration",
+        "nl": "Duur",
+        "de": "Dauer",
+        "fr": "Durée",
+        "it": "Durata",
+        "sv": "Varaktighet",
+        "no": "Varighet",
+        "es": "Duración",
+        "da": "Varighed",
+        "ru": "Продолжительность",
+        "pl": "Czas trwania",
+        "ko": "기간"
+      },
+      "units": {
+        "en": "minutes",
+        "nl": "minuten",
+        "de": "Minuten",
+        "fr": "minutes",
+        "it": "minuti",
+        "sv": "minuter",
+        "no": "minutter",
+        "es": "minutos",
+        "da": "minutter",
+        "ru": "минуты",
+        "pl": "minuty",
+        "ko": "분"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Duration",
+        "nl": "Duur",
+        "de": "Dauer",
+        "fr": "Durée",
+        "it": "Durata",
+        "sv": "Varaktighet",
+        "no": "Varighet",
+        "es": "Duración",
+        "da": "Varighed",
+        "ru": "Продолжительность",
+        "pl": "Czas trwania",
+        "ko": "기간"
+      },
+      "chartType": "spline",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "assets/icons/stopwatch.svg"
+    }
+  }
 }

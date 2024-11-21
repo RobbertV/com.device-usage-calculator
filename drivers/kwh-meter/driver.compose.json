@@ -1,0 +1,19 @@
+{
+  "name": {
+    "en": "Energy  Meter (kWh)"
+  },
+  "capabilities": [
+    "meter_power",
+        "measure_monetary",
+    "measure_duration"
+  ],
+  "settings": [
+    {
+        "id": "unit",
+        "type": "label",
+        "label": { "en": "Unit" },
+        "value": "kWh"
+      }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

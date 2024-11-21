@@ -1,0 +1,15 @@
+{
+  "name": {
+    "en": "Gas Meter (m3)"
+  },
+  "capabilities": ["meter_gas", "measure_monetary", "measure_duration"],
+  "settings": [
+    {
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "m3"
+    }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

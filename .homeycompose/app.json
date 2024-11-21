@@ -1,13 +1,13 @@
 {
-  "id": "com.dynamicEnergyCalculator",
+  "id": "com.device-usage-calculator",
   "version": "1.0.0",
-  "compatibility": ">=12.1.0",
+  "compatibility": ">=12.2.0",
   "sdk": 3,
   "platforms": [
     "local"
   ],
   "name": {
-    "en": "Dynamic Energy Calculator"
+    "en": "Device Usage Calculator"
   },
   "description": {
     "en": "Calculate the energy costs of device usage, based on the (dynamic) energy prices."

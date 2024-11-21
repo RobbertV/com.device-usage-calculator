@@ -1,0 +1,19 @@
+{
+  "name": {
+    "en": "Water Meter (m3)"
+  },
+  "capabilities": [
+    "meter_water",
+        "measure_monetary",
+    "measure_duration"
+  ],
+  "settings": [
+    {
+        "id": "unit",
+        "type": "label",
+        "label": { "en": "Unit" },
+        "value": "m3"
+      }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

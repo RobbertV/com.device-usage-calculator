@@ -1,0 +1,53 @@
+{
+  "platforms": ["local"],
+  "type": "number",
+  "title": {
+    "en": "Duration",
+    "nl": "Duur",
+    "de": "Dauer",
+    "fr": "Durée",
+    "it": "Durata",
+    "sv": "Varaktighet",
+    "no": "Varighet",
+    "es": "Duración",
+    "da": "Varighed",
+    "ru": "Продолжительность",
+    "pl": "Czas trwania",
+    "ko": "기간"
+  },
+  "units": {
+    "en": "minutes",
+    "nl": "minuten",
+    "de": "Minuten",
+    "fr": "minutes",
+    "it": "minuti",
+    "sv": "minuter",
+    "no": "minutter",
+    "es": "minutos",
+    "da": "minutter",
+    "ru": "минуты",
+    "pl": "minuty",
+    "ko": "분"
+  },
+  "insights": true,
+  "desc": {
+   "en": "Duration",
+    "nl": "Duur",
+    "de": "Dauer",
+    "fr": "Durée",
+    "it": "Durata",
+    "sv": "Varaktighet",
+    "no": "Varighet",
+    "es": "Duración",
+    "da": "Varighed",
+    "ru": "Продолжительность",
+    "pl": "Czas trwania",
+    "ko": "기간"
+  },
+  "chartType": "spline",
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "assets/icons/stopwatch.svg"
+}
