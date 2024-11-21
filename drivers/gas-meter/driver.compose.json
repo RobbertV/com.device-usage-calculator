@@ -2,7 +2,12 @@
   "name": {
     "en": "Gas Meter (m3)"
   },
-  "capabilities": ["meter_gas", "measure_monetary", "measure_duration"],
+  "capabilities": [
+    "meter_gas",
+    "measure_monetary",
+    "alarm_running",
+    "measure_duration"
+  ],
   "settings": [
     {
       "id": "unit",

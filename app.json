@@ -80,6 +80,7 @@
       "capabilities": [
         "meter_gas",
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [
@@ -146,6 +147,7 @@
       },
       "capabilities": [
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [
@@ -213,6 +215,7 @@
       "capabilities": [
         "meter_power",
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [
@@ -280,6 +283,7 @@
       "capabilities": [
         "measure_content_volume",
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [
@@ -347,6 +351,7 @@
       "capabilities": [
         "meter_water",
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [
@@ -414,6 +419,7 @@
       "capabilities": [
         "measure_power",
         "measure_monetary",
+        "alarm_running",
         "measure_duration"
       ],
       "settings": [

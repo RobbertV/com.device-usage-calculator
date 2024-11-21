@@ -10,6 +10,8 @@ export default class BaseDevice extends Homey.Device {
         this.checkCapabilities();
     }
 
+    
+
     async checkCapabilities() {
         const driverManifest = this.driver.manifest;
         let driverCapabilities = driverManifest.capabilities;

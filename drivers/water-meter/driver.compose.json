@@ -4,16 +4,17 @@
   },
   "capabilities": [
     "meter_water",
-        "measure_monetary",
+    "measure_monetary",
+    "alarm_running",
     "measure_duration"
   ],
   "settings": [
     {
-        "id": "unit",
-        "type": "label",
-        "label": { "en": "Unit" },
-        "value": "m3"
-      }
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "m3"
+    }
   ],
   "$extends": ["device", "pair", "repair"]
 }

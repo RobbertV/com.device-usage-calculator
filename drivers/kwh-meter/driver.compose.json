@@ -4,16 +4,17 @@
   },
   "capabilities": [
     "meter_power",
-        "measure_monetary",
+    "measure_monetary",
+    "alarm_running",
     "measure_duration"
   ],
   "settings": [
     {
-        "id": "unit",
-        "type": "label",
-        "label": { "en": "Unit" },
-        "value": "kWh"
-      }
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "kWh"
+    }
   ],
   "$extends": ["device", "pair", "repair"]
 }

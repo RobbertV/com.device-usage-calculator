@@ -2,17 +2,14 @@
   "name": {
     "en": "Central Heating Meter (GJ)"
   },
-  "capabilities": [
-        "measure_monetary",
-    "measure_duration"
-  ],
+  "capabilities": ["measure_monetary", "alarm_running", "measure_duration"],
   "settings": [
     {
-        "id": "unit",
-        "type": "label",
-        "label": { "en": "Unit" },
-        "value": "m3"
-      }
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "m3"
+    }
   ],
   "$extends": ["device", "pair", "repair"]
 }

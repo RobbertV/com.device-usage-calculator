@@ -4,16 +4,17 @@
   },
   "capabilities": [
     "measure_content_volume",
-        "measure_monetary",
+    "measure_monetary",
+    "alarm_running",
     "measure_duration"
   ],
   "settings": [
     {
-        "id": "unit",
-        "type": "label",
-        "label": { "en": "Unit" },
-        "value": "L"
-      }
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "L"
+    }
   ],
   "$extends": ["device", "pair", "repair"]
 }
