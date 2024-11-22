@@ -256,7 +256,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=gas-meter|gj-meter|kwh-meter|liquid-meter|water-meter|watt-meter&capabilities=alarm_running"
+            "filter": "driver_id=gas-meter|gas-meter-imperial|gj-meter|kwh-meter|liquid-meter|liquid-meter-imperial|water-meter|water-meter-imperial|watt-meter|weight-meter|weight-meter-imperial&capabilities=alarm_running"
           },
           {
             "name": "price",
@@ -311,7 +311,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=gas-meter|gj-meter|kwh-meter|liquid-meter|water-meter|watt-meter&capabilities=alarm_running"
+            "filter": "driver_id=gas-meter|gas-meter-imperial|gj-meter|kwh-meter|liquid-meter|liquid-meter-imperial|water-meter|water-meter-imperial|watt-meter|weight-meter|weight-meter-imperial&capabilities=alarm_running"
           },
           {
             "name": "price",
@@ -366,7 +366,7 @@
           {
             "type": "device",
             "name": "device",
-            "filter": "driver_id=gas-meter|gj-meter|kwh-meter|liquid-meter|water-meter|watt-meter&capabilities=alarm_running"
+            "filter": "driver_id=gas-meter|gas-meter-imperial|gj-meter|kwh-meter|liquid-meter|liquid-meter-imperial|water-meter|water-meter-imperial|watt-meter|weight-meter|weight-meter-imperial&capabilities=alarm_running"
           },
           {
             "name": "price",
@@ -423,24 +423,134 @@
       "platforms": [
         "local"
       ],
-      "pair": [
-        {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
           }
         },
-        {
-          "id": "add_devices",
-          "template": "add_devices"
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
         },
-        {
-          "id": "done",
-          "template": "done"
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
         }
-      ],
-      "repair": [
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
+      "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
@@ -466,16 +576,6 @@
         "alarm_running",
         "measure_duration"
       ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "m3"
-        }
-      ],
       "id": "gas-meter"
     },
     {
@@ -491,24 +591,134 @@
       "platforms": [
         "local"
       ],
-      "pair": [
-        {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
           }
         },
-        {
-          "id": "add_devices",
-          "template": "add_devices"
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
         },
-        {
-          "id": "done",
-          "template": "done"
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
         }
-      ],
-      "repair": [
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
+      "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
@@ -529,37 +739,10 @@
         "en": "Gas Meter (ft3)"
       },
       "capabilities": [
-        "meter_gas",
+        "meter_gas.imperial",
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "capabilitiesOptions": {
-        "meter_gas": {
-          "units": {
-            "en": "ft3",
-            "nl": "ft3",
-            "da": "ft3",
-            "it": "ft3",
-            "ko": "ft3",
-            "pl": "ft3",
-            "ru": "ft3",
-            "sv": "ft3",
-            "es": "ft3",
-            "fr": "ft3",
-            "no": "ft3"
-          }
-        }
-      },
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "ft3"
-        }
       ],
       "id": "gas-meter-imperial"
     },
@@ -576,6 +759,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -593,40 +903,94 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
         "en": "Central Heating Meter (GJ)"
       },
       "capabilities": [
+        "measure_content_volume.gj",
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "m3"
-        }
       ],
       "id": "gj-meter"
     },
@@ -643,6 +1007,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -660,21 +1151,84 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -685,16 +1239,6 @@
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "kWh"
-        }
       ],
       "id": "kwh-meter"
     },
@@ -711,6 +1255,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -728,21 +1399,84 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -753,16 +1487,6 @@
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "L"
-        }
       ],
       "id": "liquid-meter"
     },
@@ -779,6 +1503,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -796,58 +1647,94 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
         "en": "Liquid Meter (gal)"
       },
       "capabilities": [
-        "measure_content_volume",
+        "measure_content_volume.imperial",
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "capabilitiesOptions": {
-        "measure_content_volume": {
-          "units": {
-            "en": "gal",
-            "nl": "gal",
-            "da": "gal",
-            "it": "gal",
-            "ko": "gal",
-            "pl": "gal",
-            "ru": "gal",
-            "sv": "gal",
-            "es": "gal",
-            "fr": "gal",
-            "no": "gal"
-          }
-        }
-      },
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "gal"
-        }
       ],
       "id": "liquid-meter-imperial"
     },
@@ -864,6 +1751,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -881,21 +1895,84 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -906,16 +1983,6 @@
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "m3"
-        }
       ],
       "id": "water-meter"
     },
@@ -932,6 +1999,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -949,58 +2143,94 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
         "en": "Water Meter (ft3)"
       },
       "capabilities": [
-        "meter_water",
+        "meter_water.imperial",
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "capabilitiesOptions": {
-        "meter_water": {
-          "units": {
-            "en": "ft3",
-            "nl": "ft3",
-            "da": "ft3",
-            "it": "ft3",
-            "ko": "ft3",
-            "pl": "ft3",
-            "ru": "ft3",
-            "sv": "ft3",
-            "es": "ft3",
-            "fr": "ft3",
-            "no": "ft3"
-          }
-        }
-      },
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "ft3"
-        }
       ],
       "id": "water-meter-imperial"
     },
@@ -1017,6 +2247,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -1034,21 +2391,84 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -1059,16 +2479,6 @@
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "W"
-        }
       ],
       "id": "watt-meter"
     },
@@ -1086,23 +2496,6 @@
         "local"
       ],
       "pair": [
-        {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
-        },
-        {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
-        }
-      ],
-      "repair": [
         {
           "id": "list_devices",
           "template": "list_devices",
@@ -1153,6 +2546,133 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "measure_content_volume.imperial": {
+        "units": {
+          "en": "gal",
+          "nl": "gal",
+          "da": "gal",
+          "it": "gal",
+          "ko": "gal",
+          "pl": "gal",
+          "ru": "gal",
+          "sv": "gal",
+          "es": "gal",
+          "fr": "gal",
+          "no": "gal"
+        }
+      },
+      "measure_content_volume.gj": {
+        "units": {
+          "en": "gj",
+          "nl": "gj",
+          "da": "gj",
+          "it": "gj",
+          "ko": "gj",
+          "pl": "gj",
+          "ru": "gj",
+          "sv": "gj",
+          "es": "gj",
+          "fr": "gj",
+          "no": "gj"
+        }
+      },
+      "meter_water.imperial": {
+        "units": {
+          "en": "ft3",
+          "nl": "ft3",
+          "da": "ft3",
+          "it": "ft3",
+          "ko": "ft3",
+          "pl": "ft3",
+          "ru": "ft3",
+          "sv": "ft3",
+          "es": "ft3",
+          "fr": "ft3",
+          "no": "ft3"
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
@@ -1170,58 +2690,94 @@
           "template": "done"
         }
       ],
-      "repair": [
+      "settings": [
         {
-          "id": "list_devices",
-          "template": "list_devices",
-          "navigation": {
-            "next": "add_devices"
-          }
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
         },
         {
-          "id": "add_devices",
-          "template": "add_devices"
-        },
-        {
-          "id": "done",
-          "template": "done"
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
         "en": "Weight Meter (oz)"
       },
       "capabilities": [
-        "measure_weight",
+        "measure_weight.imperial",
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "capabilitiesOptions": {
-        "measure_weight": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "oz"
-        }
       ],
       "id": "weight-meter-imperial"
     }

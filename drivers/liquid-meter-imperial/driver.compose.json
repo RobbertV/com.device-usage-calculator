@@ -3,35 +3,10 @@
     "en": "Liquid Meter (gal)"
   },
   "capabilities": [
-    "measure_content_volume",
+    "measure_content_volume.imperial",
     "measure_monetary",
     "alarm_running",
     "measure_duration"
   ],
-  "capabilitiesOptions": {
-    "measure_content_volume": {
-      "units": {
-        "en": "gal",
-        "nl": "gal",
-        "da": "gal",
-        "it": "gal",
-        "ko": "gal",
-        "pl": "gal",
-        "ru": "gal",
-        "sv": "gal",
-        "es": "gal",
-        "fr": "gal",
-        "no": "gal"
-      }
-    }
-  },
-  "settings": [
-    {
-      "id": "unit",
-      "type": "label",
-      "label": { "en": "Unit" },
-      "value": "gal"
-    }
-  ],
-  "$extends": ["device", "pair", "repair"]
+  "$extends": ["device", "capabilities-options", "pair", "settings"]
 }

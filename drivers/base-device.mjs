@@ -13,14 +13,25 @@ export default class BaseDevice extends Homey.Device {
 
     async onAdded() {
         this.homey.app.log('[Device] - onAdded =>', this.getName());
-        this.setCapabilityValue('alarm_running', false);
-        this.setCapabilityValue('measure_monetary', 0);
-        this.setCapabilityValue('measure_duration', 0);
-        this.setUsageCapability(0);
+        await this.setStoreValues();
+        await this.resetValues();      
+    }
+
+    async onSettings({newSettings, changedKeys}) {
+        console.log('[Device] - onSettings =>', newSettings);
+        if(changedKeys.some(k => k === 'monetary_unit')) {
+            const costs = this.getStoreValue('costs') && this.getStoreValue('costs').value || 0;
+            await this.checkCapabilities(newSettings);
+            await this.setMonetaryCapability(costs);
+        }
     }
 
 
-    async startUsage(price, meter) {
+    // ---------- Store Values -----------
+
+    setStoreValues(price = 0, meter = 0) {
+        this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`);
+
         this.setStoreValue('usage', { value: 0 });
         this.setStoreValue('costs', { value: 0 });
         this.setStoreValue('calculation-values', {
@@ -28,8 +39,29 @@ export default class BaseDevice extends Homey.Device {
             meter,
             starttime: new Date()
         });
+    }
+
+    resetValues() {
+        this.setCapabilityValue('alarm_running', false);
+        this.setCapabilityValue('measure_duration', 0);
+        this.setMonetaryCapability(0);
+        this.setUsageCapability(0);
+    }
+
+    // ---------- Usage Calculation -----------
+
+    async startUsage(price, meter) {
+        const settings = this.getSettings();
+
+        this.setStoreValues(price, meter);
 
         this.setCapabilityValue('alarm_running', true);
+
+        if (settings.resetValues) {
+            this.setCapabilityValue('measure_duration', 0);
+            this.setMonetaryCapability(0);
+            this.setUsageCapability(0);
+        }
     }
 
     async endUsage(price, meter) {
@@ -38,8 +70,7 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async updatePriceAndMeter(price, meter) {
-
-        if(this.getCapabilityValue('alarm_running') === false) {
+        if (this.getCapabilityValue('alarm_running') === false) {
             throw new Error('Theres no session running');
         }
 
@@ -49,12 +80,10 @@ export default class BaseDevice extends Homey.Device {
 
         this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
 
-
         const diffMeter = meter - calculationValues.meter;
 
         this.updateUsage(diffMeter);
     }
-
 
     async updateUsage(newValue) {
         this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, newValue);
@@ -95,41 +124,50 @@ export default class BaseDevice extends Homey.Device {
             const usage = this.getStoreValue('usage');
             const costs = this.getStoreValue('costs');
             const calculationValues = this.getStoreValue('calculation-values');
-            
+
             const diffMs = differenceInMilliseconds(endTime, calculationValues.starttime);
-            const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example            
-    
+            const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example
+
             this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration });
-    
-            this.setCapabilityValue('measure_monetary', costs.value);
+
             this.setCapabilityValue('measure_duration', duration);
             this.setCapabilityValue('alarm_running', false);
+            this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);
         } catch (error) {
             this.homey.app.error(error);
         }
     }
 
-    async setUsageCapability(value) {
-        const capabilities = this.driver.manifest.capabilities;
-        const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
+// ---------- Capabilities -----------
 
-        capabilities.filter((c) => !arrayToFilter.includes(c)).forEach((c) => {
-            this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, c, value);
-            this.setCapabilityValue(c, value);
-        });
+    async setUsageCapability(value) {
+        const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
+        const deviceCapabilities = this.getCapabilities();
+        const getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
+
+        this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, getusageCapability, value);
+        this.setCapabilityValue(getusageCapability, value);
     }
 
-    // ---------- Capabilities -----------
+    async setMonetaryCapability(value) {
+        const deviceCapabilities = this.getCapabilities();
+        const getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
 
-    async checkCapabilities() {
-        const driverManifest = this.driver.manifest;
-        let driverCapabilities = driverManifest.capabilities;
-        let deviceCapabilities = this.getCapabilities();
+        this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability =>`, getMonetaryCapability, value);
+        this.setCapabilityValue(getMonetaryCapability, value);
+    }
+
+    async checkCapabilities(overrideSettings = false) {
+        const settings = overrideSettings || this.getSettings();
+        const driverCapabilities =  this.driver.manifest.capabilities.filter(c => c !== 'measure_monetary');
+        const deviceCapabilities = this.getCapabilities();
+        const settingsCapabilities = [settings.monetary_unit];
+        const combinedCapabilities = [...new Set([...driverCapabilities, ...settingsCapabilities])];
 
         this.homey.app.log(`[Device] ${this.getName()} - Found capabilities =>`, deviceCapabilities);
 
-        await this.updateCapabilities(driverCapabilities, deviceCapabilities);
+        await this.updateCapabilities(combinedCapabilities, deviceCapabilities);
     }
 
     async updateCapabilities(driverCapabilities, deviceCapabilities) {

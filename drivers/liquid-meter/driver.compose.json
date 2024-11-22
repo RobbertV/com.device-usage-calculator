@@ -8,13 +8,5 @@
     "alarm_running",
     "measure_duration"
   ],
-  "settings": [
-    {
-      "id": "unit",
-      "type": "label",
-      "label": { "en": "Unit" },
-      "value": "L"
-    }
-  ],
-  "$extends": ["device", "pair", "repair"]
+  "$extends": ["device", "capabilities-options", "pair", "settings"]
 }

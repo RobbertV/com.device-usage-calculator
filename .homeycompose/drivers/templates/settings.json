@@ -1,0 +1,82 @@
+{
+  "settings": [
+    {
+      "id": "reset_values",
+      "type": "checkbox",
+      "label": {
+        "en": "Reset values on start"
+      },
+      "value": false
+    },
+    {
+      "id": "monetary_unit",
+      "type": "dropdown",
+      "value": "measure_monetary",
+      "label": {
+        "en": "Monetary unit"
+      },
+      "values": [
+        {
+          "id": "measure_monetary",
+          "label": {
+            "en": "€"
+          }
+        },
+        {
+          "id": "measure_monetary.dollar",
+          "label": {
+            "en": "$"
+          }
+        },
+        {
+          "id": "measure_monetary.pound",
+          "label": {
+            "en": "£"
+          }
+        },
+        {
+          "id": "measure_monetary.yen",
+          "label": {
+            "en": "¥"
+          }
+        },
+        {
+          "id": "measure_monetary.rupee",
+          "label": {
+            "en": "₹"
+          }
+        },
+        {
+          "id": "measure_monetary.won",
+          "label": {
+            "en": "₩"
+          }
+        },
+        {
+          "id": "measure_monetary.franc",
+          "label": {
+            "en": "₣"
+          }
+        },
+        {
+          "id": "measure_monetary.zloty",
+          "label": {
+            "en": "zł"
+          }
+        },
+        {
+          "id": "measure_monetary.krone",
+          "label": {
+            "en": "kr"
+          }
+        },
+        {
+          "id": "measure_monetary.ruble",
+          "label": {
+            "en": "₽"
+          }
+        }
+      ]
+    }
+  ]
+}
