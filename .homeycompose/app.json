@@ -1,20 +1,200 @@
 {
   "id": "com.device-usage-calculator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "platforms": [
     "local"
   ],
+  "brandColor": "#000000",
   "name": {
-    "en": "Device Usage Calculator"
+    "en": "Usage Mate"
+  },
+  "tags": {
+    "en": [
+      "energy",
+      "usage",
+      "costs",
+      "device",
+      "gas",
+      "electricity",
+      "water",
+      "meter",
+      "dynamic",
+      "tibber",
+      "total",
+      "diff"
+    ],
+    "nl": [
+      "energie",
+      "gebruik",
+      "kosten",
+      "apparaat",
+      "gas",
+      "elektriciteit",
+      "water",
+      "meter",
+      "dynamisch",
+      "tibber",
+      "totaal",
+      "verschil"
+    ],
+    "de": [
+      "Energie",
+      "Verwendung",
+      "Kosten",
+      "Gerät",
+      "Gas",
+      "Elektrizität",
+      "Wasser",
+      "Zähler",
+      "dynamisch",
+      "tibber",
+      "gesamt",
+      "Unterschied"
+    ],
+    "fr": [
+      "énergie",
+      "utilisation",
+      "coûts",
+      "dispositif",
+      "gaz",
+      "électricité",
+      "eau",
+      "compteur",
+      "dynamique",
+      "tibber",
+      "total",
+      "différence"
+    ],
+    "it": [
+      "energia",
+      "utilizzo",
+      "costi",
+      "dispositivo",
+      "gas",
+      "elettricità",
+      "acqua",
+      "contatore",
+      "dinamico",
+      "tibber",
+      "totale",
+      "differenza"
+    ],
+    "sv": [
+      "energi",
+      "användning",
+      "kostnader",
+      "enhet",
+      "gas",
+      "elektricitet",
+      "vatten",
+      "mätare",
+      "dynamisk",
+      "tibber",
+      "total",
+      "skillnad"
+    ],
+    "no": [
+      "energi",
+      "bruk",
+      "kostnader",
+      "enhet",
+      "gass",
+      "elektrisitet",
+      "vann",
+      "måler",
+      "dynamisk",
+      "tibber",
+      "total",
+      "forskjell"
+    ],
+    "es": [
+      "energía",
+      "uso",
+      "costos",
+      "dispositivo",
+      "gas",
+      "electricidad",
+      "agua",
+      "medidor",
+      "dinámico",
+      "tibber",
+      "total",
+      "diferencia"
+    ],
+    "da": [
+      "energi",
+      "brug",
+      "omkostninger",
+      "enhed",
+      "gas",
+      "elektricitet",
+      "vand",
+      "måler",
+      "dynamisk",
+      "tibber",
+      "total",
+      "forskel"
+    ],
+    "ru": [
+      "энергия",
+      "использование",
+      "расходы",
+      "устройство",
+      "газ",
+      "электричество",
+      "вода",
+      "счетчик",
+      "динамический",
+      "тебер",
+      "всего",
+      "разница"
+    ],
+    "pl": [
+      "energia",
+      "użycie",
+      "koszty",
+      "urządzenie",
+      "gaz",
+      "elektryczność",
+      "woda",
+      "licznik",
+      "dynamiczny",
+      "tibber",
+      "całkowity",
+      "różnica"
+    ],
+    "ko": [
+      "에너지",
+      "사용",
+      "비용",
+      "장치",
+      "가스",
+      "전기",
+      "물",
+      "계량기",
+      "동적",
+      "티버",
+      "합계",
+      "차이"
+    ]
   },
   "description": {
-    "en": "Calculate the energy costs of device usage, based on the (dynamic) energy prices."
+    "en": "Calculate the costs of device usage, based on the (dynamic) prices.",
+    "nl": "Bereken de kosten van apparaatgebruik, op basis van de (dynamische) prijzen.",
+    "de": "Berechnen Sie die Kosten der Gerätenutzung auf der Grundlage der (dynamischen) Preise.",
+    "fr": "Calculez les coûts de l'utilisation des appareils, en fonction des prix (dynamiques).",
+    "it": "Calcola i costi dell'uso dei dispositivi, in base ai prezzi (dinamici).",
+    "sv": "Beräkna kostnaderna för enhetsanvändning, baserat på (dynamiska) priser.",
+    "no": "Beregn kostnadene ved enhetsbruk, basert på (dynamiske) priser.",
+    "es": "Calcule los costos del uso de dispositivos, basados en los precios (dinámicos).",
+    "da": "Beregn omkostningerne ved enhedsbrug, baseret på (dynamiske) priser.",
+    "ru": "Рассчитайте стоимость использования устройств на основе (динамических) цен.",
+    "pl": "Oblicz koszty korzystania z urządzeń na podstawie (dynamicznych) cen.",
+    "ko": "동적 가격을 기반으로 장치 사용 비용을 계산하십시오."
   },
-  "category": [
-    "energy"
-  ],
+  "category": ["energy"],
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -24,5 +204,34 @@
   "author": {
     "name": "Robbert Vis",
     "email": "energycalculator@robbertvis.nl"
-  }
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Martijn Poppen",
+        "email": "energycalculator@martijnpoppen.nl"
+      }
+    ],
+    "translators": [
+      {
+        "name": "ChatGPT (translations)"
+      }
+    ]
+  },
+  "contributing": {
+    "donate": {
+      "paypal": {
+        "username": "martijnpoppen"
+      },
+      "bunq": {
+        "username": "martijnpoppen"
+      }
+    }
+  },
+  "bugs": {
+    "url": "https://community.homey.app/t/114491"
+  },
+  "source": "https://github.com/martijnpoppen/com.apple.findmy",
+  "homeyCommunityTopicId": 114491,
+  "support": "https://community.homey.app/t/114491"
 }
