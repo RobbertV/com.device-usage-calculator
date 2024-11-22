@@ -64,6 +64,10 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async endUsage(price, meter) {
+        if (this.getCapabilityValue('alarm_running') === false) {
+            throw new Error('Theres no session running');
+        }
+
         await this.updatePriceAndMeter(price, meter);
         await this.calculateTotals();
     }
