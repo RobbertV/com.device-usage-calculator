@@ -212,7 +212,13 @@
         "email": "energycalculator@martijnpoppen.nl"
       }
     ],
-    "translators": [
+    "translators": [      
+    {
+        "name": "🇬🇧 Robbert Vis & Martijn Poppen"
+      },
+      {
+        "name": "🇳🇱 Robbert Vis & Martijn Poppen"
+      },
       {
         "name": "ChatGPT (translations)"
       }
@@ -221,10 +227,7 @@
   "contributing": {
     "donate": {
       "paypal": {
-        "username": "martijnpoppen"
-      },
-      "bunq": {
-        "username": "martijnpoppen"
+        "username": "robbertvis"
       }
     }
   },
