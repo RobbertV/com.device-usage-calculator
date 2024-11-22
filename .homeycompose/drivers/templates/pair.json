@@ -3,6 +3,7 @@
     {
       "id": "list_devices",
       "template": "list_devices",
+      "singular": true,
       "navigation": {
         "next": "add_devices"
       }

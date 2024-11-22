@@ -8,5 +8,5 @@
     "alarm_running",
     "measure_duration"
   ],
-  "$extends": ["device",  "capabilities-options", "pair"]
+  "$extends": ["device", "capabilities-options", "pair", "settings"]
 }

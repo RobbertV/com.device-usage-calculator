@@ -476,6 +476,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -488,72 +508,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -565,6 +526,86 @@
         {
           "id": "done",
           "template": "done"
+        }
+      ],
+      "settings": [
+        {
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
+        },
+        {
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -644,6 +685,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -656,72 +717,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -733,6 +735,86 @@
         {
           "id": "done",
           "template": "done"
+        }
+      ],
+      "settings": [
+        {
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
+        },
+        {
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
         }
       ],
       "name": {
@@ -812,6 +894,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -824,72 +926,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -1060,6 +1103,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -1072,72 +1135,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -1308,6 +1312,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -1320,72 +1344,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -1556,6 +1521,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -1568,72 +1553,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -1804,6 +1730,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -1816,72 +1762,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -2052,6 +1939,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -2064,72 +1971,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -2300,6 +2148,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -2312,72 +2180,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -2495,10 +2304,98 @@
       "platforms": [
         "local"
       ],
+      "capabilitiesOptions": {
+        "measure_monetary.dollar": {
+          "units": {
+            "en": "$"
+          }
+        },
+        "measure_monetary.euro": {
+          "units": {
+            "en": "€"
+          }
+        },
+        "measure_monetary.pound": {
+          "units": {
+            "en": "£"
+          }
+        },
+        "measure_monetary.yen": {
+          "units": {
+            "en": "¥"
+          }
+        },
+        "measure_monetary.rupee": {
+          "units": {
+            "en": "₹"
+          }
+        },
+        "measure_monetary.ruble": {
+          "units": {
+            "en": "₽"
+          }
+        },
+        "measure_monetary.krone": {
+          "units": {
+            "en": "kr"
+          }
+        },
+        "measure_monetary.won": {
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.zloty": {
+          "units": {
+            "en": "zł"
+          }
+        },
+        "measure_monetary.franc": {
+          "units": {
+            "en": "₣"
+          }
+        },
+        "meter_gas.imperial": {
+          "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        }
+      },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
@@ -2512,6 +2409,86 @@
           "template": "done"
         }
       ],
+      "settings": [
+        {
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "value": false
+        },
+        {
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
+          "label": {
+            "en": "Monetary unit"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "€"
+              }
+            },
+            {
+              "id": "measure_monetary.dollar",
+              "label": {
+                "en": "$"
+              }
+            },
+            {
+              "id": "measure_monetary.pound",
+              "label": {
+                "en": "£"
+              }
+            },
+            {
+              "id": "measure_monetary.yen",
+              "label": {
+                "en": "¥"
+              }
+            },
+            {
+              "id": "measure_monetary.rupee",
+              "label": {
+                "en": "₹"
+              }
+            },
+            {
+              "id": "measure_monetary.won",
+              "label": {
+                "en": "₩"
+              }
+            },
+            {
+              "id": "measure_monetary.franc",
+              "label": {
+                "en": "₣"
+              }
+            },
+            {
+              "id": "measure_monetary.zloty",
+              "label": {
+                "en": "zł"
+              }
+            },
+            {
+              "id": "measure_monetary.krone",
+              "label": {
+                "en": "kr"
+              }
+            },
+            {
+              "id": "measure_monetary.ruble",
+              "label": {
+                "en": "₽"
+              }
+            }
+          ]
+        }
+      ],
       "name": {
         "en": "Weight Meter (g)"
       },
@@ -2520,16 +2497,6 @@
         "measure_monetary",
         "alarm_running",
         "measure_duration"
-      ],
-      "settings": [
-        {
-          "id": "unit",
-          "type": "label",
-          "label": {
-            "en": "Unit"
-          },
-          "value": "g"
-        }
       ],
       "id": "weight-meter"
     },
@@ -2599,6 +2566,26 @@
         },
         "meter_gas.imperial": {
           "units": {
+            "en": "ft3"
+          }
+        },
+        "measure_weight.imperial": {
+          "units": {
+            "en": "oz"
+          }
+        },
+        "measure_content_volume.imperial": {
+          "units": {
+            "en": "gal"
+          }
+        },
+        "measure_content_volume.gj": {
+          "units": {
+            "en": "gj"
+          }
+        },
+        "meter_water.imperial": {
+          "units": {
             "en": "ft3",
             "nl": "ft3",
             "da": "ft3",
@@ -2611,72 +2598,13 @@
             "fr": "ft3",
             "no": "ft3"
           }
-        },
-        "measure_weight.imperial": {
-          "units": {
-            "en": "oz",
-            "nl": "oz",
-            "da": "oz",
-            "it": "oz",
-            "ko": "oz",
-            "pl": "oz",
-            "ru": "oz",
-            "sv": "oz",
-            "es": "oz",
-            "fr": "oz",
-            "no": "oz"
-          }
-        }
-      },
-      "measure_content_volume.imperial": {
-        "units": {
-          "en": "gal",
-          "nl": "gal",
-          "da": "gal",
-          "it": "gal",
-          "ko": "gal",
-          "pl": "gal",
-          "ru": "gal",
-          "sv": "gal",
-          "es": "gal",
-          "fr": "gal",
-          "no": "gal"
-        }
-      },
-      "measure_content_volume.gj": {
-        "units": {
-          "en": "gj",
-          "nl": "gj",
-          "da": "gj",
-          "it": "gj",
-          "ko": "gj",
-          "pl": "gj",
-          "ru": "gj",
-          "sv": "gj",
-          "es": "gj",
-          "fr": "gj",
-          "no": "gj"
-        }
-      },
-      "meter_water.imperial": {
-        "units": {
-          "en": "ft3",
-          "nl": "ft3",
-          "da": "ft3",
-          "it": "ft3",
-          "ko": "ft3",
-          "pl": "ft3",
-          "ru": "ft3",
-          "sv": "ft3",
-          "es": "ft3",
-          "fr": "ft3",
-          "no": "ft3"
         }
       },
       "pair": [
         {
           "id": "list_devices",
           "template": "list_devices",
+          "singular": true,
           "navigation": {
             "next": "add_devices"
           }
