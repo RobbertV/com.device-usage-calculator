@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Update usage session"
+  },
+  "titleFormatted": {
+    "en": "update usage session with [[price]] price and [[meter]] meter reading"
+  },
+  "hint": {
+    "en": "tbd"
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": "driver_id=gas-meter|gj-meter|kwh-meter|liquid-meter|water-meter|watt-meter&capabilities=alarm_running"
+    },
+    {
+      "name": "price",
+      "type": "number",
+      "placeholder": {
+        "en": "Price",
+        "nl": "Prijs",
+        "de": "Preis",
+        "fr": "Prix",
+        "it": "Prezzo",
+        "sv": "Pris",
+        "no": "Pris",
+        "es": "Precio",
+        "da": "Pris",
+        "ru": "Цена",
+        "pl": "Cena",
+        "ko": "가격"
+      }
+    },
+    {
+      "name": "meter",
+      "type": "number",
+      "placeholder": {
+        "en": "Meter reading",
+        "nl": "Meterstand",
+        "de": "Zählerstand",
+        "fr": "Compteur",
+        "it": "Contatore",
+        "sv": "Mätarställning",
+        "no": "Målerstand",
+        "es": "Medidor",
+        "da": "Måler",
+        "ru": "Счетчик",
+        "pl": "Licznik",
+        "ko": "미터"
+      }
+    }
+  ]
+}

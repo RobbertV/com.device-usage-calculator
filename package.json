@@ -6,6 +6,7 @@
     "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
   },
   "dependencies": {
+    "date-fns": "^4.1.0",
     "uuid": "^11.0.3"
   }
 }
