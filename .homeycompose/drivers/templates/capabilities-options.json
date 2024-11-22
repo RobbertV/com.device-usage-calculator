@@ -6,9 +6,39 @@
         "nl": "Laatste sessie verbuik"
       }
     },
+    "measure_power": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
+    "meter_gas": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
+    "meter_water": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
+    "measure_weight": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
+    "measure_content_volume": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
     "measure_duration": {
       "title": {
-        "en": "Last session duration",
+        "en": "Last session usage",
         "nl": "Laatste sessieduur"
       }
     },
@@ -18,6 +48,54 @@
         "nl": "Actieve sessie"
       }
     },
+    "meter_gas.imperial": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      },
+
+      "units": {
+        "en": "ft3"
+      }
+    },
+    "measure_weight.imperial": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      },
+
+      "units": {
+        "en": "oz"
+      }
+    },
+    "measure_content_volume.imperial": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      },
+
+      "units": {
+        "en": "gal"
+      }
+    },
+    "measure_content_volume.gj": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      },
+      "units": {
+        "en": "gj"
+      }
+    },
+    "meter_water.imperial": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      },
+      "units": {
+        "en": "ft3"
+      }
+    },
     "measure_monetary": {
       "title": {
         "en": "Last session costs",
@@ -25,79 +103,93 @@
       }
     },
     "measure_monetary.dollar": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "$"
       }
     },
     "measure_monetary.euro": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "€"
       }
     },
     "measure_monetary.pound": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "£"
       }
     },
     "measure_monetary.yen": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "¥"
       }
     },
     "measure_monetary.rupee": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "₹"
       }
     },
     "measure_monetary.ruble": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "₽"
       }
     },
     "measure_monetary.krone": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "kr"
       }
     },
     "measure_monetary.won": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "₩"
       }
     },
     "measure_monetary.zloty": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "zł"
       }
     },
     "measure_monetary.franc": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      },
       "units": {
         "en": "₣"
-      }
-    },
-
-    "meter_gas.imperial": {
-      "units": {
-        "en": "ft3"
-      }
-    },
-    "measure_weight.imperial": {
-      "units": {
-        "en": "oz"
-      }
-    },
-    "measure_content_volume.imperial": {
-      "units": {
-        "en": "gal"
-      }
-    },
-    "measure_content_volume.gj": {
-      "units": {
-        "en": "gj"
-      }
-    },
-    "meter_water.imperial": {
-      "units": {
-        "en": "ft3"
       }
     }
   }
