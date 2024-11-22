@@ -14,18 +14,17 @@ export default class BaseDevice extends Homey.Device {
     async onAdded() {
         this.homey.app.log('[Device] - onAdded =>', this.getName());
         await this.setStoreValues();
-        await this.resetValues();      
+        await this.resetValues();
     }
 
-    async onSettings({newSettings, changedKeys}) {
+    async onSettings({ newSettings, changedKeys }) {
         console.log('[Device] - onSettings =>', newSettings);
-        if(changedKeys.some(k => k === 'monetary_unit')) {
-            const costs = this.getStoreValue('costs') && this.getStoreValue('costs').value || 0;
+        if (changedKeys.some((k) => k === 'monetary_unit')) {
+            const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
             await this.checkCapabilities(newSettings);
             await this.setMonetaryCapability(costs);
         }
     }
-
 
     // ---------- Store Values -----------
 
@@ -83,8 +82,7 @@ export default class BaseDevice extends Homey.Device {
         const diffMeter = meter - calculationValues.meter;
 
         await this.updateUsage(diffMeter);
-
-        return true;
+        await this.updateCosts(diffMeter);
     }
 
     async updateUsage(newValue) {
@@ -97,10 +95,6 @@ export default class BaseDevice extends Homey.Device {
         await this.setStoreValue('usage', { value: previousValue + newValue });
 
         this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { value: previousValue + newValue });
-
-        await this.updateCosts(previousValue + newValue - previousValue);
-
-        return true;
     }
 
     async updateCosts(usage) {
@@ -116,8 +110,6 @@ export default class BaseDevice extends Homey.Device {
         await this.setStoreValue('costs', { value: previousCosts + costs });
 
         this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
-
-        return true;
     }
 
     async calculateTotals() {
@@ -143,7 +135,7 @@ export default class BaseDevice extends Homey.Device {
         }
     }
 
-// ---------- Capabilities -----------
+    // ---------- Capabilities -----------
 
     async setUsageCapability(value) {
         const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
@@ -164,7 +156,7 @@ export default class BaseDevice extends Homey.Device {
 
     async checkCapabilities(overrideSettings = false) {
         const settings = overrideSettings || this.getSettings();
-        const driverCapabilities =  this.driver.manifest.capabilities.filter(c => c !== 'measure_monetary');
+        const driverCapabilities = this.driver.manifest.capabilities.filter((c) => c !== 'measure_monetary');
         const deviceCapabilities = this.getCapabilities();
         const settingsCapabilities = [settings.monetary_unit];
         const combinedCapabilities = [...new Set([...driverCapabilities, ...settingsCapabilities])];
