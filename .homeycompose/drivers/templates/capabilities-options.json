@@ -73,17 +73,7 @@
     },
     "meter_water.imperial": {
       "units": {
-        "en": "ft3",
-        "nl": "ft3",
-        "da": "ft3",
-        "it": "ft3",
-        "ko": "ft3",
-        "pl": "ft3",
-        "ru": "ft3",
-        "sv": "ft3",
-        "es": "ft3",
-        "fr": "ft3",
-        "no": "ft3"
+        "en": "ft3"
       }
     }
   }
