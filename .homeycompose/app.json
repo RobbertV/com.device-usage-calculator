@@ -6,7 +6,7 @@
   "platforms": [
     "local"
   ],
-  "brandColor": "#000000",
+  "brandColor": "#49b25b",
   "name": {
     "en": "Usage Mate"
   },
@@ -203,13 +203,13 @@
   },
   "author": {
     "name": "Robbert Vis",
-    "email": "energycalculator@robbertvis.nl"
+    "email": "usagemate@robbertvis.nl"
   },
   "contributors": {
     "developers": [
       {
         "name": "Martijn Poppen",
-        "email": "energycalculator@martijnpoppen.nl"
+        "email": "usagemate@martijnpoppen.nl"
       }
     ],
     "translators": [      
@@ -232,9 +232,9 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/114491"
+    "url": "https://community.homey.app/t/xxx"
   },
-  "source": "https://github.com/martijnpoppen/com.apple.findmy",
+  "source": "https://github.com/RobbertV/com.device-usage-calculator",
   "homeyCommunityTopicId": 114491,
-  "support": "https://community.homey.app/t/114491"
+  "support": "https://community.homey.app/t/xxx"
 }
