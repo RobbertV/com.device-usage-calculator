@@ -103,10 +103,12 @@ export default class BaseDevice extends Homey.Device {
         const oldCosts = this.getStoreValue('costs');
         const previousCosts = oldCosts.value || 0;
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
 
         // Calculate the costs
         const costs = price * usage;
+
+        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
+
         await this.setStoreValue('costs', { value: previousCosts + costs });
 
         this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
