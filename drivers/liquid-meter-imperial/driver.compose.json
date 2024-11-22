@@ -4,9 +4,9 @@
   },
   "capabilities": [
     "measure_content_volume.imperial",
-    "measure_monetary",
+    "measure_duration",
     "alarm_running",
-    "measure_duration"
+    "measure_monetary"
   ],
   "$extends": ["device", "capabilities-options", "pair", "settings"]
 }

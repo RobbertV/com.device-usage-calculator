@@ -3,10 +3,10 @@
     "en": "Weight Meter (oz)"
   },
   "capabilities": [
-    "measure_weight.imperial",
-    "measure_monetary",
     "alarm_running",
-    "measure_duration"
+    "measure_duration",
+    "measure_weight.imperial",
+    "measure_monetary"
   ],
   "$extends": ["device", "capabilities-options", "pair", "settings"]
 }
