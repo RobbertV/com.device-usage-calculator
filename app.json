@@ -603,9 +603,9 @@
       },
       "capabilities": [
         "meter_gas",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "gas-meter"
     },
@@ -802,9 +802,9 @@
       },
       "capabilities": [
         "meter_gas.imperial",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "gas-meter-imperial"
     },
@@ -1001,9 +1001,9 @@
       },
       "capabilities": [
         "measure_content_volume.gj",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "gj-meter"
     },
@@ -1200,9 +1200,9 @@
       },
       "capabilities": [
         "meter_power",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "kwh-meter"
     },
@@ -1399,9 +1399,9 @@
       },
       "capabilities": [
         "measure_content_volume",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "liquid-meter"
     },
@@ -1598,9 +1598,9 @@
       },
       "capabilities": [
         "measure_content_volume.imperial",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "liquid-meter-imperial"
     },
@@ -1797,9 +1797,9 @@
       },
       "capabilities": [
         "meter_water",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "water-meter"
     },
@@ -1996,9 +1996,9 @@
       },
       "capabilities": [
         "meter_water.imperial",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "water-meter-imperial"
     },
@@ -2195,9 +2195,9 @@
       },
       "capabilities": [
         "measure_power",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "watt-meter"
     },
@@ -2394,9 +2394,9 @@
       },
       "capabilities": [
         "measure_weight",
-        "measure_monetary",
+        "measure_duration",
         "alarm_running",
-        "measure_duration"
+        "measure_monetary"
       ],
       "id": "weight-meter"
     },
@@ -2592,10 +2592,10 @@
         "en": "Weight Meter (oz)"
       },
       "capabilities": [
-        "measure_weight.imperial",
-        "measure_monetary",
         "alarm_running",
-        "measure_duration"
+        "measure_duration",
+        "measure_weight.imperial",
+        "measure_monetary"
       ],
       "id": "weight-meter-imperial"
     }

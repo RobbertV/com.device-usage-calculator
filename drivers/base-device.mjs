@@ -82,7 +82,9 @@ export default class BaseDevice extends Homey.Device {
 
         const diffMeter = meter - calculationValues.meter;
 
-        this.updateUsage(diffMeter);
+        await this.updateUsage(diffMeter);
+
+        return true;
     }
 
     async updateUsage(newValue) {
@@ -99,6 +101,8 @@ export default class BaseDevice extends Homey.Device {
         this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { value: previousValue + newValue });
 
         await this.updateCosts(previousValue + newValue - previousValue);
+
+        return true;
     }
 
     async updateCosts(usage) {
@@ -116,6 +120,8 @@ export default class BaseDevice extends Homey.Device {
         await this.setStoreValue('costs', { value: previousCosts + costs });
 
         this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
+
+        return true;
     }
 
     async calculateTotals() {
@@ -134,6 +140,8 @@ export default class BaseDevice extends Homey.Device {
             this.setCapabilityValue('alarm_running', false);
             this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);
+
+            return true;
         } catch (error) {
             this.homey.app.error(error);
         }
