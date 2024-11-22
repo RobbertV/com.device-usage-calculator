@@ -98,11 +98,11 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async updateCosts(usage) {
+        const settings = this.getSettings();
         const calculationValues = this.getStoreValue('calculation-values');
         const price = calculationValues.price;
         const oldCosts = this.getStoreValue('costs');
         const previousCosts = oldCosts.value || 0;
-
 
         // Calculate the costs
         const costs = price * usage;
@@ -112,9 +112,13 @@ export default class BaseDevice extends Homey.Device {
         await this.setStoreValue('costs', { value: previousCosts + costs });
 
         this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
+
+        if(settings.update_values) {
+            this.calculateTotals(true);
+        }
     }
 
-    async calculateTotals() {
+    async calculateTotals(isRunning = false) {
         try {
             const endTime = new Date();
             const usage = this.getStoreValue('usage');
@@ -127,11 +131,9 @@ export default class BaseDevice extends Homey.Device {
             this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration });
 
             this.setCapabilityValue('measure_duration', duration);
-            this.setCapabilityValue('alarm_running', false);
+            this.setCapabilityValue('alarm_running', isRunning);
             this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);
-
-            return true;
         } catch (error) {
             this.homey.app.error(error);
         }

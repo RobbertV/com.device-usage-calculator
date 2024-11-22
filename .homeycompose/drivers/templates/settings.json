@@ -6,8 +6,22 @@
       "label": {
         "en": "Reset values on start"
       },
+      "hint": {
+        "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
+      },
       "value": false
     },
+    {
+        "id": "update_values",
+        "type": "checkbox",
+        "label": {
+          "en": "Update values on price change"
+        },
+        "hint": {
+            "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
+        },
+        "value": false
+      },
     {
       "id": "monetary_unit",
       "type": "dropdown",
