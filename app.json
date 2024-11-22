@@ -852,7 +852,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -1371,7 +1372,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -1890,7 +1892,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -2409,7 +2412,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -2928,7 +2932,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -3447,7 +3452,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -3966,7 +3972,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -4485,7 +4492,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -5004,7 +5012,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -5523,7 +5532,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
@@ -6042,7 +6052,8 @@
           "type": "dropdown",
           "value": "measure_monetary",
           "label": {
-            "en": "Monetary unit"
+            "en": "Currency",
+            "nl": "Valuta"
           },
           "values": [
             {
