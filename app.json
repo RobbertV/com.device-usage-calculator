@@ -357,7 +357,7 @@
           "en": "Update usage session"
         },
         "titleFormatted": {
-          "en": "update usage session with [[price]] price and [[meter]] meter reading"
+          "en": "Update usage session with [[price]] price and [[meter]] meter reading"
         },
         "hint": {
           "en": "tbd"

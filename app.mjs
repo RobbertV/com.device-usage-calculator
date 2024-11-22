@@ -1,7 +1,7 @@
 'use strict';
 
 import Homey from 'homey';
-// import flowActions from './lib/flows/actions.mjs';
+import flowActions from './lib/flows/actions.mjs';
 // import flowConditions from './lib/flows/conditions.mjs';
 
 class DynamicMeasureApp extends Homey.App {
