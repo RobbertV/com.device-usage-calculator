@@ -88,8 +88,6 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async updateUsage(newValue) {
-        this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, newValue);
-
         const oldUsage = this.getStoreValue('usage');
         const previousValue = oldUsage.value || 0;
 
@@ -106,14 +104,12 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async updateCosts(usage) {
-        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, usage);
-
         const calculationValues = this.getStoreValue('calculation-values');
         const price = calculationValues.price;
         const oldCosts = this.getStoreValue('costs');
         const previousCosts = oldCosts.value || 0;
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, usage });
+        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
 
         // Calculate the costs
         const costs = price * usage;
