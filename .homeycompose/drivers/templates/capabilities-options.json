@@ -1,5 +1,29 @@
 {
   "capabilitiesOptions": {
+    "meter_power": {
+      "title": {
+        "en": "Last session usage",
+        "nl": "Laatste sessie verbuik"
+      }
+    },
+    "measure_duration": {
+      "title": {
+        "en": "Last session duration",
+        "nl": "Laatste sessieduur"
+      }
+    },
+    "alarm_running": {
+      "title": {
+        "en": "Active session",
+        "nl": "Actieve sessie"
+      }
+    },
+    "measure_monetary": {
+      "title": {
+        "en": "Last session costs",
+        "nl": "Laatste sessie kosten"
+      }
+    },
     "measure_monetary.dollar": {
       "units": {
         "en": "$"
