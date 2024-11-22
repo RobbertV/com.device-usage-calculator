@@ -1,0 +1,20 @@
+{
+  "name": {
+    "en": "Weight Meter (g)"
+  },
+  "capabilities": [
+    "measure_weight",
+    "measure_monetary",
+    "alarm_running",
+    "measure_duration"
+  ],
+  "settings": [
+    {
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "g"
+    }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

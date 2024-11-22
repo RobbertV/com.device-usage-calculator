@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>measure_content_volume</title>
+    <g id="measure_content_volume" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M32.9922779,6.26351372 L53.9922779,18.2635137 C54.6154279,18.6195994 55,19.2822863 55,20 L55,44 C55,44.7177137 54.6154279,45.3804006 53.9922779,45.7364863 L32.9922779,57.7364863 C32.3774125,58.0878379 31.6225875,58.0878379 31.0077221,57.7364863 L10.0077221,45.7364863 C9.38457213,45.3804006 9,44.7177137 9,44 L9,20 C9,19.2822863 9.38457213,18.6195994 10.0077221,18.2635137 L31.0077221,6.26351372 C31.6225875,5.91216209 32.3774125,5.91216209 32.9922779,6.26351372 Z M13,23.34 L13,42.839 L30,52.553 L30,33.155 L13,23.34 Z M51,23.339 L34,33.154 L34,52.553 L51,42.838 L51,23.339 Z M32,10.303 L15.124,19.946 L32,29.689 L48.875,19.947 L32,10.303 Z" id="Shape" fill="#000000"></path>
+        <line x1="33" y1="49" x2="38" y2="46" id="Path-2" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+        <line x1="33" y1="44" x2="38" y2="41" id="Path-2" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+        <line x1="33" y1="39" x2="38" y2="36" id="Path-2" stroke="#000000" stroke-width="2" stroke-linecap="round"></line>
+    </g>
+</svg>

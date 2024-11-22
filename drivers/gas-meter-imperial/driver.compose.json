@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Gas Meter (ft3)"
+  },
+  "capabilities": [
+    "meter_gas",
+    "measure_monetary",
+    "alarm_running",
+    "measure_duration"
+  ],
+  "capabilitiesOptions": {
+    "meter_gas": {
+      "units": {
+        "en": "ft3",
+        "nl": "ft3",
+        "da": "ft3",
+        "it": "ft3",
+        "ko": "ft3",
+        "pl": "ft3",
+        "ru": "ft3",
+        "sv": "ft3",
+        "es": "ft3",
+        "fr": "ft3",
+        "no": "ft3"
+      }
+    }
+  },
+  "settings": [
+    {
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "ft3"
+    }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

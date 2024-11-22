@@ -479,6 +479,91 @@
       "id": "gas-meter"
     },
     {
+      "icon": "/drivers/gas-meter-imperial/assets/icon.svg",
+      "images": {
+        "large": "/drivers/gas-meter-imperial/assets/images/large.png",
+        "small": "/drivers/gas-meter-imperial/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Gas Meter (ft3)"
+      },
+      "capabilities": [
+        "meter_gas",
+        "measure_monetary",
+        "alarm_running",
+        "measure_duration"
+      ],
+      "capabilitiesOptions": {
+        "meter_gas": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "ft3"
+        }
+      ],
+      "id": "gas-meter-imperial"
+    },
+    {
       "icon": "/drivers/gj-meter/assets/icon.svg",
       "images": {
         "large": "/drivers/gj-meter/assets/images/large.png",
@@ -682,6 +767,91 @@
       "id": "liquid-meter"
     },
     {
+      "icon": "/drivers/liquid-meter-imperial/assets/icon.svg",
+      "images": {
+        "large": "/drivers/liquid-meter-imperial/assets/images/large.png",
+        "small": "/drivers/liquid-meter-imperial/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Liquid Meter (gal)"
+      },
+      "capabilities": [
+        "measure_content_volume",
+        "measure_monetary",
+        "alarm_running",
+        "measure_duration"
+      ],
+      "capabilitiesOptions": {
+        "measure_content_volume": {
+          "units": {
+            "en": "gal",
+            "nl": "gal",
+            "da": "gal",
+            "it": "gal",
+            "ko": "gal",
+            "pl": "gal",
+            "ru": "gal",
+            "sv": "gal",
+            "es": "gal",
+            "fr": "gal",
+            "no": "gal"
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "gal"
+        }
+      ],
+      "id": "liquid-meter-imperial"
+    },
+    {
       "icon": "/drivers/water-meter/assets/icon.svg",
       "images": {
         "large": "/drivers/water-meter/assets/images/large.png",
@@ -750,6 +920,91 @@
       "id": "water-meter"
     },
     {
+      "icon": "/drivers/water-meter-imperial/assets/icon.svg",
+      "images": {
+        "large": "/drivers/water-meter-imperial/assets/images/large.png",
+        "small": "/drivers/water-meter-imperial/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Water Meter (ft3)"
+      },
+      "capabilities": [
+        "meter_water",
+        "measure_monetary",
+        "alarm_running",
+        "measure_duration"
+      ],
+      "capabilitiesOptions": {
+        "meter_water": {
+          "units": {
+            "en": "ft3",
+            "nl": "ft3",
+            "da": "ft3",
+            "it": "ft3",
+            "ko": "ft3",
+            "pl": "ft3",
+            "ru": "ft3",
+            "sv": "ft3",
+            "es": "ft3",
+            "fr": "ft3",
+            "no": "ft3"
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "ft3"
+        }
+      ],
+      "id": "water-meter-imperial"
+    },
+    {
       "icon": "/drivers/watt-meter/assets/icon.svg",
       "images": {
         "large": "/drivers/watt-meter/assets/images/large.png",
@@ -816,6 +1071,159 @@
         }
       ],
       "id": "watt-meter"
+    },
+    {
+      "icon": "/drivers/weight-meter/assets/icon.svg",
+      "images": {
+        "large": "/drivers/weight-meter/assets/images/large.png",
+        "small": "/drivers/weight-meter/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Weight Meter (g)"
+      },
+      "capabilities": [
+        "measure_weight",
+        "measure_monetary",
+        "alarm_running",
+        "measure_duration"
+      ],
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "g"
+        }
+      ],
+      "id": "weight-meter"
+    },
+    {
+      "icon": "/drivers/weight-meter-imperial/assets/icon.svg",
+      "images": {
+        "large": "/drivers/weight-meter-imperial/assets/images/large.png",
+        "small": "/drivers/weight-meter-imperial/assets/images/small.png"
+      },
+      "class": "sensor",
+      "connectivity": [
+        "cloud"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "pair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "repair": [
+        {
+          "id": "list_devices",
+          "template": "list_devices",
+          "navigation": {
+            "next": "add_devices"
+          }
+        },
+        {
+          "id": "add_devices",
+          "template": "add_devices"
+        },
+        {
+          "id": "done",
+          "template": "done"
+        }
+      ],
+      "name": {
+        "en": "Weight Meter (oz)"
+      },
+      "capabilities": [
+        "measure_weight",
+        "measure_monetary",
+        "alarm_running",
+        "measure_duration"
+      ],
+      "capabilitiesOptions": {
+        "measure_weight": {
+          "units": {
+            "en": "oz",
+            "nl": "oz",
+            "da": "oz",
+            "it": "oz",
+            "ko": "oz",
+            "pl": "oz",
+            "ru": "oz",
+            "sv": "oz",
+            "es": "oz",
+            "fr": "oz",
+            "no": "oz"
+          }
+        }
+      },
+      "settings": [
+        {
+          "id": "unit",
+          "type": "label",
+          "label": {
+            "en": "Unit"
+          },
+          "value": "oz"
+        }
+      ],
+      "id": "weight-meter-imperial"
     }
   ],
   "capabilities": {

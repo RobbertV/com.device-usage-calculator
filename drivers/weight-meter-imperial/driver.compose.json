@@ -1,0 +1,37 @@
+{
+  "name": {
+    "en": "Weight Meter (oz)"
+  },
+  "capabilities": [
+    "measure_weight",
+    "measure_monetary",
+    "alarm_running",
+    "measure_duration"
+  ],
+  "capabilitiesOptions": {
+    "measure_weight": {
+      "units": {
+        "en": "oz",
+        "nl": "oz",
+        "da": "oz",
+        "it": "oz",
+        "ko": "oz",
+        "pl": "oz",
+        "ru": "oz",
+        "sv": "oz",
+        "es": "oz",
+        "fr": "oz",
+        "no": "oz"
+      }
+    }
+  },
+  "settings": [
+    {
+      "id": "unit",
+      "type": "label",
+      "label": { "en": "Unit" },
+      "value": "oz"
+    }
+  ],
+  "$extends": ["device", "pair", "repair"]
+}

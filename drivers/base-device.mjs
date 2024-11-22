@@ -11,6 +11,15 @@ export default class BaseDevice extends Homey.Device {
         await this.checkCapabilities();
     }
 
+    async onAdded() {
+        this.homey.app.log('[Device] - onAdded =>', this.getName());
+        this.setCapabilityValue('alarm_running', false);
+        this.setCapabilityValue('measure_monetary', 0);
+        this.setCapabilityValue('measure_duration', 0);
+        this.setUsageCapability(0);
+    }
+
+
     async startUsage(price, meter) {
         this.setStoreValue('usage', { value: 0 });
         this.setStoreValue('costs', { value: 0 });
