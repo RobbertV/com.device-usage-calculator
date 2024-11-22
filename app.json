@@ -427,55 +427,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -484,7 +556,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -493,7 +573,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -502,7 +590,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -511,7 +607,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -520,13 +624,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -535,7 +655,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -544,7 +672,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -553,7 +689,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -562,7 +706,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -571,7 +723,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -580,7 +740,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -589,7 +757,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -598,7 +774,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -607,7 +791,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -740,55 +932,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -797,7 +1061,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -806,7 +1078,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -815,7 +1095,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -824,7 +1112,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -833,13 +1129,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -848,7 +1160,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -857,7 +1177,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -866,7 +1194,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -875,7 +1211,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -884,7 +1228,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -893,7 +1245,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -902,7 +1262,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -911,7 +1279,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -920,7 +1296,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -1053,55 +1437,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1110,7 +1566,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -1119,7 +1583,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -1128,7 +1600,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -1137,7 +1617,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1146,13 +1634,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -1161,7 +1665,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -1170,7 +1682,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -1179,7 +1699,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -1188,7 +1716,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -1197,7 +1733,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -1206,7 +1750,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -1215,7 +1767,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -1224,7 +1784,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -1233,7 +1801,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -1366,55 +1942,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1423,7 +2071,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -1432,7 +2088,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -1441,7 +2105,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -1450,7 +2122,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1459,13 +2139,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -1474,7 +2170,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -1483,7 +2187,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -1492,7 +2204,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -1501,7 +2221,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -1510,7 +2238,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -1519,7 +2255,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -1528,7 +2272,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -1537,7 +2289,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -1546,7 +2306,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -1679,55 +2447,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1736,7 +2576,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -1745,7 +2593,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -1754,7 +2610,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -1763,7 +2627,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -1772,13 +2644,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -1787,7 +2675,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -1796,7 +2692,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -1805,7 +2709,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -1814,7 +2726,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -1823,7 +2743,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -1832,7 +2760,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -1841,7 +2777,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -1850,7 +2794,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -1859,7 +2811,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -1992,55 +2952,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2049,7 +3081,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -2058,7 +3098,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -2067,7 +3115,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -2076,7 +3132,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2085,13 +3149,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -2100,7 +3180,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -2109,7 +3197,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -2118,7 +3214,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -2127,7 +3231,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -2136,7 +3248,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -2145,7 +3265,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -2154,7 +3282,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -2163,7 +3299,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -2172,7 +3316,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -2305,55 +3457,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2362,7 +3586,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -2371,7 +3603,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -2380,7 +3620,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -2389,7 +3637,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2398,13 +3654,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -2413,7 +3685,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -2422,7 +3702,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -2431,7 +3719,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -2440,7 +3736,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -2449,7 +3753,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -2458,7 +3770,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -2467,7 +3787,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -2476,7 +3804,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -2485,7 +3821,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -2618,55 +3962,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2675,7 +4091,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -2684,7 +4108,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -2693,7 +4125,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -2702,7 +4142,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2711,13 +4159,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -2726,7 +4190,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -2735,7 +4207,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -2744,7 +4224,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -2753,7 +4241,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -2762,7 +4258,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -2771,7 +4275,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -2780,7 +4292,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -2789,7 +4309,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -2798,7 +4326,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -2931,55 +4467,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -2988,7 +4596,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -2997,7 +4613,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -3006,7 +4630,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -3015,7 +4647,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -3024,13 +4664,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -3039,7 +4695,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -3048,7 +4712,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -3057,7 +4729,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -3066,7 +4746,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -3075,7 +4763,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -3084,7 +4780,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -3093,7 +4797,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -3102,7 +4814,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -3111,7 +4831,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -3244,55 +4972,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -3301,7 +5101,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -3310,7 +5118,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -3319,7 +5135,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -3328,7 +5152,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -3337,13 +5169,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -3352,7 +5200,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -3361,7 +5217,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -3370,7 +5234,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -3379,7 +5251,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -3388,7 +5268,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -3397,7 +5285,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -3406,7 +5302,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -3415,7 +5319,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -3424,7 +5336,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
@@ -3557,55 +5477,127 @@
         "meter_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_power": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_gas": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "meter_water": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_weight": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_content_volume": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           }
         },
         "measure_duration": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessieduur"
+            "nl": "Laatste sessieduur",
+            "de": "Letzte Sitzungsdauer",
+            "fr": "Durée de la dernière session",
+            "es": "Duración de la última sesión",
+            "it": "Durata dell'ultima sessione",
+            "pt": "Duração da última sessão",
+            "pl": "Czas trwania ostatniej sesji",
+            "ru": "Продолжительность последней сессии",
+            "ko": "마지막 세션 지속 시간"
           }
         },
         "alarm_running": {
           "title": {
             "en": "Active session",
-            "nl": "Actieve sessie"
+            "nl": "Actieve sessie",
+            "de": "Aktive Sitzung",
+            "fr": "Session active",
+            "es": "Sesión activa",
+            "it": "Sessione attiva",
+            "pt": "Sessão ativa",
+            "pl": "Aktywna sesja",
+            "ru": "Активная сессия",
+            "ko": "활성 세션"
           }
         },
         "meter_gas.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -3614,7 +5606,15 @@
         "measure_weight.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -3623,7 +5623,15 @@
         "measure_content_volume.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -3632,7 +5640,15 @@
         "measure_content_volume.gj": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -3641,7 +5657,15 @@
         "meter_water.imperial": {
           "title": {
             "en": "Last session usage",
-            "nl": "Laatste sessie verbuik"
+            "nl": "Laatste sessie verbuik",
+            "de": "Letzte Sitzung Verbrauch",
+            "fr": "Dernière session d'utilisation",
+            "es": "Último uso de la sesión",
+            "it": "Ultimo utilizzo della sessione",
+            "pt": "Última sessão de uso",
+            "pl": "Ostatnie użycie sesji",
+            "ru": "Последнее использование сессии",
+            "ko": "마지막 세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -3650,13 +5674,29 @@
         "measure_monetary": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           }
         },
         "measure_monetary.dollar": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "$"
@@ -3665,7 +5705,15 @@
         "measure_monetary.euro": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "€"
@@ -3674,7 +5722,15 @@
         "measure_monetary.pound": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "£"
@@ -3683,7 +5739,15 @@
         "measure_monetary.yen": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "¥"
@@ -3692,7 +5756,15 @@
         "measure_monetary.rupee": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₹"
@@ -3701,7 +5773,15 @@
         "measure_monetary.ruble": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₽"
@@ -3710,7 +5790,15 @@
         "measure_monetary.krone": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "kr"
@@ -3719,7 +5807,15 @@
         "measure_monetary.won": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₩"
@@ -3728,7 +5824,15 @@
         "measure_monetary.zloty": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "zł"
@@ -3737,7 +5841,15 @@
         "measure_monetary.franc": {
           "title": {
             "en": "Last session costs",
-            "nl": "Laatste sessie kosten"
+            "nl": "Laatste sessie kosten",
+            "de": "Letzte Sitzungskosten",
+            "fr": "Coûts de la dernière session",
+            "es": "Costos de la última sesión",
+            "it": "Costi dell'ultima sessione",
+            "pt": "Custos da última sessão",
+            "pl": "Koszty ostatniej sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
           },
           "units": {
             "en": "₣"
