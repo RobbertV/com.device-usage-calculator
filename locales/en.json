@@ -8,6 +8,10 @@
     "minute": "minute",
     "minutes": "minutes",
     "second": "second",
-    "seconds": "seconds"
+    "seconds": "seconds",
+    "daysShort": "d",
+    "hoursShort": "h",
+    "minutesShort": "m",
+    "secondsShort": "s"
   }
 }

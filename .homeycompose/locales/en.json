@@ -1,13 +1,9 @@
 {
     "helpers": {
         "locale": "en-EN",
-        "day": "day",
-        "days": "days",
-        "hour": "hour",
-        "hours": "hours",
-        "minute": "minute",
-        "minutes": "minutes",
-        "second": "second",
-        "seconds": "seconds"
+        "daysShort": "d",
+        "hoursShort": "h",
+        "minutesShort": "m",
+        "secondsShort": "s"
     }
 }

@@ -131,7 +131,7 @@ export default class BaseDevice extends Homey.Device {
 
             const diffMs = differenceInMilliseconds(endTime, calculationValues.starttime);
             const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example
-            const prettyDuration = formattedDuration(diffMs, this.homey.app.log);
+            const prettyDuration = formattedDuration(diffMs, this.homey.__);
 
             this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration });
 
