@@ -144,17 +144,29 @@ export default class BaseDevice extends Homey.Device {
         }
     }
 
-    async formattedCosts(currency) {
+    async formattedCosts() {
         try {
             const settings = this.getSettings();
             const rawCosts = this.getStoreValue('costs');
             const rawCostsValue = rawCosts.value;
-            const formattedCosts = rawCostsValue.toLocaleString(this.homey.__('helpers.locale'), { style: 'currency', currency: currency });
-
-            //ToDo: Retrieve settings monetary_unit for currency selection
             const unit = settings.monetary_unit;
+            const unitMap = {
+                measure_monetary: 'EUR',
+                'measure_monetary.euro': 'EUR',
+                'measure_monetary.dollar': 'USD',
+                'measure_monetary.pound': 'GBP',
+                'measure_monetary.yen': '',
+                'measure_monetary.rupee': '',
+                'measure_monetary.ruble': '',
+                'measure_monetary.krone': 'NOK', // Norway = NOK, Sweden = SEK, Danish = DKK
+                'measure_monetary.won': '',
+                'measure_monetary.zloty': '',
+                'measure_monetary.franc': 'CHF'
+            };
+            const currencyUnit = unitMap[unit];
+            const formattedCosts = rawCostsValue.toLocaleString(this.homey.__('helpers.locale'), { style: 'currency', currency: currencyUnit });
 
-            this.homey.app.log(`[Device] ${this.getName()} - formattedCosts =>`, { unit, formattedCosts });
+            this.homey.app.log(`[Device] ${this.getName()} - formattedCosts =>`, { currencyUnit, formattedCosts });
 
             return formattedCosts;
         } catch (error) {
