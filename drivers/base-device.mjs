@@ -144,6 +144,24 @@ export default class BaseDevice extends Homey.Device {
         }
     }
 
+    async formattedCosts(currency) {
+        try {
+            const settings = this.getSettings();
+            const rawCosts = this.getStoreValue('costs');
+            const rawCostsValue = rawCosts.value;
+            const formattedCosts = rawCostsValue.toLocaleString(this.homey.__('helpers.locale'), { style: 'currency', currency: currency });
+
+            //ToDo: Retrieve settings monetary_unit for currency selection
+            const unit = settings.monetary_unit;
+
+            this.homey.app.log(`[Device] ${this.getName()} - formattedCosts =>`, { unit, formattedCosts });
+
+            return formattedCosts;
+        } catch (error) {
+            this.homey.app.error(error);
+        }
+    }
+
     // ---------- Capabilities -----------
 
     async setUsageCapability(value) {

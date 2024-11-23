@@ -299,6 +299,83 @@
       },
       {
         "title": {
+          "en": "Get formatted session costs"
+        },
+        "titleFormatted": {
+          "en": "Get formatted session costs in [[currency]]"
+        },
+        "hint": {
+          "en": "Retrieve the costs from the last session in official format"
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": "driver_id=gas-meter|gas-meter-imperial|gj-meter|kwh-meter|liquid-meter|liquid-meter-imperial|water-meter|water-meter-imperial|watt-meter|weight-meter|weight-meter-imperial&capabilities=alarm_running"
+          },
+          {
+            "name": "currency",
+            "type": "dropdown",
+            "title": {
+              "en": "currency",
+              "nl": "valuta",
+              "de": "Währung",
+              "no": "valuta"
+            },
+            "values": [
+              {
+                "id": "EUR",
+                "label": {
+                  "en": "€ Euro"
+                }
+              },
+              {
+                "id": "USD",
+                "label": {
+                  "en": "$ US Dollar"
+                }
+              },
+              {
+                "id": "GBP",
+                "label": {
+                  "en": "£ GBP"
+                }
+              },
+              {
+                "id": "NOK",
+                "label": {
+                  "en": "NOK"
+                }
+              },
+              {
+                "id": "SEK",
+                "label": {
+                  "en": "SEK"
+                }
+              },
+              {
+                "id": "DKK",
+                "label": {
+                  "en": "DKK"
+                }
+              }
+            ]
+          }
+        ],
+        "tokens": [
+          {
+            "name": "formattedCosts",
+            "title": {
+              "en": "Fromatted costs"
+            },
+            "type": "string",
+            "example": "€ 0,00"
+          }
+        ],
+        "id": "get-formatted-session-costs"
+      },
+      {
+        "title": {
           "en": "Start usage session"
         },
         "titleFormatted": {
