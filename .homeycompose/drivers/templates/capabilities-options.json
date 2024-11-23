@@ -84,20 +84,6 @@
         "ko": "마지막 세션 사용량"
       }
     },
-    "measure_duration": {
-      "title": {
-        "en": "Last session usage",
-        "nl": "Laatste sessieduur",
-        "de": "Letzte Sitzungsdauer",
-        "fr": "Durée de la dernière session",
-        "es": "Duración de la última sesión",
-        "it": "Durata dell'ultima sessione",
-        "pt": "Duração da última sessão",
-        "pl": "Czas trwania ostatniej sesji",
-        "ru": "Продолжительность последней сессии",
-        "ko": "마지막 세션 지속 시간"
-      }
-    },
     "alarm_running": {
       "title": {
         "en": "Active session",
