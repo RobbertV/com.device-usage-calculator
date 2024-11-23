@@ -1,6 +1,6 @@
 {
   "platforms": ["local"],
-  "type": "number",
+  "type": "string",
   "title": {
     "en": "Duration",
     "nl": "Duur",
@@ -15,21 +15,7 @@
     "pl": "Czas trwania",
     "ko": "기간"
   },
-  "units": {
-    "en": "minutes",
-    "nl": "minuten",
-    "de": "Minuten",
-    "fr": "minutes",
-    "it": "minuti",
-    "sv": "minuter",
-    "no": "minutter",
-    "es": "minutos",
-    "da": "minutter",
-    "ru": "минуты",
-    "pl": "minuty",
-    "ko": "분"
-  },
-  "insights": true,
+  "insights": false,
   "desc": {
    "en": "Duration",
     "nl": "Duur",
@@ -44,8 +30,6 @@
     "pl": "Czas trwania",
     "ko": "기간"
   },
-  "chartType": "spline",
-  "decimals": 2,
   "getable": true,
   "setable": false,
   "uiComponent": "sensor",

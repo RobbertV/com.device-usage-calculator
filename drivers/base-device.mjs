@@ -1,7 +1,7 @@
 'use strict';
 
 import Homey from 'homey';
-import { sleep } from '../lib/helpers.mjs';
+import { sleep, formattedDuration } from '../lib/helpers.mjs';
 import { differenceInMilliseconds } from 'date-fns';
 
 export default class BaseDevice extends Homey.Device {
@@ -117,7 +117,7 @@ export default class BaseDevice extends Homey.Device {
 
         this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
 
-        if(settings.update_values) {
+        if (settings.update_values) {
             this.calculateTotals(true);
         }
     }
@@ -131,10 +131,11 @@ export default class BaseDevice extends Homey.Device {
 
             const diffMs = differenceInMilliseconds(endTime, calculationValues.starttime);
             const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example
+            const prettyDuration = formattedDuration(diffMs, this.homey.__, this.homey.app.log);
 
-            this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration });
+            this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration });
 
-            this.setCapabilityValue('measure_duration', duration);
+            this.setCapabilityValue('measure_duration', prettyDuration);
             this.setCapabilityValue('alarm_running', isRunning);
             this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);

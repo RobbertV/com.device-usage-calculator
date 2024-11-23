@@ -1,0 +1,13 @@
+{
+    "helpers": {
+        "locale": "nl-NL",
+        "day": "dag",
+        "days": "dagen",
+        "hour": "uur",
+        "hours": "uur",
+        "minute": "min",
+        "minutes": "min",
+        "second": "seconde",
+        "seconds": "seconden"
+    }
+}
