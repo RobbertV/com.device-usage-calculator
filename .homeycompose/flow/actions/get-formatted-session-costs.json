@@ -3,7 +3,7 @@
     "en": "Get formatted session costs"
   },
   "hint": {
-    "en": "Retrieve the costs from the last session in official format"
+    "en": "Retrieve the costs in your local format from the last session in a flow tag"
   },
   "args": [
     {
