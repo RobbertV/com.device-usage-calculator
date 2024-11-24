@@ -146,17 +146,18 @@ export default class BaseDevice extends Homey.Device {
 
     async formattedCosts() {
         try {
+            const i18n = this.homey.i18n.getLanguage();
             const settings = this.getSettings();
             const rawCosts = this.getStoreValue('costs');
             const rawCostsValue = rawCosts.value;
             const unit = settings.monetary_unit;
             let currencyUnit = 'EUR';
 
-            if(unit.includes('.')) {
+            if (unit.includes('.')) {
                 currencyUnit = unit.split('.')[1];
             }
-            
-            const formattedCosts = rawCostsValue.toLocaleString(this.homey.__('helpers.locale'), { style: 'currency', currency: currencyUnit });
+
+            const formattedCosts = rawCostsValue.toLocaleString(i18n, { style: 'currency', currency: currencyUnit });
 
             this.homey.app.log(`[Device] ${this.getName()} - formattedCosts =>`, { currencyUnit, formattedCosts });
 
