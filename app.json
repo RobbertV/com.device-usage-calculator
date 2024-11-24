@@ -247,10 +247,10 @@
           "en": "End usage session"
         },
         "titleFormatted": {
-          "en": "End usage session with [[price]] price and [[meter]] meter reading"
+          "en": "End usage session with [[price]] tariff and [[meter]] meter reading"
         },
         "hint": {
-          "en": "tbd"
+          "en": "With given tariff & meter count, calculation will be made for the running session"
         },
         "args": [
           {
@@ -328,10 +328,10 @@
           "en": "Start usage session"
         },
         "titleFormatted": {
-          "en": "Start usage session with [[price]] price and [[meter]] meter reading"
+          "en": "Start usage session with [[price]] tariff and [[meter]] meter reading"
         },
         "hint": {
-          "en": "tbd"
+          "en": "Starting a new calcultion session for usage insisghts"
         },
         "args": [
           {
@@ -380,13 +380,13 @@
       },
       {
         "title": {
-          "en": "Update usage session"
+          "en": "Update active session"
         },
         "titleFormatted": {
-          "en": "Update usage session with [[price]] price and [[meter]] meter reading"
+          "en": "Update active session with [[price]] tariff and [[meter]] meter reading"
         },
         "hint": {
-          "en": "tbd"
+          "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate"
         },
         "args": [
           {

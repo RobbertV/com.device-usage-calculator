@@ -3,10 +3,10 @@
         "en": "End usage session"
     },
     "titleFormatted": {
-        "en": "End usage session with [[price]] price and [[meter]] meter reading"
+        "en": "End usage session with [[price]] tariff and [[meter]] meter reading"
     },
     "hint": {
-        "en": "tbd"
+        "en": "With given tariff & meter count, calculation will be made for the running session"
     },
     "args": [
         {

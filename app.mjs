@@ -4,7 +4,7 @@ import Homey from 'homey';
 import flowActions from './lib/flows/actions.mjs';
 // import flowConditions from './lib/flows/conditions.mjs';
 
-class DynamicMeasureApp extends Homey.App {
+class DeviceUsageCalculatorApp extends Homey.App {
     trace() {
         console.log.bind(this, '[trace]').apply(this, arguments);
     }
@@ -38,11 +38,9 @@ class DynamicMeasureApp extends Homey.App {
     async onInit() {
         this.homey.app.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
-
         await flowActions(this.homey);
         // await flowConditions(this.homey);
     }
-
 
     async sendNotifications() {
         try {
@@ -60,4 +58,4 @@ class DynamicMeasureApp extends Homey.App {
     }
 }
 
-export default DynamicMeasureApp;
+export default DeviceUsageCalculatorApp;

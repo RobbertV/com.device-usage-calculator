@@ -3,10 +3,10 @@
         "en": "Start usage session"
     },
     "titleFormatted": {
-        "en": "Start usage session with [[price]] price and [[meter]] meter reading"
+        "en": "Start usage session with [[price]] tariff and [[meter]] meter reading"
     },
     "hint": {
-        "en": "tbd"
+        "en": "Starting a new calcultion session for usage insisghts"
     },
     "args": [
         {

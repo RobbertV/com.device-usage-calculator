@@ -1,12 +1,12 @@
 {
     "title": {
-        "en": "Update usage session"
+        "en": "Update active session"
     },
     "titleFormatted": {
-        "en": "Update usage session with [[price]] price and [[meter]] meter reading"
+        "en": "Update active session with [[price]] tariff and [[meter]] meter reading"
     },
     "hint": {
-        "en": "tbd"
+        "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate"
     },
     "args": [
         {
