@@ -158,7 +158,7 @@ export default class BaseDevice extends Homey.Device {
                 'measure_monetary.yen': '',
                 'measure_monetary.rupee': '',
                 'measure_monetary.ruble': '',
-                'measure_monetary.krone': 'NOK', // Norway = NOK, Sweden = SEK, Danish = DKK
+                'measure_monetary.krone': this.homey.__('helpers.currency'), // Norway = NOK, Sweden = SEK, Danish = DKK
                 'measure_monetary.won': '',
                 'measure_monetary.zloty': '',
                 'measure_monetary.franc': 'CHF'

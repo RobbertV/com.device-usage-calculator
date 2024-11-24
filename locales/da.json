@@ -1,7 +1,7 @@
 {
   "helpers": {
-    "locale": "en-EN",
-    "currency": "USD",
+    "locale": "da-DK",
+    "currency": "DKK",
     "day": "day",
     "days": "days",
     "hour": "hour",

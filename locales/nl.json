@@ -1,6 +1,7 @@
 {
   "helpers": {
     "locale": "nl-NL",
+    "currency": "EUR",
     "day": "dag",
     "days": "dagen",
     "hour": "uur",

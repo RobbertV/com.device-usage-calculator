@@ -1,7 +1,7 @@
 {
   "helpers": {
-    "locale": "en-EN",
-    "currency": "USD",
+    "locale": "sv-SE",
+    "currency": "SEK",
     "day": "day",
     "days": "days",
     "hour": "hour",

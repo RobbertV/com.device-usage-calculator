@@ -1,0 +1,18 @@
+{
+  "helpers": {
+    "locale": "nn-NO",
+    "currency": "NOK",
+    "day": "dag",
+    "days": "dager",
+    "hour": "time",
+    "hours": "timer",
+    "minute": "minutt",
+    "minutes": "minutter",
+    "second": "sekund",
+    "seconds": "sekunder",
+    "daysShort": "d",
+    "hoursShort": "t",
+    "minutesShort": "m",
+    "secondsShort": "s"
+  }
+}
