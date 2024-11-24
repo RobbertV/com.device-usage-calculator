@@ -196,9 +196,12 @@
         "pl": "Koszty ostatniej sesji",
         "ru": "Стоимость последней сессии",
         "ko": "마지막 세션 비용"
-      }
+      },
+        "units": {
+            "en": "€"
+        }
     },
-    "measure_monetary.dollar": {
+    "measure_monetary.USD": {
       "title": {
         "en": "Last session costs",
         "nl": "Laatste sessie kosten",
@@ -215,24 +218,7 @@
         "en": "$"
       }
     },
-    "measure_monetary.euro": {
-      "title": {
-        "en": "Last session costs",
-        "nl": "Laatste sessie kosten",
-        "de": "Letzte Sitzungskosten",
-        "fr": "Coûts de la dernière session",
-        "es": "Costos de la última sesión",
-        "it": "Costi dell'ultima sessione",
-        "pt": "Custos da última sessão",
-        "pl": "Koszty ostatniej sesji",
-        "ru": "Стоимость последней сессии",
-        "ko": "마지막 세션 비용"
-      },
-      "units": {
-        "en": "€"
-      }
-    },
-    "measure_monetary.pound": {
+    "measure_monetary.GBP": {
       "title": {
         "en": "Last session costs",
         "nl": "Laatste sessie kosten",
@@ -249,58 +235,41 @@
         "en": "£"
       }
     },
-    "measure_monetary.yen": {
-      "title": {
-        "en": "Last session costs",
-        "nl": "Laatste sessie kosten",
-        "de": "Letzte Sitzungskosten",
-        "fr": "Coûts de la dernière session",
-        "es": "Costos de la última sesión",
-        "it": "Costi dell'ultima sessione",
-        "pt": "Custos da última sessão",
-        "pl": "Koszty ostatniej sesji",
-        "ru": "Стоимость последней сессии",
-        "ko": "마지막 세션 비용"
+    "measure_monetary.CHF": {
+        "title": {
+          "en": "Last session costs",
+          "nl": "Laatste sessie kosten",
+          "de": "Letzte Sitzungskosten",
+          "fr": "Coûts de la dernière session",
+          "es": "Costos de la última sesión",
+          "it": "Costi dell'ultima sessione",
+          "pt": "Custos da última sessão",
+          "pl": "Koszty ostatniej sesji",
+          "ru": "Стоимость последней сессии",
+          "ko": "마지막 세션 비용"
+        },
+        "units": {
+          "en": "₣"
+        }
       },
-      "units": {
-        "en": "¥"
-      }
-    },
-    "measure_monetary.rupee": {
-      "title": {
-        "en": "Last session costs",
-        "nl": "Laatste sessie kosten",
-        "de": "Letzte Sitzungskosten",
-        "fr": "Coûts de la dernière session",
-        "es": "Costos de la última sesión",
-        "it": "Costi dell'ultima sessione",
-        "pt": "Custos da última sessão",
-        "pl": "Koszty ostatniej sesji",
-        "ru": "Стоимость последней сессии",
-        "ko": "마지막 세션 비용"
+      "measure_monetary.PLN": {
+        "title": {
+          "en": "Last session costs",
+          "nl": "Laatste sessie kosten",
+          "de": "Letzte Sitzungskosten",
+          "fr": "Coûts de la dernière session",
+          "es": "Costos de la última sesión",
+          "it": "Costi dell'ultima sessione",
+          "pt": "Custos da última sessão",
+          "pl": "Koszty ostatniej sesji",
+          "ru": "Стоимость последней сессии",
+          "ko": "마지막 세션 비용"
+        },
+        "units": {
+          "en": "zł"
+        }
       },
-      "units": {
-        "en": "₹"
-      }
-    },
-    "measure_monetary.ruble": {
-      "title": {
-        "en": "Last session costs",
-        "nl": "Laatste sessie kosten",
-        "de": "Letzte Sitzungskosten",
-        "fr": "Coûts de la dernière session",
-        "es": "Costos de la última sesión",
-        "it": "Costi dell'ultima sessione",
-        "pt": "Custos da última sessão",
-        "pl": "Koszty ostatniej sesji",
-        "ru": "Стоимость последней сессии",
-        "ko": "마지막 세션 비용"
-      },
-      "units": {
-        "en": "₽"
-      }
-    },
-    "measure_monetary.krone": {
+    "measure_monetary.DKK": {
       "title": {
         "en": "Last session costs",
         "nl": "Laatste sessie kosten",
@@ -317,7 +286,7 @@
         "en": "kr"
       }
     },
-    "measure_monetary.won": {
+    "measure_monetary.NOK": {
       "title": {
         "en": "Last session costs",
         "nl": "Laatste sessie kosten",
@@ -331,10 +300,10 @@
         "ko": "마지막 세션 비용"
       },
       "units": {
-        "en": "₩"
+        "en": "kr"
       }
     },
-    "measure_monetary.zloty": {
+    "measure_monetary.SEK": {
       "title": {
         "en": "Last session costs",
         "nl": "Laatste sessie kosten",
@@ -348,25 +317,25 @@
         "ko": "마지막 세션 비용"
       },
       "units": {
-        "en": "zł"
+        "en": "kr"
       }
     },
-    "measure_monetary.franc": {
-      "title": {
-        "en": "Last session costs",
-        "nl": "Laatste sessie kosten",
-        "de": "Letzte Sitzungskosten",
-        "fr": "Coûts de la dernière session",
-        "es": "Costos de la última sesión",
-        "it": "Costi dell'ultima sessione",
-        "pt": "Custos da última sessão",
-        "pl": "Koszty ostatniej sesji",
-        "ru": "Стоимость последней сессии",
-        "ko": "마지막 세션 비용"
-      },
-      "units": {
-        "en": "₣"
+    "measure_monetary.RUB": {
+        "title": {
+          "en": "Last session costs",
+          "nl": "Laatste sessie kosten",
+          "de": "Letzte Sitzungskosten",
+          "fr": "Coûts de la dernière session",
+          "es": "Costos de la última sesión",
+          "it": "Costi dell'ultima sessione",
+          "pt": "Custos da última sessão",
+          "pl": "Koszty ostatniej sesji",
+          "ru": "Стоимость последней сессии",
+          "ko": "마지막 세션 비용"
+        },
+        "units": {
+          "en": "₽"
+        }
       }
-    }
   }
 }
