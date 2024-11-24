@@ -81,12 +81,12 @@ export default class BaseDevice extends Homey.Device {
 
         this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter });
 
-        this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
+         const diffMeter = meter - calculationValues.meter;
 
-        const diffMeter = meter - calculationValues.meter;
+         await this.updateUsage(diffMeter);
+         await this.updateCosts(diffMeter);
 
-        await this.updateUsage(diffMeter);
-        await this.updateCosts(diffMeter);
+         this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
     }
 
     async updateUsage(newValue) {
