@@ -1,9 +1,0 @@
-{
-    "helpers": {
-        "locale": "nl-NL",
-        "daysShort": "d",
-        "hoursShort": "u",
-        "minutesShort": "m",
-        "secondsShort": "s"
-    }
-}
