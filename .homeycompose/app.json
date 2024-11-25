@@ -1,6 +1,6 @@
 {
   "id": "com.device-usage-calculator",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "compatibility": ">=12.2.0",
   "sdk": 3,
   "platforms": [
@@ -194,7 +194,9 @@
     "pl": "Twój towarzysz do obliczania zużycia i kosztów",
     "ko": "사용량 및 비용 계산을 위한 동반자"
   },
-  "category": ["energy"],
+  "category": [
+    "energy"
+  ],
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -212,8 +214,8 @@
         "email": "usagemate@martijnpoppen.nl"
       }
     ],
-    "translators": [      
-    {
+    "translators": [
+      {
         "name": "🇬🇧 Robbert Vis & Martijn Poppen"
       },
       {
