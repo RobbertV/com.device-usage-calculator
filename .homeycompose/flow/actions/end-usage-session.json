@@ -8,6 +8,7 @@
     "hint": {
         "en": "With given tariff & meter count, calculation will be made for the running session"
     },
+    "highlight": true,
     "args": [
         {
             "type": "device",

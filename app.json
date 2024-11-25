@@ -252,6 +252,7 @@
         "hint": {
           "en": "With given tariff & meter count, calculation will be made for the running session"
         },
+        "highlight": true,
         "args": [
           {
             "type": "device",
@@ -333,6 +334,7 @@
         "hint": {
           "en": "Starting a new calcultion session for usage insisghts"
         },
+        "highlight": true,
         "args": [
           {
             "type": "device",

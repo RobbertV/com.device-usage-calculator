@@ -8,6 +8,7 @@
     "hint": {
         "en": "Starting a new calcultion session for usage insisghts"
     },
+    "highlight": true,
     "args": [
         {
             "type": "device",
