@@ -40,11 +40,13 @@ export default class BaseDevice extends Homey.Device {
         });
     }
 
-    resetValues() {
-        this.setCapabilityValue('alarm_running', false);
-        this.setCapabilityValue('measure_duration', 0);
-        this.setMonetaryCapability(0);
-        this.setUsageCapability(0);
+    async resetValues() {
+        const prettyDuration = formattedDuration(diffMs, this.homey.__);
+
+        await this.setCapabilityValue('alarm_running', false);
+        await this.setCapabilityValue('measure_duration', prettyDuration);
+        await this.setMonetaryCapability(0);
+        await this.setUsageCapability(0);
     }
 
     // ---------- Usage Calculation -----------
@@ -54,13 +56,13 @@ export default class BaseDevice extends Homey.Device {
 
         this.setStoreValues(price, meter);
 
-        this.setCapabilityValue('alarm_running', true);
+        
 
         if (settings.resetValues) {
-            this.setCapabilityValue('measure_duration', 0);
-            this.setMonetaryCapability(0);
-            this.setUsageCapability(0);
+            await this.resetValues();
         }
+
+        await this.setCapabilityValue('alarm_running', true);
     }
 
     async endUsage(price, meter) {
