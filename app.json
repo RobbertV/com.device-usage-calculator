@@ -235,11 +235,11 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/121162"
+    "url": "https://community.homey.app/t/121589"
   },
   "source": "https://github.com/RobbertV/com.device-usage-calculator",
-  "homeyCommunityTopicId": 121162,
-  "support": "https://community.homey.app/t/121162",
+  "homeyCommunityTopicId": 121589,
+  "support": "https://community.homey.app/t/121589",
   "flow": {
     "actions": [
       {
