@@ -182,18 +182,18 @@
     ]
   },
   "description": {
-    "en": "Calculate the costs of device usage, based on the (dynamic) prices.",
-    "nl": "Bereken de kosten van apparaatgebruik, op basis van de (dynamische) prijzen.",
-    "de": "Berechnen Sie die Kosten der Gerätenutzung auf der Grundlage der (dynamischen) Preise.",
-    "fr": "Calculez les coûts de l'utilisation des appareils, en fonction des prix (dynamiques).",
-    "it": "Calcola i costi dell'uso dei dispositivi, in base ai prezzi (dinamici).",
-    "sv": "Beräkna kostnaderna för enhetsanvändning, baserat på (dynamiska) priser.",
-    "no": "Beregn kostnadene ved enhetsbruk, basert på (dynamiske) priser.",
-    "es": "Calcule los costos del uso de dispositivos, basados en los precios (dinámicos).",
-    "da": "Beregn omkostningerne ved enhedsbrug, baseret på (dynamiske) priser.",
-    "ru": "Рассчитайте стоимость использования устройств на основе (динамических) цен.",
-    "pl": "Oblicz koszty korzystania z urządzeń na podstawie (dynamicznych) cen.",
-    "ko": "동적 가격을 기반으로 장치 사용 비용을 계산하십시오."
+    "en": "Your companion for calculating usage and costs",
+    "nl": "Uw metgezel voor het berekenen van gebruik en kosten",
+    "de": "Ihr Begleiter zur Berechnung von Verbrauch und Kosten",
+    "fr": "Votre compagnon pour calculer l'utilisation et les coûts",
+    "it": "Il tuo compagno per calcolare l'utilizzo e i costi",
+    "sv": "Din följeslagare för att beräkna användning och kostnader",
+    "no": "Din følgesvenn for å beregne bruk og kostnader",
+    "es": "Su compañero para calcular el uso y los costos",
+    "da": "Din ledsager til beregning af brug og omkostninger",
+    "ru": "Ваш компаньон для расчета использования и затрат",
+    "pl": "Twój towarzysz do obliczania zużycia i kosztów",
+    "ko": "사용량 및 비용 계산을 위한 동반자"
   },
   "category": [
     "energy"
@@ -235,22 +235,55 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/xxx"
+    "url": "https://community.homey.app/t/121162"
   },
   "source": "https://github.com/RobbertV/com.device-usage-calculator",
-  "homeyCommunityTopicId": 114491,
-  "support": "https://community.homey.app/t/xxx",
+  "homeyCommunityTopicId": 121162,
+  "support": "https://community.homey.app/t/121162",
   "flow": {
     "actions": [
       {
         "title": {
-          "en": "End usage session"
+          "en": "End usage session",
+          "nl": "Eindig gebruikssessie",
+          "de": "Nutzungssitzung beenden",
+          "fr": "Fin de la session d'utilisation",
+          "it": "Fine sessione di utilizzo",
+          "sv": "Avsluta användningssession",
+          "no": "Avslutt bruksøkt",
+          "es": "Finalizar sesión de uso",
+          "da": "Afslut brugssession",
+          "ru": "Завершить сеанс использования",
+          "pl": "Zakończ sesję użytkowania",
+          "ko": "사용 세션 종료"
         },
         "titleFormatted": {
-          "en": "End usage session with [[price]] tariff and [[meter]] meter reading"
+          "en": "End usage session with [[price]] tariff and [[meter]] meter reading",
+          "nl": "Eindig gebruikssessie met [[price]] tarief en [[meter]] meterstand",
+          "de": "Beenden Sie die Nutzungssitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]]",
+          "fr": "Fin de la session d'utilisation avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+          "it": "Fine sessione di utilizzo con tariffa [[price]] e lettura contatore [[meter]]",
+          "sv": "Avsluta användningssession med [[price]] tariff och [[meter]] mätarställning",
+          "no": "Avslutt bruksøkt med [[price]] tariff og [[meter]] målerstand",
+          "es": "Finalizar sesión de uso con tarifa [[price]] y lectura de medidor [[meter]]",
+          "da": "Afslut brugssession med [[price]] takst og [[meter]] målerlæsning",
+          "ru": "Завершить сеанс использования с тарифом [[price]] и показанием счетчика [[meter]]",
+          "pl": "Zakończ sesję użytkowania z taryfą [[price]] i odczytem licznika [[meter]]",
+          "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 사용 세션 종료"
         },
         "hint": {
-          "en": "With given tariff & meter count, calculation will be made for the running session"
+          "en": "With given tariff & meter count, calculation will be made for the running session",
+          "nl": "Met het opgegeven tarief en meterstand wordt de berekening gemaakt voor de lopende sessie",
+          "de": "Mit dem angegebenen Tarif und Zählerstand wird die Berechnung für die laufende Sitzung durchgeführt",
+          "fr": "Avec le tarif et le compteur donnés, le calcul sera effectué pour la session en cours",
+          "it": "Con il tariffa e il conteggio del contatore forniti, verrà effettuato il calcolo per la sessione in corso",
+          "sv": "Med angivet tariff och mätarantal kommer beräkningen att göras för den löpande sessionen",
+          "no": "Med angitt tariff og målerantall vil beregningen bli gjort for den løpende økten",
+          "es": "Con la tarifa y el recuento del medidor dados, se realizará el cálculo para la sesión en ejecución",
+          "da": "Med den angivne takst og målerantal vil der blive foretaget beregning for den kørende session",
+          "ru": "С учетом указанного тарифа и количества счетчиков будет произведен расчет для текущей сессии",
+          "pl": "Z podaną taryfą i liczbą liczników zostanie dokonane obliczenie dla bieżącej sesji",
+          "ko": "지정된 요금 및 미터 카운트로 실행 중인 세션에 대한 계산이 수행됩니다"
         },
         "highlight": true,
         "args": [
@@ -300,10 +333,46 @@
       },
       {
         "title": {
-          "en": "Get formatted session costs"
+          "en": "Get formatted session costs",
+          "nl": "Ontvang opgemaakte sessiekosten",
+          "de": "Erhalten Sie formatierte Sitzungskosten",
+          "fr": "Obtenir les coûts de session formatés",
+          "it": "Ottieni i costi della sessione formattati",
+          "sv": "Hämta formaterade sessionkostnader",
+          "no": "Få formaterte øktkostnader",
+          "es": "Obtener los costos de la sesión formateados",
+          "da": "Få formaterede sessionomkostninger",
+          "ru": "Получить отформатированные затраты на сессию",
+          "pl": "Pobierz sformatowane koszty sesji",
+          "ko": "서식이 지정된 세션 비용 가져오기"
+        },
+        "titleFormatted": {
+          "en": "Get formatted session costs",
+          "nl": "Ontvang opgemaakte sessiekosten",
+          "de": "Erhalten Sie formatierte Sitzungskosten",
+          "fr": "Obtenir les coûts de session formatés",
+          "it": "Ottieni i costi della sessione formattati",
+          "sv": "Hämta formaterade sessionkostnader",
+          "no": "Få formaterte øktkostnader",
+          "es": "Obtener los costos de la sesión formateados",
+          "da": "Få formaterede sessionomkostninger",
+          "ru": "Получить отформатированные затраты на сессию",
+          "pl": "Pobierz sformatowane koszty sesji",
+          "ko": "서식이 지정된 세션 비용 가져오기"
         },
         "hint": {
-          "en": "Retrieve the costs in your local format from the last session in a flow tag"
+          "en": "Retrieve the costs in your local format from the last session in a flow tag",
+          "nl": "Haal de kosten op in uw lokale formaat van de laatste sessie in een flow-tag",
+          "de": "Rufen Sie die Kosten in Ihrem lokalen Format aus der letzten Sitzung in einem Flow-Tag ab",
+          "fr": "Récupérez les coûts dans votre format local de la dernière session dans une balise de flux",
+          "it": "Recupera i costi nel tuo formato locale dall'ultima sessione in un tag di flusso",
+          "sv": "Hämta kostnaderna i ditt lokala format från den senaste sessionen i en flödestagg",
+          "no": "Hent kostnadene i ditt lokale format fra den siste økten i en flyttagg",
+          "es": "Recupere los costos en su formato local de la última sesión en una etiqueta de flujo",
+          "da": "Hent omkostningerne i dit lokale format fra den sidste session i en flow-tag",
+          "ru": "Получите затраты в вашем локальном формате из последней сессии в теге потока",
+          "pl": "Pobierz koszty w swoim lokalnym formacie z ostatniej sesji w tagu przepływu",
+          "ko": "플로우 태그의 마지막 세션에서 로컬 형식의 비용을 검색합니다"
         },
         "args": [
           {
@@ -316,7 +385,18 @@
           {
             "name": "formattedCosts",
             "title": {
-              "en": "Fromatted costs"
+              "en": "Fromatted costs",
+              "nl": "Opgemaakte kosten",
+              "de": "Formatierte Kosten",
+              "fr": "Coûts formatés",
+              "it": "Costi formattati",
+              "sv": "Formaterade kostnader",
+              "no": "Formaterte kostnader",
+              "es": "Costos formateados",
+              "da": "Formaterede omkostninger",
+              "ru": "Отформатированные затраты",
+              "pl": "Sformatowane koszty",
+              "ko": "서식이 지정된 비용"
             },
             "type": "string",
             "example": "€ 0,00"
@@ -326,13 +406,46 @@
       },
       {
         "title": {
-          "en": "Start usage session"
+          "en": "Start usage session",
+          "nl": "Start gebruikssessie",
+          "de": "Starten Sie die Nutzungssitzung",
+          "fr": "Démarrer la session d'utilisation",
+          "it": "Inizia la sessione di utilizzo",
+          "sv": "Starta användningssession",
+          "no": "Start brukssesjon",
+          "es": "Iniciar sesión de uso",
+          "da": "Start brugssession",
+          "ru": "Начать сеанс использования",
+          "pl": "Rozpocznij sesję użytkowania",
+          "ko": "사용 세션 시작"
         },
         "titleFormatted": {
-          "en": "Start usage session with [[price]] tariff and [[meter]] meter reading"
+          "en": "Start usage session with [[price]] tariff and [[meter]] meter reading",
+          "nl": "Start gebruikssessie met [[price]] tarief en [[meter]] meterstand",
+          "de": "Starten Sie die Nutzungssitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]]",
+          "fr": "Démarrer la session d'utilisation avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+          "it": "Inizia la sessione di utilizzo con tariffa [[price]] e lettura contatore [[meter]]",
+          "sv": "Starta användningssession med [[price]] tariff och [[meter]] mätarställning",
+          "no": "Start brukssesjon med [[price]] tariff og [[meter]] målerstand",
+          "es": "Iniciar sesión de uso con tarifa [[price]] y lectura de medidor [[meter]]",
+          "da": "Start brugssession med [[price]] takst og [[meter]] målerlæsning",
+          "ru": "Начать сеанс использования с тарифом [[price]] и показанием счетчика [[meter]]",
+          "pl": "Rozpocznij sesję użytkowania z taryfą [[price]] i odczytem licznika [[meter]]",
+          "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 사용 세션 시작"
         },
         "hint": {
-          "en": "Starting a new calcultion session for usage insisghts"
+          "en": "Starting a new calcultion session for usage insisghts",
+          "nl": "Start een nieuwe berekeningssessie voor gebruiksinzichten",
+          "de": "Starten einer neuen Berechnungssitzung für Nutzungseinblicke",
+          "fr": "Démarrer une nouvelle session de calcul pour des informations d'utilisation",
+          "it": "Avvio di una nuova sessione di calcolo per le informazioni sull'utilizzo",
+          "sv": "Starta en ny beräkningssession för användningsinsikter",
+          "no": "Starter en ny beregningssesjon for bruk innsikter",
+          "es": "Iniciar una nueva sesión de cálculo para información de uso",
+          "da": "Start en ny beregningssession for brug af indblik",
+          "ru": "Запуск новой сеанса расчета для использования входных данных",
+          "pl": "Rozpoczęcie nowej sesji obliczeniowej dla wglądu w użycie",
+          "ko": "사용량 통찰력을 위한 새로운 계산 세션 시작"
         },
         "highlight": true,
         "args": [
@@ -382,13 +495,46 @@
       },
       {
         "title": {
-          "en": "Update active session"
+          "en": "Update active session",
+          "nl": "Werk actieve sessie bij",
+          "de": "Aktive Sitzung aktualisieren",
+          "fr": "Mettre à jour la session active",
+          "it": "Aggiorna la sessione attiva",
+          "sv": "Uppdatera aktiv session",
+          "no": "Oppdater aktiv økt",
+          "es": "Actualizar sesión activa",
+          "da": "Opdater aktiv session",
+          "ru": "Обновить активную сессию",
+          "pl": "Zaktualizuj aktywną sesję",
+          "ko": "활성 세션 업데이트"
         },
         "titleFormatted": {
-          "en": "Update active session with [[price]] tariff and [[meter]] meter reading"
+          "en": "Update active session with [[price]] tariff and [[meter]] meter reading",
+          "nl": "Werk actieve sessie bij met [[price]] tarief en [[meter]] meterstand",
+          "de": "Aktive Sitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]] aktualisieren",
+          "fr": "Mettre à jour la session active avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+          "it": "Aggiorna la sessione attiva con tariffa [[price]] e lettura contatore [[meter]]",
+          "sv": "Uppdatera aktiv session med [[price]] tariff och [[meter]] mätarställning",
+          "no": "Oppdater aktiv økt med [[price]] tariff og [[meter]] målerstand",
+          "es": "Actualizar sesión activa con tarifa [[price]] y lectura de medidor [[meter]]",
+          "da": "Opdater aktiv session med [[price]] takst og [[meter]] målerlæsning",
+          "ru": "Обновить активную сессию с тарифом [[price]] и показанием счетчика [[meter]]",
+          "pl": "Zaktualizuj aktywną sesję z taryfą [[price]] i odczytem licznika [[meter]]",
+          "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 활성 세션 업데이트"
         },
         "hint": {
-          "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate"
+          "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate",
+          "nl": "Bij dynamische of vaste tariefwijzigingen wordt de sessie bijgewerkt en worden de juiste kosten per tarief berekend",
+          "de": "Bei dynamischen oder festen Tarifänderungen wird die Sitzung aktualisiert und die korrekten Kosten pro Tarifrate berechnet",
+          "fr": "En cas de modifications de tarif dynamiques ou fixes, cela mettra à jour la session et calculera les coûts corrects par taux de tarif",
+          "it": "In caso di modifiche dinamiche o fisse al tariffa, questa operazione aggiornerà la sessione e calcolerà i costi corretti per tariffa",
+          "sv": "När du har dynamiska eller fasta tariffändringar uppdateras sessionen och beräknar korrekta kostnader per tariffpris",
+          "no": "Ved dynamiske eller faste tariffendringer vil dette oppdatere økten og beregne riktige kostnader per tariffpris",
+          "es": "Cuando tenga cambios de tarifa dinámicos o fijos, esto actualizará la sesión y calculará los costos correctos por tarifa",
+          "da": "Når du har dynamiske eller faste takstændringer, opdateres sessionen, og der beregnes korrekte omkostninger pr. takst",
+          "ru": "При динамических или фиксированных изменениях тарифа это обновит сессию и рассчитает правильные затраты на тариф",
+          "pl": "W przypadku dynamicznych lub stałych zmian taryfy ta operacja zaktualizuje sesję i obliczy poprawne koszty za stawkę taryfy",
+          "ko": "동적 또는 고정 된 요금 변경이있는 경우이 세션을 업데이트하고 각 요금율 당 올바른 비용을 계산합니다"
         },
         "args": [
           {

@@ -181,18 +181,18 @@
     ]
   },
   "description": {
-    "en": "Calculate the costs of device usage, based on the (dynamic) prices.",
-    "nl": "Bereken de kosten van apparaatgebruik, op basis van de (dynamische) prijzen.",
-    "de": "Berechnen Sie die Kosten der Gerätenutzung auf der Grundlage der (dynamischen) Preise.",
-    "fr": "Calculez les coûts de l'utilisation des appareils, en fonction des prix (dynamiques).",
-    "it": "Calcola i costi dell'uso dei dispositivi, in base ai prezzi (dinamici).",
-    "sv": "Beräkna kostnaderna för enhetsanvändning, baserat på (dynamiska) priser.",
-    "no": "Beregn kostnadene ved enhetsbruk, basert på (dynamiske) priser.",
-    "es": "Calcule los costos del uso de dispositivos, basados en los precios (dinámicos).",
-    "da": "Beregn omkostningerne ved enhedsbrug, baseret på (dynamiske) priser.",
-    "ru": "Рассчитайте стоимость использования устройств на основе (динамических) цен.",
-    "pl": "Oblicz koszty korzystania z urządzeń na podstawie (dynamicznych) cen.",
-    "ko": "동적 가격을 기반으로 장치 사용 비용을 계산하십시오."
+    "en": "Your companion for calculating usage and costs",
+    "nl": "Uw metgezel voor het berekenen van gebruik en kosten",
+    "de": "Ihr Begleiter zur Berechnung von Verbrauch und Kosten",
+    "fr": "Votre compagnon pour calculer l'utilisation et les coûts",
+    "it": "Il tuo compagno per calcolare l'utilizzo e i costi",
+    "sv": "Din följeslagare för att beräkna användning och kostnader",
+    "no": "Din følgesvenn for å beregne bruk og kostnader",
+    "es": "Su compañero para calcular el uso y los costos",
+    "da": "Din ledsager til beregning af brug og omkostninger",
+    "ru": "Ваш компаньон для расчета использования и затрат",
+    "pl": "Twój towarzysz do obliczania zużycia i kosztów",
+    "ko": "사용량 및 비용 계산을 위한 동반자"
   },
   "category": ["energy"],
   "permissions": [],
@@ -232,9 +232,9 @@
     }
   },
   "bugs": {
-    "url": "https://community.homey.app/t/xxx"
+    "url": "https://community.homey.app/t/121162"
   },
   "source": "https://github.com/RobbertV/com.device-usage-calculator",
-  "homeyCommunityTopicId": 114491,
-  "support": "https://community.homey.app/t/xxx"
+  "homeyCommunityTopicId": 121162,
+  "support": "https://community.homey.app/t/121162"
 }

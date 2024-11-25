@@ -2,7 +2,6 @@
 
 import Homey from 'homey';
 import flowActions from './lib/flows/actions.mjs';
-// import flowConditions from './lib/flows/conditions.mjs';
 
 class DeviceUsageCalculatorApp extends Homey.App {
     trace() {
@@ -39,18 +38,17 @@ class DeviceUsageCalculatorApp extends Homey.App {
         this.homey.app.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
         await flowActions(this.homey);
-        // await flowConditions(this.homey);
     }
 
     async sendNotifications() {
         try {
-            // const ntfy2023100401 = `[Usage Mate] (1/2) - Good news. This app version doesn't require the cloud server anymore`;
-            // const ntfy2023100402 = `[Usage Mate] (2/2) - The complete connection is now running natevely on your Homey.`;
+            // const ntfy1 = `[Usage Mate] (1/2) - `;
+            // const ntfy2 = `[Usage Mate] (2/2) - `;
             // await this.homey.notifications.createNotification({
-            //     excerpt: ntfy2023100402
+            //     excerpt: ntfy2
             // });
             // await this.homey.notifications.createNotification({
-            //     excerpt: ntfy2023100401
+            //     excerpt: ntfy1
             // });
         } catch (error) {
             this.homey.app.error('sendNotifications - error', console.error());

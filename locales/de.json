@@ -1,0 +1,8 @@
+{
+    "helpers": {
+        "daysShort": "t",
+        "hoursShort": "h",
+        "minutesShort": "m",
+        "secondsShort": "s"
+    }
+}

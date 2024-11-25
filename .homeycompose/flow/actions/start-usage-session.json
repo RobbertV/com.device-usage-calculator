@@ -1,12 +1,45 @@
 {
     "title": {
-        "en": "Start usage session"
+        "en": "Start usage session",
+        "nl": "Start gebruikssessie",
+        "de": "Starten Sie die Nutzungssitzung",
+        "fr": "Démarrer la session d'utilisation",
+        "it": "Inizia la sessione di utilizzo",
+        "sv": "Starta användningssession",
+        "no": "Start brukssesjon",
+        "es": "Iniciar sesión de uso",
+        "da": "Start brugssession",
+        "ru": "Начать сеанс использования",
+        "pl": "Rozpocznij sesję użytkowania",
+        "ko": "사용 세션 시작"
     },
     "titleFormatted": {
-        "en": "Start usage session with [[price]] tariff and [[meter]] meter reading"
+        "en": "Start usage session with [[price]] tariff and [[meter]] meter reading",
+        "nl": "Start gebruikssessie met [[price]] tarief en [[meter]] meterstand",
+        "de": "Starten Sie die Nutzungssitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]]",
+        "fr": "Démarrer la session d'utilisation avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+        "it": "Inizia la sessione di utilizzo con tariffa [[price]] e lettura contatore [[meter]]",
+        "sv": "Starta användningssession med [[price]] tariff och [[meter]] mätarställning",
+        "no": "Start brukssesjon med [[price]] tariff og [[meter]] målerstand",
+        "es": "Iniciar sesión de uso con tarifa [[price]] y lectura de medidor [[meter]]",
+        "da": "Start brugssession med [[price]] takst og [[meter]] målerlæsning",
+        "ru": "Начать сеанс использования с тарифом [[price]] и показанием счетчика [[meter]]",
+        "pl": "Rozpocznij sesję użytkowania z taryfą [[price]] i odczytem licznika [[meter]]",
+        "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 사용 세션 시작"
     },
     "hint": {
-        "en": "Starting a new calcultion session for usage insisghts"
+        "en": "Starting a new calcultion session for usage insisghts",
+        "nl": "Start een nieuwe berekeningssessie voor gebruiksinzichten",
+        "de": "Starten einer neuen Berechnungssitzung für Nutzungseinblicke",
+        "fr": "Démarrer une nouvelle session de calcul pour des informations d'utilisation",
+        "it": "Avvio di una nuova sessione di calcolo per le informazioni sull'utilizzo",
+        "sv": "Starta en ny beräkningssession för användningsinsikter",
+        "no": "Starter en ny beregningssesjon for bruk innsikter",
+        "es": "Iniciar una nueva sesión de cálculo para información de uso",
+        "da": "Start en ny beregningssession for brug af indblik",
+        "ru": "Запуск новой сеанса расчета для использования входных данных",
+        "pl": "Rozpoczęcie nowej sesji obliczeniowej dla wglądu w użycie",
+        "ko": "사용량 통찰력을 위한 새로운 계산 세션 시작"
     },
     "highlight": true,
     "args": [

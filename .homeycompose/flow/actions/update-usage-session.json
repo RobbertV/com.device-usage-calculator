@@ -1,12 +1,46 @@
 {
     "title": {
-        "en": "Update active session"
+        "en": "Update active session",
+
+        "nl": "Werk actieve sessie bij",
+        "de": "Aktive Sitzung aktualisieren",
+        "fr": "Mettre à jour la session active",
+        "it": "Aggiorna la sessione attiva",
+        "sv": "Uppdatera aktiv session",
+        "no": "Oppdater aktiv økt",
+        "es": "Actualizar sesión activa",
+        "da": "Opdater aktiv session",
+        "ru": "Обновить активную сессию",
+        "pl": "Zaktualizuj aktywną sesję",
+        "ko": "활성 세션 업데이트"
     },
     "titleFormatted": {
-        "en": "Update active session with [[price]] tariff and [[meter]] meter reading"
+        "en": "Update active session with [[price]] tariff and [[meter]] meter reading",
+        "nl": "Werk actieve sessie bij met [[price]] tarief en [[meter]] meterstand",
+        "de": "Aktive Sitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]] aktualisieren",
+        "fr": "Mettre à jour la session active avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+        "it": "Aggiorna la sessione attiva con tariffa [[price]] e lettura contatore [[meter]]",
+        "sv": "Uppdatera aktiv session med [[price]] tariff och [[meter]] mätarställning",
+        "no": "Oppdater aktiv økt med [[price]] tariff og [[meter]] målerstand",
+        "es": "Actualizar sesión activa con tarifa [[price]] y lectura de medidor [[meter]]",
+        "da": "Opdater aktiv session med [[price]] takst og [[meter]] målerlæsning",
+        "ru": "Обновить активную сессию с тарифом [[price]] и показанием счетчика [[meter]]",
+        "pl": "Zaktualizuj aktywną sesję z taryfą [[price]] i odczytem licznika [[meter]]",
+        "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 활성 세션 업데이트"
     },
     "hint": {
-        "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate"
+        "en": "When having dynamic or fixed tariff changes, this will update the session and calculate correct costs per tariff rate",
+        "nl": "Bij dynamische of vaste tariefwijzigingen wordt de sessie bijgewerkt en worden de juiste kosten per tarief berekend",
+        "de": "Bei dynamischen oder festen Tarifänderungen wird die Sitzung aktualisiert und die korrekten Kosten pro Tarifrate berechnet",
+        "fr": "En cas de modifications de tarif dynamiques ou fixes, cela mettra à jour la session et calculera les coûts corrects par taux de tarif",
+        "it": "In caso di modifiche dinamiche o fisse al tariffa, questa operazione aggiornerà la sessione e calcolerà i costi corretti per tariffa",
+        "sv": "När du har dynamiska eller fasta tariffändringar uppdateras sessionen och beräknar korrekta kostnader per tariffpris",
+        "no": "Ved dynamiske eller faste tariffendringer vil dette oppdatere økten og beregne riktige kostnader per tariffpris",
+        "es": "Cuando tenga cambios de tarifa dinámicos o fijos, esto actualizará la sesión y calculará los costos correctos por tarifa",
+        "da": "Når du har dynamiske eller faste takstændringer, opdateres sessionen, og der beregnes korrekte omkostninger pr. takst",
+        "ru": "При динамических или фиксированных изменениях тарифа это обновит сессию и рассчитает правильные затраты на тариф",
+        "pl": "W przypadku dynamicznych lub stałych zmian taryfy ta operacja zaktualizuje sesję i obliczy poprawne koszty za stawkę taryfy",
+        "ko": "동적 또는 고정 된 요금 변경이있는 경우이 세션을 업데이트하고 각 요금율 당 올바른 비용을 계산합니다"
     },
     "args": [
         {

@@ -1,9 +1,45 @@
 {
   "title": {
-    "en": "Get formatted session costs"
+    "en": "Get formatted session costs",
+    "nl": "Ontvang opgemaakte sessiekosten",
+    "de": "Erhalten Sie formatierte Sitzungskosten",
+    "fr": "Obtenir les coûts de session formatés",
+    "it": "Ottieni i costi della sessione formattati",
+    "sv": "Hämta formaterade sessionkostnader",
+    "no": "Få formaterte øktkostnader",
+    "es": "Obtener los costos de la sesión formateados",
+    "da": "Få formaterede sessionomkostninger",
+    "ru": "Получить отформатированные затраты на сессию",
+    "pl": "Pobierz sformatowane koszty sesji",
+    "ko": "서식이 지정된 세션 비용 가져오기"
+  },
+  "titleFormatted": {
+    "en": "Get formatted session costs",
+    "nl": "Ontvang opgemaakte sessiekosten",
+    "de": "Erhalten Sie formatierte Sitzungskosten",
+    "fr": "Obtenir les coûts de session formatés",
+    "it": "Ottieni i costi della sessione formattati",
+    "sv": "Hämta formaterade sessionkostnader",
+    "no": "Få formaterte øktkostnader",
+    "es": "Obtener los costos de la sesión formateados",
+    "da": "Få formaterede sessionomkostninger",
+    "ru": "Получить отформатированные затраты на сессию",
+    "pl": "Pobierz sformatowane koszty sesji",
+    "ko": "서식이 지정된 세션 비용 가져오기"
   },
   "hint": {
-    "en": "Retrieve the costs in your local format from the last session in a flow tag"
+    "en": "Retrieve the costs in your local format from the last session in a flow tag",
+    "nl": "Haal de kosten op in uw lokale formaat van de laatste sessie in een flow-tag",
+    "de": "Rufen Sie die Kosten in Ihrem lokalen Format aus der letzten Sitzung in einem Flow-Tag ab",
+    "fr": "Récupérez les coûts dans votre format local de la dernière session dans une balise de flux",
+    "it": "Recupera i costi nel tuo formato locale dall'ultima sessione in un tag di flusso",
+    "sv": "Hämta kostnaderna i ditt lokala format från den senaste sessionen i en flödestagg",
+    "no": "Hent kostnadene i ditt lokale format fra den siste økten i en flyttagg",
+    "es": "Recupere los costos en su formato local de la última sesión en una etiqueta de flujo",
+    "da": "Hent omkostningerne i dit lokale format fra den sidste session i en flow-tag",
+    "ru": "Получите затраты в вашем локальном формате из последней сессии в теге потока",
+    "pl": "Pobierz koszty w swoim lokalnym formacie z ostatniej sesji w tagu przepływu",
+    "ko": "플로우 태그의 마지막 세션에서 로컬 형식의 비용을 검색합니다"
   },
   "args": [
     {
@@ -16,7 +52,18 @@
     {
       "name": "formattedCosts",
       "title": {
-        "en": "Fromatted costs"
+        "en": "Fromatted costs",
+        "nl": "Opgemaakte kosten",
+        "de": "Formatierte Kosten",
+        "fr": "Coûts formatés",
+        "it": "Costi formattati",
+        "sv": "Formaterade kostnader",
+        "no": "Formaterte kostnader",
+        "es": "Costos formateados",
+        "da": "Formaterede omkostninger",
+        "ru": "Отформатированные затраты",
+        "pl": "Sformatowane koszty",
+        "ko": "서식이 지정된 비용"
       },
       "type": "string",
       "example": "€ 0,00"

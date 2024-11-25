@@ -1,12 +1,45 @@
 {
     "title": {
-        "en": "End usage session"
+        "en": "End usage session",
+        "nl": "Eindig gebruikssessie",
+        "de": "Nutzungssitzung beenden",
+        "fr": "Fin de la session d'utilisation",
+        "it": "Fine sessione di utilizzo",
+        "sv": "Avsluta användningssession",
+        "no": "Avslutt bruksøkt",
+        "es": "Finalizar sesión de uso",
+        "da": "Afslut brugssession",
+        "ru": "Завершить сеанс использования",
+        "pl": "Zakończ sesję użytkowania",
+        "ko": "사용 세션 종료"
     },
     "titleFormatted": {
-        "en": "End usage session with [[price]] tariff and [[meter]] meter reading"
+        "en": "End usage session with [[price]] tariff and [[meter]] meter reading",
+        "nl": "Eindig gebruikssessie met [[price]] tarief en [[meter]] meterstand",
+        "de": "Beenden Sie die Nutzungssitzung mit dem Tarif [[price]] und dem Zählerstand [[meter]]",
+        "fr": "Fin de la session d'utilisation avec un tarif de [[price]] et une lecture de compteur de [[meter]]",
+        "it": "Fine sessione di utilizzo con tariffa [[price]] e lettura contatore [[meter]]",
+        "sv": "Avsluta användningssession med [[price]] tariff och [[meter]] mätarställning",
+        "no": "Avslutt bruksøkt med [[price]] tariff og [[meter]] målerstand",
+        "es": "Finalizar sesión de uso con tarifa [[price]] y lectura de medidor [[meter]]",
+        "da": "Afslut brugssession med [[price]] takst og [[meter]] målerlæsning",
+        "ru": "Завершить сеанс использования с тарифом [[price]] и показанием счетчика [[meter]]",
+        "pl": "Zakończ sesję użytkowania z taryfą [[price]] i odczytem licznika [[meter]]",
+        "ko": "[[price]] 요금 및 [[meter]] 미터 독서로 사용 세션 종료"
     },
     "hint": {
-        "en": "With given tariff & meter count, calculation will be made for the running session"
+        "en": "With given tariff & meter count, calculation will be made for the running session",
+        "nl": "Met het opgegeven tarief en meterstand wordt de berekening gemaakt voor de lopende sessie",
+        "de": "Mit dem angegebenen Tarif und Zählerstand wird die Berechnung für die laufende Sitzung durchgeführt",
+        "fr": "Avec le tarif et le compteur donnés, le calcul sera effectué pour la session en cours",
+        "it": "Con il tariffa e il conteggio del contatore forniti, verrà effettuato il calcolo per la sessione in corso",
+        "sv": "Med angivet tariff och mätarantal kommer beräkningen att göras för den löpande sessionen",
+        "no": "Med angitt tariff og målerantall vil beregningen bli gjort for den løpende økten",
+        "es": "Con la tarifa y el recuento del medidor dados, se realizará el cálculo para la sesión en ejecución",
+        "da": "Med den angivne takst og målerantal vil der blive foretaget beregning for den kørende session",
+        "ru": "С учетом указанного тарифа и количества счетчиков будет произведен расчет для текущей сессии",
+        "pl": "Z podaną taryfą i liczbą liczników zostanie dokonane obliczenie dla bieżącej sesji",
+        "ko": "지정된 요금 및 미터 카운트로 실행 중인 세션에 대한 계산이 수행됩니다"
     },
     "highlight": true,
     "args": [

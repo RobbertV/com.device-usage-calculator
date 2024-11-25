@@ -1,0 +1,8 @@
+{
+    "helpers": {
+        "daysShort": "일",
+        "hoursShort": "시",
+        "minutesShort": "분",
+        "secondsShort": "초"
+    }
+}
