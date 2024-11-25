@@ -41,7 +41,7 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async resetValues() {
-        const prettyDuration = formattedDuration(diffMs, this.homey.__);
+        const prettyDuration = formattedDuration(0, this.homey.__);
 
         await this.setCapabilityValue('alarm_running', false);
         await this.setCapabilityValue('measure_duration', prettyDuration);
