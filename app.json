@@ -587,8 +587,8 @@
     {
       "icon": "/drivers/gas-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/gas-meter/assets/images/large.png",
-        "small": "/drivers/gas-meter/assets/images/small.png"
+        "large": "/drivers/gas-meter/assets/images/large.jpg",
+        "small": "/drivers/gas-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -1056,8 +1056,8 @@
     {
       "icon": "/drivers/gas-meter-imperial/assets/icon.svg",
       "images": {
-        "large": "/drivers/gas-meter-imperial/assets/images/large.png",
-        "small": "/drivers/gas-meter-imperial/assets/images/small.png"
+        "large": "/drivers/gas-meter-imperial/assets/images/large.jpg",
+        "small": "/drivers/gas-meter-imperial/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -1525,8 +1525,8 @@
     {
       "icon": "/drivers/gj-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/gj-meter/assets/images/large.png",
-        "small": "/drivers/gj-meter/assets/images/small.png"
+        "large": "/drivers/gj-meter/assets/images/large.jpg",
+        "small": "/drivers/gj-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -1994,8 +1994,8 @@
     {
       "icon": "/drivers/kwh-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/kwh-meter/assets/images/large.png",
-        "small": "/drivers/kwh-meter/assets/images/small.png"
+        "large": "/drivers/kwh-meter/assets/images/large.jpg",
+        "small": "/drivers/kwh-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -2463,8 +2463,8 @@
     {
       "icon": "/drivers/liquid-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/liquid-meter/assets/images/large.png",
-        "small": "/drivers/liquid-meter/assets/images/small.png"
+        "large": "/drivers/liquid-meter/assets/images/large.jpg",
+        "small": "/drivers/liquid-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -2932,8 +2932,8 @@
     {
       "icon": "/drivers/liquid-meter-imperial/assets/icon.svg",
       "images": {
-        "large": "/drivers/liquid-meter-imperial/assets/images/large.png",
-        "small": "/drivers/liquid-meter-imperial/assets/images/small.png"
+        "large": "/drivers/liquid-meter-imperial/assets/images/large.jpg",
+        "small": "/drivers/liquid-meter-imperial/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -3401,8 +3401,8 @@
     {
       "icon": "/drivers/water-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/water-meter/assets/images/large.png",
-        "small": "/drivers/water-meter/assets/images/small.png"
+        "large": "/drivers/water-meter/assets/images/large.jpg",
+        "small": "/drivers/water-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -3870,8 +3870,8 @@
     {
       "icon": "/drivers/water-meter-imperial/assets/icon.svg",
       "images": {
-        "large": "/drivers/water-meter-imperial/assets/images/large.png",
-        "small": "/drivers/water-meter-imperial/assets/images/small.png"
+        "large": "/drivers/water-meter-imperial/assets/images/large.jpg",
+        "small": "/drivers/water-meter-imperial/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -4339,8 +4339,8 @@
     {
       "icon": "/drivers/watt-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/watt-meter/assets/images/large.png",
-        "small": "/drivers/watt-meter/assets/images/small.png"
+        "large": "/drivers/watt-meter/assets/images/large.jpg",
+        "small": "/drivers/watt-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -4808,8 +4808,8 @@
     {
       "icon": "/drivers/weight-meter/assets/icon.svg",
       "images": {
-        "large": "/drivers/weight-meter/assets/images/large.png",
-        "small": "/drivers/weight-meter/assets/images/small.png"
+        "large": "/drivers/weight-meter/assets/images/large.jpg",
+        "small": "/drivers/weight-meter/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
@@ -5277,8 +5277,8 @@
     {
       "icon": "/drivers/weight-meter-imperial/assets/icon.svg",
       "images": {
-        "large": "/drivers/weight-meter-imperial/assets/images/large.png",
-        "small": "/drivers/weight-meter-imperial/assets/images/small.png"
+        "large": "/drivers/weight-meter-imperial/assets/images/large.jpg",
+        "small": "/drivers/weight-meter-imperial/assets/images/small.jpg"
       },
       "class": "sensor",
       "connectivity": [
