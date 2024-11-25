@@ -1,5 +1,8 @@
 {
   "1.0.0": {
     "en": "Initial app release"
+  },
+  "1.0.1": {
+    "en": "FIX: duration reset value"
   }
 }
