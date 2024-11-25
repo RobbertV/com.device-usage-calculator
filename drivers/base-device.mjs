@@ -56,8 +56,6 @@ export default class BaseDevice extends Homey.Device {
 
         this.setStoreValues(price, meter);
 
-        
-
         if (settings.resetValues) {
             await this.resetValues();
         }
@@ -83,12 +81,12 @@ export default class BaseDevice extends Homey.Device {
 
         this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter });
 
-         const diffMeter = meter - calculationValues.meter;
+        const diffMeter = meter - calculationValues.meter;
 
-         await this.updateUsage(diffMeter);
-         await this.updateCosts(diffMeter);
+        await this.updateUsage(diffMeter);
+        await this.updateCosts(diffMeter);
 
-         this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
+        this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
     }
 
     async updateUsage(newValue) {
@@ -172,20 +170,44 @@ export default class BaseDevice extends Homey.Device {
     // ---------- Capabilities -----------
 
     async setUsageCapability(value) {
-        const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
-        const deviceCapabilities = this.getCapabilities();
-        const getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
+        try {
+            const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
+            let deviceCapabilities = this.getCapabilities();
+            let getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
 
-        this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, getusageCapability, value);
-        this.setCapabilityValue(getusageCapability, value);
+            if (!getusageCapability) {
+                this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability => No usage capability found, retrying in 5 seconds`);
+
+                await sleep(5000);
+                deviceCapabilities = this.getCapabilities();
+                getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
+            }
+
+            this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, getusageCapability, value);
+            this.setCapabilityValue(getusageCapability, value);
+        } catch (error) {
+            this.homey.app.error(error);
+        }
     }
 
     async setMonetaryCapability(value) {
-        const deviceCapabilities = this.getCapabilities();
-        const getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
+        try {
+            let deviceCapabilities = this.getCapabilities();
+            let getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
 
-        this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability =>`, getMonetaryCapability, value);
-        this.setCapabilityValue(getMonetaryCapability, value);
+            if (!getMonetaryCapability) {
+                this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability => No monetary capability found, retrying in 5 seconds`);
+
+                await sleep(5000);
+                deviceCapabilities = this.getCapabilities();
+                getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
+            }
+
+            this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability =>`, getMonetaryCapability, value);
+            this.setCapabilityValue(getMonetaryCapability, value);
+        } catch (error) {
+            this.homey.app.error(error);
+        }
     }
 
     async checkCapabilities(overrideSettings = false) {
