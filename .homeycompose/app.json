@@ -13,6 +13,7 @@
   "tags": {
     "en": [
       "energy",
+      "price",
       "usage",
       "costs",
       "device",
@@ -244,7 +245,7 @@
   },
   "description": {
     "en": "Your companion for calculating usage and costs",
-    "nl": "Uw compaan voor het berekenen van gebruik en kosten",
+    "nl": "Uw kompaan voor het berekenen van gebruik en kosten",
     "de": "Ihr Begleiter zur Berechnung von Verbrauch und Kosten",
     "fr": "Votre compagnon pour calculer l'utilisation et les coûts",
     "it": "Il tuo compagno per calcolare l'utilizzo e i costi",
