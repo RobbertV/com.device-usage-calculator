@@ -42,8 +42,8 @@ class DeviceUsageCalculatorApp extends Homey.App {
 
     async sendNotifications() {
         try {
-            // const ntfy1 = `[Usage Mate] (1/2) - `;
-            // const ntfy2 = `[Usage Mate] (2/2) - `;
+            // const ntfy1 = `[Power Price] (1/2) - `;
+            // const ntfy2 = `[Power Price] (2/2) - `;
             // await this.homey.notifications.createNotification({
             //     excerpt: ntfy2
             // });

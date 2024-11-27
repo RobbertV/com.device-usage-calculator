@@ -9,7 +9,7 @@
   ],
   "brandColor": "#49b25b",
   "name": {
-    "en": "Usage Mate"
+    "en": "Power Price"
   },
   "tags": {
     "en": [
@@ -23,8 +23,15 @@
       "meter",
       "dynamic",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "diff"
+      "diff",
+      "power",
+      "hour",
+      "calculator",
+      "solar"
     ],
     "nl": [
       "energie",
@@ -37,8 +44,13 @@
       "meter",
       "dynamisch",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "totaal",
-      "verschil"
+      "verschil",
+      "calculator",
+      "solar"
     ],
     "de": [
       "Energie",
@@ -51,8 +63,13 @@
       "Zähler",
       "dynamisch",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "gesamt",
-      "Unterschied"
+      "Unterschied",
+      "calculator",
+      "solar"
     ],
     "fr": [
       "énergie",
@@ -65,8 +82,13 @@
       "compteur",
       "dynamique",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "différence"
+      "différence",
+      "calculator",
+      "solar"
     ],
     "it": [
       "energia",
@@ -79,8 +101,13 @@
       "contatore",
       "dinamico",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "totale",
-      "differenza"
+      "differenza",
+      "calculator",
+      "solar"
     ],
     "sv": [
       "energi",
@@ -93,8 +120,13 @@
       "mätare",
       "dynamisk",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "skillnad"
+      "skillnad",
+      "calculator",
+      "solar"
     ],
     "no": [
       "energi",
@@ -107,8 +139,13 @@
       "måler",
       "dynamisk",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "forskjell"
+      "forskjell",
+      "calculator",
+      "solar"
     ],
     "es": [
       "energía",
@@ -121,8 +158,13 @@
       "medidor",
       "dinámico",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "diferencia"
+      "diferencia",
+      "calculator",
+      "solar"
     ],
     "da": [
       "energi",
@@ -135,8 +177,13 @@
       "måler",
       "dynamisk",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "total",
-      "forskel"
+      "forskel",
+      "calculator",
+      "solar"
     ],
     "ru": [
       "энергия",
@@ -149,8 +196,13 @@
       "счетчик",
       "динамический",
       "тебер",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "всего",
-      "разница"
+      "разница",
+      "calculator",
+      "solar"
     ],
     "pl": [
       "energia",
@@ -163,8 +215,13 @@
       "licznik",
       "dynamiczny",
       "tibber",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "całkowity",
-      "różnica"
+      "różnica",
+      "calculator",
+      "solar"
     ],
     "ko": [
       "에너지",
@@ -177,13 +234,18 @@
       "계량기",
       "동적",
       "티버",
+      "zonneplan",
+      "anwb",
+      "vattenvall",
       "합계",
-      "차이"
+      "차이",
+      "calculator",
+      "solar"
     ]
   },
   "description": {
     "en": "Your companion for calculating usage and costs",
-    "nl": "Uw metgezel voor het berekenen van gebruik en kosten",
+    "nl": "Uw compaan voor het berekenen van gebruik en kosten",
     "de": "Ihr Begleiter zur Berechnung von Verbrauch und Kosten",
     "fr": "Votre compagnon pour calculer l'utilisation et les coûts",
     "it": "Il tuo compagno per calcolare l'utilizzo e i costi",

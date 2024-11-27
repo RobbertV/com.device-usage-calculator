@@ -28,8 +28,8 @@ export default class BaseDevice extends Homey.Device {
 
     // ---------- Store Values -----------
 
-    setStoreValues(price = 0, meter = 0) {
-        this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`);
+    async setStoreValues(price = 0, meter = 0) {
+        this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`, { price, meter });
 
         this.setStoreValue('usage', { value: 0 });
         this.setStoreValue('costs', { value: 0 });
@@ -79,7 +79,7 @@ export default class BaseDevice extends Homey.Device {
 
         const calculationValues = this.getStoreValue('calculation-values');
 
-        this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter });
+        this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter, calculationValues });
 
         const diffMeter = meter - calculationValues.meter;
 
