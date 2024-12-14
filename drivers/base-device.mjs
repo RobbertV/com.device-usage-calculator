@@ -126,16 +126,16 @@ export default class BaseDevice extends Homey.Device {
         try {
             const endTime = new Date();
             const settings = this.getSettings();
-            const showSeconds = settings.show_duration_seconds;
+            const showSecSettings = settings.show_duration_seconds;
             const usage = this.getStoreValue('usage');
             const costs = this.getStoreValue('costs');
             const calculationValues = this.getStoreValue('calculation-values');
 
             const diffMs = differenceInMilliseconds(endTime, calculationValues.starttime);
             const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example
-            const prettyDuration = formattedDuration(diffMs, this.homey.__, showSeconds);
+            const prettyDuration = formattedDuration(diffMs, this.homey.__, showSecSettings);
 
-            this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration, showSeconds });
+            this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration, showSecSettings });
 
             this.setCapabilityValue('measure_duration', prettyDuration);
             this.setCapabilityValue('alarm_running', isRunning);
