@@ -10,5 +10,8 @@
   },
   "2.0.0": {
     "en": "Name rebranding to Power Price for better app description"
+  },
+  "2.0.1": {
+    "en": "OPT: Add device settings to enable/disable duartion seconds"
   }
 }
