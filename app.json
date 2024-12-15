@@ -1040,6 +1040,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -1507,6 +1518,17 @@
             "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
           },
           "value": false
+        },
+        {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
         },
         {
           "id": "monetary_unit",
@@ -1978,6 +2000,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -2445,6 +2478,17 @@
             "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
           },
           "value": false
+        },
+        {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
         },
         {
           "id": "monetary_unit",
@@ -2916,6 +2960,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -3383,6 +3438,17 @@
             "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
           },
           "value": false
+        },
+        {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
         },
         {
           "id": "monetary_unit",
@@ -3854,6 +3920,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -4044,16 +4121,16 @@
         },
         "meter_gas.imperial": {
           "title": {
-            "en": "Last session usage",
-            "nl": "Laatste sessie verbuik",
-            "de": "Letzte Sitzung Verbrauch",
-            "fr": "Dernière session d'utilisation",
-            "es": "Último uso de la sesión",
-            "it": "Ultimo utilizzo della sessione",
-            "pt": "Última sessão de uso",
-            "pl": "Ostatnie użycie sesji",
-            "ru": "Последнее использование сессии",
-            "ko": "마지막 세션 사용량"
+            "en": "Session usage",
+            "nl": "Sessie verbuik",
+            "de": "Sitzung Verbrauch",
+            "fr": "Session d'utilisation",
+            "es": "Uso de la sesión",
+            "it": "Utilizzo della sessione",
+            "pt": "Sessão de uso",
+            "pl": "Użycie sesji",
+            "ru": "использование сессии",
+            "ko": "세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -4061,16 +4138,16 @@
         },
         "measure_weight.imperial": {
           "title": {
-            "en": "Last session usage",
-            "nl": "Laatste sessie verbuik",
-            "de": "Letzte Sitzung Verbrauch",
-            "fr": "Dernière session d'utilisation",
-            "es": "Último uso de la sesión",
-            "it": "Ultimo utilizzo della sessione",
-            "pt": "Última sessão de uso",
-            "pl": "Ostatnie użycie sesji",
-            "ru": "Последнее использование сессии",
-            "ko": "마지막 세션 사용량"
+            "en": "Session usage",
+            "nl": "Sessie verbuik",
+            "de": "Sitzung Verbrauch",
+            "fr": "Session d'utilisation",
+            "es": "Uso de la sesión",
+            "it": "Utilizzo della sessione",
+            "pt": "Sessão de uso",
+            "pl": "Użycie sesji",
+            "ru": "использование сессии",
+            "ko": "세션 사용량"
           },
           "units": {
             "en": "oz"
@@ -4078,16 +4155,16 @@
         },
         "measure_content_volume.imperial": {
           "title": {
-            "en": "Last session usage",
-            "nl": "Laatste sessie verbuik",
-            "de": "Letzte Sitzung Verbrauch",
-            "fr": "Dernière session d'utilisation",
-            "es": "Último uso de la sesión",
-            "it": "Ultimo utilizzo della sessione",
-            "pt": "Última sessão de uso",
-            "pl": "Ostatnie użycie sesji",
-            "ru": "Последнее использование сессии",
-            "ko": "마지막 세션 사용량"
+            "en": "Session usage",
+            "nl": "Sessie verbuik",
+            "de": "Sitzung Verbrauch",
+            "fr": "Session d'utilisation",
+            "es": "Uso de la sesión",
+            "it": "Utilizzo della sessione",
+            "pt": "Sessão de uso",
+            "pl": "Użycie sesji",
+            "ru": "использование сессии",
+            "ko": "세션 사용량"
           },
           "units": {
             "en": "gal"
@@ -4095,16 +4172,16 @@
         },
         "measure_content_volume.gj": {
           "title": {
-            "en": "Last session usage",
-            "nl": "Laatste sessie verbuik",
-            "de": "Letzte Sitzung Verbrauch",
-            "fr": "Dernière session d'utilisation",
-            "es": "Último uso de la sesión",
-            "it": "Ultimo utilizzo della sessione",
-            "pt": "Última sessão de uso",
-            "pl": "Ostatnie użycie sesji",
-            "ru": "Последнее использование сессии",
-            "ko": "마지막 세션 사용량"
+            "en": "Session usage",
+            "nl": "Sessie verbuik",
+            "de": "Sitzung Verbrauch",
+            "fr": "Session d'utilisation",
+            "es": "Uso de la sesión",
+            "it": "Utilizzo della sessione",
+            "pt": "Sessão de uso",
+            "pl": "Użycie sesji",
+            "ru": "использование сессии",
+            "ko": "세션 사용량"
           },
           "units": {
             "en": "gj"
@@ -4112,16 +4189,16 @@
         },
         "meter_water.imperial": {
           "title": {
-            "en": "Last session usage",
-            "nl": "Laatste sessie verbuik",
-            "de": "Letzte Sitzung Verbrauch",
-            "fr": "Dernière session d'utilisation",
-            "es": "Último uso de la sesión",
-            "it": "Ultimo utilizzo della sessione",
-            "pt": "Última sessão de uso",
-            "pl": "Ostatnie użycie sesji",
-            "ru": "Последнее использование сессии",
-            "ko": "마지막 세션 사용량"
+            "en": "Session usage",
+            "nl": "Sessie verbuik",
+            "de": "Sitzung Verbrauch",
+            "fr": "Session d'utilisation",
+            "es": "Uso de la sesión",
+            "it": "Utilizzo della sessione",
+            "pt": "Sessão de uso",
+            "pl": "Użycie sesji",
+            "ru": "использование сессии",
+            "ko": "세션 사용량"
           },
           "units": {
             "en": "ft3"
@@ -4129,14 +4206,14 @@
         },
         "measure_monetary": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4146,14 +4223,14 @@
         },
         "measure_monetary.USD": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4163,14 +4240,14 @@
         },
         "measure_monetary.GBP": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4180,14 +4257,14 @@
         },
         "measure_monetary.CHF": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4197,14 +4274,14 @@
         },
         "measure_monetary.PLN": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4214,14 +4291,14 @@
         },
         "measure_monetary.DKK": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4231,14 +4308,14 @@
         },
         "measure_monetary.NOK": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4248,14 +4325,14 @@
         },
         "measure_monetary.SEK": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4265,14 +4342,14 @@
         },
         "measure_monetary.RUB": {
           "title": {
-            "en": "Last session costs",
-            "nl": "Laatste sessie kosten",
-            "de": "Letzte Sitzungskosten",
-            "fr": "Coûts de la dernière session",
-            "es": "Costos de la última sesión",
-            "it": "Costi dell'ultima sessione",
-            "pt": "Custos da última sessão",
-            "pl": "Koszty ostatniej sesji",
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "pl": "Koszty sesji",
             "ru": "Стоимость последней сессии",
             "ko": "마지막 세션 비용"
           },
@@ -4321,6 +4398,17 @@
             "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
           },
           "value": false
+        },
+        {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
         },
         {
           "id": "monetary_unit",
@@ -4792,6 +4880,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -5261,6 +5360,17 @@
           "value": false
         },
         {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
+        },
+        {
           "id": "monetary_unit",
           "type": "dropdown",
           "value": "measure_monetary",
@@ -5728,6 +5838,17 @@
             "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
           },
           "value": false
+        },
+        {
+          "id": "show_duration_seconds",
+          "type": "checkbox",
+          "label": {
+            "en": "Show seconds for duration"
+          },
+          "hint": {
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+          },
+          "value": true
         },
         {
           "id": "monetary_unit",

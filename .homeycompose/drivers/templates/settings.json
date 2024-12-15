@@ -23,6 +23,17 @@
       "value": false
     },
     {
+      "id": "show_duration_seconds",
+      "type": "checkbox",
+      "label": {
+        "en": "Show seconds for duration"
+      },
+      "hint": {
+        "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+      },
+      "value": true
+    },
+    {
       "id": "monetary_unit",
       "type": "dropdown",
       "value": "measure_monetary",
@@ -80,11 +91,11 @@
           }
         },
         {
-            "id": "measure_monetary.RUB",
-            "label": {
-              "en": "RUB (₽)"
-            }
+          "id": "measure_monetary.RUB",
+          "label": {
+            "en": "RUB (₽)"
           }
+        }
       ]
     }
   ]
