@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Weight Meter (oz)"
+    "en": "Weight Meter (oz)",
+    "nl": "Gewichtsmeter (oz)",
+    "de": "Gewichtsmesser (oz)",
+    "fr": "Pèse-personne (oz)",
+    "es": "Báscula de peso (oz)",
+    "it": "Bilancia pesapersone (oz)",
+    "pt": "Balança de peso (oz)",
+    "sv": "Viktmätare (oz)",
+    "no": "Vektmåler (oz)",
+    "da": "Vægtmåler (oz)",
+    "pl": "Waga (oz)",
+    "ru": "Весы (oz)",
+    "ko": "무게계 (oz)"
   },
   "capabilities": [
     "alarm_running",

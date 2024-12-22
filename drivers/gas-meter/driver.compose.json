@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Gas Meter (m3)"
+    "en": "Gas Meter (m3)",
+    "nl": "Gas Meter (m3)",
+    "de": "Gaszähler (m3)",
+    "fr": "Compteur de gaz (m3)",
+    "es": "Medidor de gas (m3)",
+    "it": "Contatore del gas (m3)",
+    "sv": "Gasräknare (m3)",
+    "no": "Gassmåler (m3)",
+    "pt": "Medidor de gás (m3)",
+    "da": "Gas måler (m3)",
+    "pl": "Licznik gazu (m3)",
+    "ru": "Газовый счетчик (м3)",
+    "ko": "가스 미터 (m3)"
   },
   "capabilities": [
     "meter_gas",

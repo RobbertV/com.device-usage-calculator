@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Gas Meter (ft3)"
+    "en": "Gas Meter (ft3)",
+    "nl": "Gas Meter (ft3)",
+    "de": "Gaszähler (ft3)",
+    "fr": "Compteur de gaz (ft3)",
+    "es": "Medidor de gas (ft3)",
+    "it": "Contatore del gas (ft3)",
+    "sv": "Gasräknare (ft3)",
+    "no": "Gassmåler (ft3)",
+    "pt": "Medidor de gás (ft3)",
+    "da": "Gas måler (ft3)",
+    "pl": "Licznik gazu (ft3)",
+    "ru": "Газовый счетчик (футы)",
+    "ko": "가스 미터 (ft3)"
   },
   "capabilities": [
     "meter_gas.imperial",

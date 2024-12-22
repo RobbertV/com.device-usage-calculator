@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Water Meter (m3)"
+    "en": "Water Meter (m3)",
+    "nl": "Watermeter (m3)",
+    "de": "Wasserzähler (m3)",
+    "fr": "Compteur d'eau (m3)",
+    "es": "Medidor de agua (m3)",
+    "it": "Contatore d'acqua (m3)",
+    "pt": "Medidor de água (m3)",
+    "sv": "Vattenmätare (m3)",
+    "no": "Vannmåler (m3)",
+    "da": "Vandmåler (m3)",
+    "pl": "Licznik wody (m3)",
+    "ru": "Водомер (м3)",
+    "ko": "수도 미터 (m3)"
   },
   "capabilities": [
     "meter_water",

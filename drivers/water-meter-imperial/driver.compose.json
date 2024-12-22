@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Water Meter (ft3)"
+    "en": "Water Meter (ft3)",
+    "nl": "Watermeter (ft3)",
+    "de": "Wasserzähler (ft3)",
+    "fr": "Compteur d'eau (ft3)",
+    "es": "Medidor de agua (ft3)",
+    "it": "Contatore d'acqua (ft3)",
+    "pt": "Medidor de água (ft3)",
+    "sv": "Vattenmätare (ft3)",
+    "no": "Vannmåler (ft3)",
+    "da": "Vandmåler (ft3)",
+    "pl": "Licznik wody (ft3)",
+    "ru": "Водомер (фут3)",
+    "ko": "수도 미터 (ft3)"
   },
   "capabilities": [
     "meter_water.imperial",

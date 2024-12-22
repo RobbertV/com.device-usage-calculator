@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Liquid Meter (L)"
+    "en": "Liquid Meter (L)",
+    "nl": "Vloeistofmeter (L)",
+    "de": "Flüssigkeitszähler (L)",
+    "fr": "Compteur de liquide (L)",
+    "it": "Contatore di liquidi (L)",
+    "es": "Medidor de líquidos (L)",
+    "pt": "Medidor de líquidos (L)",
+    "sv": "Vätskemätare (L)",
+    "no": "Væskemåler (L)",
+    "da": "Væskemåler (L)",
+    "pl": "Licznik cieczy (L)",
+    "ru": "Жидкостный счетчик (л)",
+    "ko": "액체 미터 (L)"
   },
   "capabilities": [
     "measure_content_volume",

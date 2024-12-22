@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Liquid Meter (gal)"
+    "en": "Liquid Meter (gal)",
+    "nl": "Vloeistofmeter (gal)",
+    "de": "Flüssigkeitszähler (gal)",
+    "fr": "Compteur de liquide (gal)",
+    "es": "Medidor de líquidos (gal)",
+    "it": "Contatore di liquidi (gal)",
+    "pt": "Medidor de líquidos (gal)",
+    "sv": "Vätskemätare (gal)",
+    "no": "Væskemåler (gal)",
+    "da": "Væskemåler (gal)",
+    "pl": "Licznik cieczy (gal)",
+    "ru": "Жидкостный счетчик (гал)",
+    "ko": "액체 미터 (갤런)"
   },
   "capabilities": [
     "measure_content_volume.imperial",

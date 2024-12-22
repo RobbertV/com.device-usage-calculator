@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Energy Meter (W)"
+    "en": "Energy Meter (W)",
+    "nl": "Energiemeter (W)",
+    "de": "Energiezähler (W)",
+    "fr": "Compteur d'énergie (W)",
+    "es": "Medidor de energía (W)",
+    "it": "Contatore di energia (W)",
+    "pt": "Medidor de energia (W)",
+    "sv": "Energimätare (W)",
+    "no": "Energimåler (W)",
+    "da": "Energiemåler (W)",
+    "pl": "Licznik energii (W)",
+    "ru": "Энергометр (W)",
+    "ko": "에너지계 (W)"
   },
   "capabilities": [
     "measure_power",

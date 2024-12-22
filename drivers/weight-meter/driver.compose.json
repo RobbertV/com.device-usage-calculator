@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Weight Meter (g)"
+    "en": "Weight Meter (g)",
+    "nl": "Weegschaal (g)",
+    "de": "Waage (g)",
+    "fr": "Balance (g)",
+    "es": "Báscula (g)",
+    "sv": "Våg (g)",
+    "no": "Vekt (g)",
+    "it": "Bilancia (g)",
+    "pt": "Balança (g)",
+    "da": "Vægt (g)",
+    "pl": "Waga (g)",
+    "ru": "Весы (г)",
+    "ko": "무게계 (g)"
   },
   "capabilities": [
     "measure_weight",

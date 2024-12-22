@@ -1,6 +1,18 @@
 {
   "name": {
-    "en": "Energy  Meter (kWh)"
+    "en": "Energy  Meter (kWh)",
+    "nl": "Energie Meter (kWh)",
+    "de": "Energiezähler (kWh)",
+    "fr": "Compteur d'énergie (kWh)",
+    "es": "Medidor de energía (kWh)",
+    "sv": "Energimätare (kWh)",
+    "no": "Energimåler (kWh)",
+    "it": "Contatore di energia (kWh)",
+    "pt": "Medidor de energia (kWh)",
+    "da": "Energimåler (kWh)",
+    "pl": "Licznik energii (kWh)",
+    "ru": "Счетчик энергии (кВтч)",
+    "ko": "에너지 미터 (kWh)"
   },
   "capabilities": [
     "meter_power",
