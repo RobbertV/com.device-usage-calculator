@@ -150,8 +150,9 @@ export default class BaseDevice extends Homey.Device {
         try {
             const i18n = this.homey.i18n.getLanguage();
             const settings = this.getSettings();
-            const rawCosts = this.getStoreValue('costs');
-            const rawCostsValue = rawCosts.value;
+            const deviceCapabilities = this.getCapabilities();
+            const getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
+            const rawCostsValue = this.getCapabilityValue(getMonetaryCapability);
             const unit = settings.monetary_unit;
             let currencyUnit = 'EUR';
 
