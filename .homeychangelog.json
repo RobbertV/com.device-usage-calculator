@@ -13,5 +13,8 @@
   },
   "2.0.1": {
     "en": "OPT: Add device settings to enable/disable duartion seconds"
+  },
+  "2.0.2": {
+    "en": "OPT: Change formatted cost from capability & Improve translations"
   }
 }
