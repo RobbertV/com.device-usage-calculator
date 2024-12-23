@@ -1,18 +1,18 @@
 {
   "name": {
-    "en": "Central Heating Meter (GJ)",
-    "nl": "Centrale Verwarming Meter (GJ)",
-    "de": "Heizungszähler (GJ)",
-    "fr": "Compteur de chauffage central (GJ)",
-    "es": "Medidor de calefacción central (GJ)",
-    "sv": "Centralvärme mätare (GJ)",
-    "no": "Sentralvarme måler (GJ)",
-    "it": "Contatore di riscaldamento centralizzato (GJ)",
-    "pt": "Medidor de aquecimento central (GJ)",
-    "da": "Centralvarme måler (GJ)",
-    "pl": "Licznik centralnego ogrzewania (GJ)",
-    "ru": "Счетчик центрального отопления (ГДж)",
-    "ko": "중앙 난방 미터 (GJ)"
+    "en": "District heating Meter (GJ)",
+    "nl": "Stadsverwarming Meter (GJ)",
+    "de": "Fernwärmezähler (GJ)",
+    "fr": "Compteur de chauffage urbain (GJ)",
+    "es": "Medidor de calefacción urbana (GJ)",
+    "it": "Contatore di riscaldamento urbano (GJ)",
+    "pt": "Medidor de aquecimento urbano (GJ)",
+    "sv": "Fjärrvärme Mätare (GJ)",
+    "no": "Fjernvarme Måler (GJ)",
+    "da": "Fjernvarme Måler (GJ)",
+    "pl": "Licznik ciepła miejskiego (GJ)",
+    "ru": "Счетчик тепла города (ГДж)",
+    "ko": "지역 난방 미터 (GJ)"
   },
   "capabilities": [
     "measure_content_volume.gj",

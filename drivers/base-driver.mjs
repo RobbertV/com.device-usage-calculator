@@ -12,12 +12,12 @@ export default class BaseDriver extends Homey.Driver {
     async onPair(session) {
         this.homey.app.log(`[Driver] - onPair`, this.id);
 
-        session.setHandler('showView', async (viewId, data) => {
-            this.homey.app.log(`[Driver] - onPair - showView`, { viewId, data });
-        });
+        // session.setHandler('showView', async (viewId, data) => {
+        //     this.homey.app.log(`[Driver] - onPair - showView`, { viewId, data });
+        // });
 
-        session.setHandler('list_devices', async (data) => {
-            this.homey.app.log(`[Driver] - onPair - list_devices`, data);
+        session.setHandler('list_devices', async () => {
+            this.homey.app.log(`[Driver] - onPair - list_devices`, this.manifest.name[this.homeyLanguage]);
 
             return [
                 {
