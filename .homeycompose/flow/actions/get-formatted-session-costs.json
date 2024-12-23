@@ -28,18 +28,18 @@
     "ko": "서식이 지정된 세션 비용 가져오기"
   },
   "hint": {
-    "en": "Retrieve the costs in your local format from the last session in a flow tag",
-    "nl": "Haal de kosten op in uw lokale formaat van de laatste sessie in een flow-tag",
-    "de": "Rufen Sie die Kosten in Ihrem lokalen Format aus der letzten Sitzung in einem Flow-Tag ab",
-    "fr": "Récupérez les coûts dans votre format local de la dernière session dans une balise de flux",
-    "it": "Recupera i costi nel tuo formato locale dall'ultima sessione in un tag di flusso",
-    "sv": "Hämta kostnaderna i ditt lokala format från den senaste sessionen i en flödestagg",
-    "no": "Hent kostnadene i ditt lokale format fra den siste økten i en flyttagg",
-    "es": "Recupere los costos en su formato local de la última sesión en una etiqueta de flujo",
-    "da": "Hent omkostningerne i dit lokale format fra den sidste session i en flow-tag",
-    "ru": "Получите затраты в вашем локальном формате из последней сессии в теге потока",
-    "pl": "Pobierz koszty w swoim lokalnym formacie z ostatniej sesji w tagu przepływu",
-    "ko": "플로우 태그의 마지막 세션에서 로컬 형식의 비용을 검색합니다"
+    "en": "Retrieve the device formatted session costs. You can use this in a flow tag",
+    "nl": "Haal de opgemaakte sessiekosten van het apparaat op. Je kunt dit gebruiken in een flow-tag",
+    "de": "Rufen Sie die formatierten Sitzungskosten des Geräts ab. Sie können dies in einem Flow-Tag verwenden",
+    "fr": "Récupérez les coûts de session formatés de l'appareil. Vous pouvez utiliser ceci dans une balise de flux",
+    "it": "Recupera i costi della sessione formattati del dispositivo. Puoi utilizzarlo in un tag di flusso",
+    "sv": "Hämta enhetens formaterade sessionkostnader. Du kan använda detta i en flödestag",
+    "no": "Hent enhetens formaterte øktkostnader. Du kan bruke dette i en flyttagg",
+    "es": "Recupere los costos de sesión formateados del dispositivo. Puede usar esto en una etiqueta de flujo",
+    "da": "Hent enhedens formaterede sessionomkostninger. Du kan bruge dette i en flow-tag",
+    "ru": "Получите отформатированные затраты на сессию устройства. Вы можете использовать это в теге потока",
+    "pl": "Pobierz sformatowane koszty sesji urządzenia. Możesz użyć tego w tagu przepływu",
+    "ko": "장치의 서식이 지정된 세션 비용을 검색하십시오. 이것을 플로우 태그에서 사용할 수 있습니다"
   },
   "args": [
     {
