@@ -95,6 +95,24 @@
           "label": {
             "en": "RUB (₽)"
           }
+        },
+        {
+          "id": "measure_monetary.KRW",
+          "label": {
+            "en": "KRW (₩)"
+          }
+        },
+        {
+          "id": "measure_monetary.AUD",
+          "label": {
+            "en": "AUD (AU$)"
+          }
+        },
+        {
+          "id": "measure_monetary.CAD",
+          "label": {
+            "en": "CAD ($)"
+          }
         }
       ]
     }

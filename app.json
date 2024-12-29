@@ -269,13 +269,13 @@
   },
   "author": {
     "name": "Robbert Vis",
-    "email": "usagemate@robbertvis.nl"
+    "email": "powerprice@robbertvis.nl"
   },
   "contributors": {
     "developers": [
       {
         "name": "Martijn Poppen",
-        "email": "usagemate@martijnpoppen.nl"
+        "email": "powerprice@martijnpoppen.nl"
       }
     ],
     "translators": [
@@ -1059,6 +1059,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -1174,6 +1234,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -1614,6 +1692,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -1729,6 +1867,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -2169,6 +2325,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -2284,6 +2500,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -2724,6 +2958,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -2839,6 +3133,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -3279,6 +3591,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -3394,6 +3766,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -3834,6 +4224,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -3949,6 +4399,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -4389,6 +4857,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -4504,6 +5032,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -4944,6 +5490,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -5059,6 +5665,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -5499,6 +6123,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -5614,6 +6298,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -6054,6 +6756,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -6169,6 +6931,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
@@ -6609,6 +7389,66 @@
           "units": {
             "en": "₽"
           }
+        },
+        "measure_monetary.KRW": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "₩"
+          }
+        },
+        "measure_monetary.AUD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "A$"
+          }
+        },
+        "measure_monetary.CAD": {
+          "title": {
+            "en": "Session costs",
+            "nl": "Sessie kosten",
+            "de": "Sitzungskosten",
+            "fr": "Coûts de la session",
+            "es": "Costos de la sesión",
+            "it": "Costi dell' sessione",
+            "pt": "Custos da sessão",
+            "sv": "Sessionens kostnader",
+            "no": "Øktkostnader",
+            "da": "Sessionens omkostninger",
+            "pl": "Koszty sesji",
+            "ru": "Стоимость последней сессии",
+            "ko": "마지막 세션 비용"
+          },
+          "units": {
+            "en": "$"
+          }
         }
       },
       "pair": [
@@ -6724,6 +7564,24 @@
               "id": "measure_monetary.RUB",
               "label": {
                 "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
               }
             }
           ]
