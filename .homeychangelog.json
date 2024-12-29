@@ -16,5 +16,8 @@
   },
   "2.0.2": {
     "en": "OPT: Change formatted cost from capability & Improve translations"
+  },
+  "2.0.3": {
+    "en": "OPT: Added support for AUD, CAD & KRW currency unit"
   }
 }
