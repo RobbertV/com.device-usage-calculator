@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" crossorigin href="./index.css">
+    </head>
+
+    <body class="homey-widget-full-width power-price-widget">
+        <div id="results" class="container"></div>
+        <script type="text/javascript">
+            function onHomeyReady(Homey) {
+                // console.log('Widget settings:', Homey.getSettings());
+                getData(Homey);
+
+                Homey.on('updateDevice', () => {
+                    getData(Homey);
+                });
+            }
+
+            function getData(Homey) {
+                const { device } = Homey.getSettings();
+                if (!device) {
+                    showError('Please select your Power Price device from the widget\'s settings.');
+                    return;
+                }
+
+                Homey.api('GET', `/capabilities?deviceId=${device.id}`)
+                    .then(deviceValues => {
+                        const results = document.querySelector('#results');
+                        // results.innerHTML = JSON.stringify(deviceValues);
+
+                        results.innerHTML = `<div class="date homey-text-small-light">Last update: ${deviceValues.lastUpdate}</div>`;
+
+                        Object.keys(deviceValues).forEach((key) => {
+                            if (key === 'lastUpdate') return;
+                            results.innerHTML += `
+                                <div class="var-item">
+                                <div class="var">
+                                    <div class="key homey-text-small-light">${key}</div> 
+                                    <div class="value">${deviceValues[key]}</div>
+                                </div>
+                                </div>
+                            `;
+                        })
+
+                        Homey.ready({ height: results.offsetHeight + 6 }); // Add 6px for box-shadow
+                    })
+                    .catch(err => {
+                        showError(`Please select your Power Price device from the widget's settings.`);
+                        return;
+                    })
+            }
+        </script>
+    </body>
+
+</html>

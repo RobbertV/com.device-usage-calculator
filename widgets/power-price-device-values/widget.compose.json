@@ -1,0 +1,25 @@
+{
+    "name": {
+        "en": "kWh device values"
+    },
+    "transparent": true,
+    "settings": [
+        {
+            "id": "device",
+            "type": "autocomplete",
+            "title": {
+                "en": "kWh device"
+            }
+        }
+    ],
+    "api": {
+        "getDevices": {
+            "method": "GET",
+            "path": "/"
+        },
+        "getDeviceCapabilities": {
+            "method": "GET",
+            "path": "/capabilities"
+        }
+    }
+}

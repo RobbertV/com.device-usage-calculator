@@ -26,6 +26,10 @@ export default class BaseDevice extends Homey.Device {
         }
     }
 
+    async onDeleted() {
+        this.homey.app.log('[Device] - on =>', this.getName());
+    }
+
     // ---------- Store Values -----------
 
     async setStoreValues(price = 0, meter = 0) {

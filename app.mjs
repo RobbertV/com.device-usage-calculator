@@ -38,6 +38,7 @@ class DeviceUsageCalculatorApp extends Homey.App {
         this.homey.app.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
         await flowActions(this.homey);
+        await this.setupWidget();
     }
 
     async sendNotifications() {
@@ -53,6 +54,22 @@ class DeviceUsageCalculatorApp extends Homey.App {
         } catch (error) {
             this.homey.app.error('sendNotifications - error', console.error());
         }
+    }
+
+    async setupWidget() {
+        const widget = this.homey.dashboards.getWidget('power-price-device-values');
+
+        widget.registerSettingAutocompleteListener('device', async (query, settings) => {
+            const drivers = await this.homey.drivers.getDriver('kwh-meter');
+            const devices = drivers.getDevices();
+
+            return Object.values(devices)
+                .map((device) => ({
+                    name: device.getName(),
+                    id: device.getData().id
+                }))
+                .filter((PPDevice) => PPDevice.name.toLowerCase().includes(query.toLowerCase()));
+        });
     }
 }
 

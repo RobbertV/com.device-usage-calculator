@@ -7611,6 +7611,34 @@
       "id": "weight-meter-imperial"
     }
   ],
+  "widgets": {
+    "power-price-device-values": {
+      "name": {
+        "en": "kWh device values"
+      },
+      "transparent": true,
+      "settings": [
+        {
+          "id": "device",
+          "type": "autocomplete",
+          "title": {
+            "en": "kWh device"
+          }
+        }
+      ],
+      "api": {
+        "getDevices": {
+          "method": "GET",
+          "path": "/"
+        },
+        "getDeviceCapabilities": {
+          "method": "GET",
+          "path": "/capabilities"
+        }
+      },
+      "id": "power-price-device-values"
+    }
+  },
   "capabilities": {
     "measure_duration": {
       "platforms": [
