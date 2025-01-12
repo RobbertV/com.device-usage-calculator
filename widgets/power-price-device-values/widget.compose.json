@@ -9,6 +9,35 @@
             "type": "autocomplete",
             "title": {
                 "en": "Selected device"
+            },
+            "hint": {
+                "en": "Select the device you want to show the values for"
+            }
+        },
+        {
+            "id": "showDeviceName",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show device name",
+                "nl": "Toon apparaatnaam"
+            },
+            "hint": {
+                "en": "Show the name of the device",
+                "nl": "Toon de naam van het apparaat"
+            }
+        },
+        {
+            "id": "showUpdateTimestamp",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Show update timestamp",
+                "nl": "Toon update-tijdstempel"
+            },
+            "hint": {
+                "en": "Show the timestamp of the last update",
+                "nl": "Toon de tijdstempel van de laatste update"
             }
         }
     ],

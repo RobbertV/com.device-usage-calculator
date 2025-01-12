@@ -5,8 +5,11 @@
     </head>
 
     <body class="homey-widget power-price-widget">
+        <div class="device-name homey-text-bold"></div>
         <div id="isRunning" class="running homey-text-small-light"></div>
-        <div id="results" class="container"></div>
+        <div id="results" class="results"></div>
+        <div class="timestamp homey-text-small-light"></div>
+
         <script type="text/javascript">
             function onHomeyReady(Homey) {
                 // console.log('Widget settings:', Homey.getSettings());
@@ -18,45 +21,51 @@
             }
 
             function getData(Homey) {
-                const { device } = Homey.getSettings();
-                if (!device) {
+                const widgetSettings = Homey.getSettings();
+                if (!widgetSettings.device) {
                     showError('Please select your Power Price device from the widget\'s settings.');
                     return;
                 }
 
-                Homey.api('GET', `/capabilities?deviceId=${device.id}`)
+                Homey.api('GET', `/capabilities?deviceId=${widgetSettings.device.id}`)
                     .then(deviceValues => {
                         const isRunning = document.querySelector('#isRunning');
+                        const deviceName = document.querySelector('.device-name');
                         const results = document.querySelector('#results');
+                        const timestamp = document.querySelector('.timestamp');
                         // results.innerHTML = JSON.stringify(deviceValues);
 
                         console.log('deviceValues:', deviceValues);
 
                         if (deviceValues.isRunning) {
                             isRunning.classList.add('is-running');
-                            isRunning.innerHTML = Homey.__(`widgets.isRunning`);
+                            isRunning.innerText = Homey.__(`widgets.isRunning`);
                         } else {
                             isRunning.classList.remove('is-running');
-                            isRunning.innerHTML = Homey.__(`widgets.isNotRunning`);
+                            isRunning.innerText = Homey.__(`widgets.isNotRunning`);
                         }
-                        results.innerHTML = `<div class="name homey-text-light">${deviceValues.name}</div>`;
+                        if (widgetSettings.showDeviceName) {
+                            deviceName.innerText = deviceValues.name;
+                        }
 
                         Object.keys(deviceValues).forEach((key) => {
                             if (key === 'lastUpdate' || key === 'name' || key === 'isRunning') return;
                             const label = Homey.__(`widgets.${key}`) || key;
                             results.innerHTML += `
                                 <div class="var-item">
-                                <div class="var">
                                     <div class="key homey-text-small-light">${label}</div> 
                                     <div class="value">${deviceValues[key]}</div>
-                                </div>
                                 </div>
                             `;
                         });
 
-                        results.innerHTML += `<div class="date homey-text-small-light">${Homey.__(`widgets.lastUpdate`)}: ${deviceValues.lastUpdate}</div>`;
+                        if (widgetSettings.showUpdateTimestamp) {
+                            timestamp.innerHTML = `${Homey.__(`widgets.lastUpdate`)}: ${deviceValues.lastUpdate}`;
+                        }
+                    }).then(() => {
+                        const widgetContainer = document.querySelector('.power-price-widget');
 
-                        Homey.ready({ height: results.offsetHeight + 32 }); // Add 2 * 16px for widget padding
+                        Homey.ready({ height: widgetContainer.offsetHeight });
                     })
                     .catch(err => {
                         showError(`Please select your Power Price device from the widget's settings.`);
