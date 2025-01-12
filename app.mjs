@@ -60,15 +60,30 @@ class DeviceUsageCalculatorApp extends Homey.App {
         const widget = this.homey.dashboards.getWidget('power-price-device-values');
 
         widget.registerSettingAutocompleteListener('device', async (query, settings) => {
-            const drivers = await this.homey.drivers.getDriver('kwh-meter');
-            const devices = drivers.getDevices();
+            let devices = [];
+            const drivers = await this.homey.drivers.getDrivers();
+            // this.log('[setupWidget] - get drivers:', Object.keys(drivers));
 
-            return Object.values(devices)
-                .map((device) => ({
+            for (const driverKey of Object.keys(drivers)) {
+                const driver = await this.homey.drivers.getDriver(driverKey);
+                // this.log('[setupWidget] - get driver:', Object.keys(driver));
+
+                const newDevice = driver.getDevices();
+
+                devices = [...devices, ...newDevice];
+            }
+
+            this.log('[setupWidget] - Autocomplete query:', query, devices);
+            // this.log('[Widget] Get devices', devices[0].getData().id);
+
+            const foundDevices = devices.map((device) => {
+                return {
                     name: device.getName(),
                     id: device.getData().id
-                }))
-                .filter((PPDevice) => PPDevice.name.toLowerCase().includes(query.toLowerCase()));
+                };
+            });
+
+            return foundDevices.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()));
         });
     }
 }

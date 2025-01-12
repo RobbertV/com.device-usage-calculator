@@ -4,7 +4,8 @@
         <link rel="stylesheet" crossorigin href="./index.css">
     </head>
 
-    <body class="homey-widget-full-width power-price-widget">
+    <body class="homey-widget power-price-widget">
+        <div id="isRunning" class="running homey-text-small-light"></div>
         <div id="results" class="container"></div>
         <script type="text/javascript">
             function onHomeyReady(Homey) {
@@ -25,24 +26,37 @@
 
                 Homey.api('GET', `/capabilities?deviceId=${device.id}`)
                     .then(deviceValues => {
+                        const isRunning = document.querySelector('#isRunning');
                         const results = document.querySelector('#results');
                         // results.innerHTML = JSON.stringify(deviceValues);
 
-                        results.innerHTML = `<div class="date homey-text-small-light">Last update: ${deviceValues.lastUpdate}</div>`;
+                        console.log('deviceValues:', deviceValues);
+
+                        if (deviceValues.isRunning) {
+                            isRunning.classList.add('is-running');
+                            isRunning.innerHTML = Homey.__(`widgets.isRunning`);
+                        } else {
+                            isRunning.classList.remove('is-running');
+                            isRunning.innerHTML = Homey.__(`widgets.isNotRunning`);
+                        }
+                        results.innerHTML = `<div class="name homey-text-light">${deviceValues.name}</div>`;
 
                         Object.keys(deviceValues).forEach((key) => {
-                            if (key === 'lastUpdate') return;
+                            if (key === 'lastUpdate' || key === 'name' || key === 'isRunning') return;
+                            const label = Homey.__(`widgets.${key}`) || key;
                             results.innerHTML += `
                                 <div class="var-item">
                                 <div class="var">
-                                    <div class="key homey-text-small-light">${key}</div> 
+                                    <div class="key homey-text-small-light">${label}</div> 
                                     <div class="value">${deviceValues[key]}</div>
                                 </div>
                                 </div>
                             `;
-                        })
+                        });
 
-                        Homey.ready({ height: results.offsetHeight + 6 }); // Add 6px for box-shadow
+                        results.innerHTML += `<div class="date homey-text-small-light">${Homey.__(`widgets.lastUpdate`)}: ${deviceValues.lastUpdate}</div>`;
+
+                        Homey.ready({ height: results.offsetHeight + 32 }); // Add 2 * 16px for widget padding
                     })
                     .catch(err => {
                         showError(`Please select your Power Price device from the widget's settings.`);

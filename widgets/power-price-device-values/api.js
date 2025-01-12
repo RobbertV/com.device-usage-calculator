@@ -22,6 +22,7 @@ module.exports = {
     async getDeviceCapabilities({ homey, query }) {
         const { deviceId } = query;
         const device = await getDevice({ homey, deviceId });
+        const deviceSettings = device.getSettings();
         const i18n = homey.i18n.getLanguage();
         const date = new Date();
         const options = {
@@ -34,12 +35,21 @@ module.exports = {
         };
         const dateResult = new Intl.DateTimeFormat(i18n, options).format(date);
 
+        const unit = deviceSettings.monetary_unit;
+        let currencyUnit = 'EUR';
+
+        if (unit.includes('.')) {
+            currencyUnit = unit.split('.')[1];
+        }
+        const formattedCosts = device.getCapabilityValue('measure_monetary').toLocaleString(i18n, { style: 'currency', currency: currencyUnit });
+
         return {
             lastUpdate: dateResult,
-            usage: device.getCapabilityValue('meter_power'),
+            name: device.getName(),
+            usage: device.getCapabilityValue('meter_power').toFixed(2),
             duration: device.getCapabilityValue('measure_duration'),
-            costs: device.getCapabilityValue('measure_monetary'),
-            running: device.getCapabilityValue('alarm_running')
+            costs: formattedCosts,
+            isRunning: device.getCapabilityValue('alarm_running')
         };
     },
 

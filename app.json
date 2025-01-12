@@ -7614,15 +7614,15 @@
   "widgets": {
     "power-price-device-values": {
       "name": {
-        "en": "kWh device values"
+        "en": "Measuring device"
       },
-      "transparent": true,
+      "transparent": false,
       "settings": [
         {
           "id": "device",
           "type": "autocomplete",
           "title": {
-            "en": "kWh device"
+            "en": "Selected device"
           }
         }
       ],
