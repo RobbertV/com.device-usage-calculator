@@ -10,7 +10,7 @@
         "duration": "Looptijd",
         "costs": "Kosten",
         "lastUpdate": "Laaste update",
-        "isRunning": "Bezig",
-        "isNotRunning": "Niet bezig"
+        "isRunning": "Actief",
+        "isNotRunning": "Inactief"
     }
 }

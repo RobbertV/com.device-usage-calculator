@@ -8,25 +8,40 @@ async function getDevice({ homey, deviceId }) {
     if (!deviceId) {
         throw new Error('Missing Device deviceId');
     }
+    // ToDo: refactor to simplified variant with provided driverId
+    let devices = [];
+    const drivers = await homey.drivers.getDrivers();
 
-    // let devices = [];
-    // const drivers = await homey.drivers.getDrivers();
+    for await (const driverKey of Object.keys(drivers)) {
+        const driver = await homey.drivers.getDriver(driverKey);
+        const newDevice = driver.getDevices();
 
-    // for await (const driverKey of Object.keys(drivers)) {
-    //     const driver = await homey.drivers.getDriver(driverKey);
-    //     const newDevice = driver.getDevices();
+        devices = [...devices, ...newDevice];
+    }
 
-    //     devices = [...devices, ...newDevice];
-    // }
-    const devices = await homey.drivers.getDriver('kwh-meter').getDevices();
     const selectedDevice = devices.find((device) => device.getData().id === deviceId);
-    // if (!selectedDevice) {
-    //     throw new Error('Power Price device Not Found');
-    // }
-
-    console.log('[getDevice]:', selectedDevice);
+    if (!selectedDevice) {
+        throw new Error('[Widget API] [getDevice] Power Price device Not Found');
+    }
 
     return selectedDevice;
+}
+
+async function getUnit({ usageCapability }) {
+    const unitMap = {
+        meter_gas: 'm3',
+        'meter_gas.imperial': 'ft3',
+        'measure_content_volume.gj': 'GJ',
+        meter_power: 'kWh',
+        measure_content_volume: 'L',
+        'measure_content_volume.imperial': 'gal',
+        meter_water: 'm3',
+        'meter_water.imperial': 'ft3',
+        measure_power: 'W',
+        measure_weight: 'kg',
+        'measure_weight.imperial': 'oz'
+    };
+    return unitMap[usageCapability] || '';
 }
 
 async function getUsageCapability({ device }) {
@@ -69,28 +84,22 @@ module.exports = {
         const { deviceId } = query;
         const device = await getDevice({ homey, deviceId });
 
-        console.log('[getDeviceCapabilities] - ', device);
+        // console.log('[getDeviceCapabilities] - ', device);
         const deviceSettings = device.getSettings();
         const i18n = homey.i18n.getLanguage();
 
         const timestamp = await getTimestamp({ i18n });
         const formattedCosts = await getFormattedMonetaryValue({ device, deviceSettings, i18n });
         const usageCapability = await getUsageCapability({ device });
+        const unit = await getUnit({ usageCapability });
 
-        const mappings = {
-            meter_water: 'm3',
-            meter_power: 'kWh',
-            meter_gas: 'm3',
-            measure_power: 'W'
-        };
-        const affix = mappings[usageCapability] || '';
-
-        const usage = `${device.getCapabilityValue(usageCapability).toFixed(2)} ${affix}`;
+        const usage = device.getCapabilityValue(usageCapability).toFixed(2);
 
         return {
             lastUpdate: timestamp,
             name: device.getName(),
             usage,
+            unit,
             duration: device.getCapabilityValue('measure_duration'),
             costs: formattedCosts,
             isRunning: device.getCapabilityValue('alarm_running')
