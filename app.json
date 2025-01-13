@@ -7656,13 +7656,9 @@
         }
       ],
       "api": {
-        "getDevices": {
-          "method": "GET",
-          "path": "/"
-        },
         "getDeviceCapabilities": {
           "method": "GET",
-          "path": "/capabilities"
+          "path": "/"
         }
       },
       "id": "power-price-device-values"

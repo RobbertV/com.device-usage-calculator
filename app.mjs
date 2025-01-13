@@ -59,29 +59,31 @@ class DeviceUsageCalculatorApp extends Homey.App {
     async setupWidget() {
         const widget = this.homey.dashboards.getWidget('power-price-device-values');
 
-        widget.registerSettingAutocompleteListener('device', async (query, settings) => {
+        widget.registerSettingAutocompleteListener('device', async (query) => {
             let devices = [];
             const drivers = await this.homey.drivers.getDrivers();
-            // this.log('[setupWidget] - get drivers:', Object.keys(drivers));
 
             for (const driverKey of Object.keys(drivers)) {
                 const driver = await this.homey.drivers.getDriver(driverKey);
-                // this.log('[setupWidget] - get driver:', Object.keys(driver));
+
+                // console.log(['driver - ', driver]);
 
                 const newDevice = driver.getDevices();
 
                 devices = [...devices, ...newDevice];
             }
 
-            this.log('[setupWidget] - Autocomplete query:', query, devices);
-            // this.log('[Widget] Get devices', devices[0].getData().id);
+            // this.log('[setupWidget] - Autocomplete query:', query, devices);
+            // this.log('[Widget] Get devices', devices[0]);
 
-            const foundDevices = devices.map((device) => {
-                return {
-                    name: device.getName(),
-                    id: device.getData().id
-                };
-            });
+            const foundDevices = devices
+                .map((device) => {
+                    return {
+                        name: device.getName(),
+                        id: device.getData().id
+                    };
+                })
+                .sort((a, b) => a.name.localeCompare(b.name));
 
             return foundDevices.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()));
         });

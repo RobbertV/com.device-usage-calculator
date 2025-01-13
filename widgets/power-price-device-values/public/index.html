@@ -22,12 +22,14 @@
 
             function getData(Homey) {
                 const widgetSettings = Homey.getSettings();
+                console.log('[Widget Settings] - ', widgetSettings);
+
                 if (!widgetSettings.device) {
                     showError('Please select your Power Price device from the widget\'s settings.');
                     return;
                 }
 
-                Homey.api('GET', `/capabilities?deviceId=${widgetSettings.device.id}`)
+                Homey.api('GET', `/?deviceId=${widgetSettings.device.id}}`)
                     .then(deviceValues => {
                         const isRunning = document.querySelector('#isRunning');
                         const deviceName = document.querySelector('.device-name');
