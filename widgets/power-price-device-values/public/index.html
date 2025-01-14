@@ -5,14 +5,20 @@
     </head>
 
     <body class="homey-widget power-price-widget">
-        <div class="device-name homey-text-bold"></div>
-        <div id="isRunning" class="running homey-text-small-light"></div>
-        <div id="results" class="results">Loading...</div>
-        <div class="timestamp homey-text-small-light"></div>
-
+        <div class="error homey-text-small-light"></div>
+        <div class="container">
+            <div class="icon hidden"></div>
+            <div class="device-name homey-text-small-light"></div>
+            <div class="running homey-text-small-light hidden"></div>
+            <div class="results">Loading...</div>
+            <div class="timestamp homey-text-small-light hidden"></div>
+        </div>
         <script type="text/javascript">
             function onHomeyReady(Homey) {
-                init(Homey);
+                // add timeout to wait for app devices to be ready
+                setTimeout(() => {
+                    init(Homey);
+                }, 1000);
                 
                 Homey.on('updateDevice', () => {
                     init(Homey);
@@ -21,63 +27,74 @@
 
             function init(Homey) {
                 const widgetSettings = Homey.getSettings();
+                const widgetContainer = document.querySelector('.power-price-widget');
+                const widgetError = document.querySelector('.error');
+                const widgetContent = document.querySelector('.container');
                 console.log('[Widget Settings] - ', widgetSettings);
 
                 if (!widgetSettings.device) {
-                    showError('Please select your Power Price device from the widget\'s settings.');
+                    widgetContent.innerHTML = '';
+                    widgetError.innerText = 'Please select your Power Price device from the widget\'s settings.';
                     return;
                 }
 
-            Homey.api('GET', `/?deviceId=${widgetSettings.device.id}`)
+                Homey.api('GET', `/?deviceId=${widgetSettings.device.id}&driverId=${widgetSettings.device.driverId}`)
                     .then(deviceValues => {
-                        const isRunning = document.querySelector('#isRunning');
+                        const icon = document.querySelector('.icon');
+                        const isRunning = document.querySelector('.running');
                         const deviceName = document.querySelector('.device-name');
-                        const results = document.querySelector('#results');
+                        const results = document.querySelector('.results');
                         const timestamp = document.querySelector('.timestamp');
                         // results.innerHTML = JSON.stringify(deviceValues);
-                        results.innerHTML = '';
-
                         // console.log('deviceValues:', deviceValues);
 
-                        if (deviceValues.isRunning) {
-                            isRunning.classList.add('is-running');
-                            isRunning.innerText = Homey.__(`widgets.isRunning`);
-                        } else {
-                            isRunning.classList.remove('is-running');
-                            isRunning.innerText = Homey.__(`widgets.isNotRunning`);
+                        icon.classList.remove('hidden');
+                        icon.innerHTML = `<img src="../..${deviceValues.icon}" />`;
+
+                        if (widgetSettings.showActivity) {
+                            isRunning.classList.remove('hidden');
+                            if (deviceValues.isRunning) {
+                                isRunning.classList.add('is-running');
+                                isRunning.innerText = Homey.__(`widgets.isRunning`);
+                            } else {
+                                isRunning.classList.remove('is-running');
+                                isRunning.innerText = Homey.__(`widgets.isNotRunning`);
+                            }
                         }
+
                         if (widgetSettings.showDeviceName) {
                             deviceName.innerText = deviceValues.name;
                         }
 
-                        Object.keys(deviceValues).forEach((key) => {
-                            if (key === 'lastUpdate' || key === 'name' || key === 'isRunning' || key === 'unit') return;
+                        results.innerHTML = '';
+
+                        Object.keys(deviceValues.results).forEach((key) => {
                             const label = Homey.__(`widgets.${key}`) || key;
                             let unit = '';
                             if (key === 'usage') {
                                 unit = `<span class="homey-text-small"> ${deviceValues.unit}</span>`;
                             }
                             results.innerHTML += `
-                            <div class="var-item">
-                                <div class="key homey-text-small-light">${label}</div> 
-                                <div class="value">${deviceValues[key]}${unit}</div>
+                            <div class="var-item ${key}">
+                                <div class="value homey-text-medium">${deviceValues.results[key]}${unit}</div>
+                                ${widgetSettings.showLabel ? `<div class="key homey-text-small-light">${label}</div>` : ''}
                             </div>
                         `;
                         });
 
                         if (widgetSettings.showUpdateTimestamp) {
+                            timestamp.classList.remove('hidden');
                             timestamp.innerHTML = `${Homey.__(`widgets.lastUpdate`)}: ${deviceValues.lastUpdate}`;
                         }
                     })
                     .then(() => {
-                        const widgetContainer = document.querySelector('.power-price-widget');
-
                         Homey.ready({ height: widgetContainer.offsetHeight });
                     })
                     .catch(err => {
-                        showError(`Please select your Power Price device from the widget's settings.`);
-                        return;
+                        widgetError.innerHTML = err;
                     })
+
+                return;
             }
         </script>
     </body>

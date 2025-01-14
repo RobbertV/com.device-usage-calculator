@@ -28,6 +28,32 @@
             }
         },
         {
+            "id": "showActivity",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show device activity",
+                "nl": "Toon apparaat activiteit"
+            },
+            "hint": {
+                "en": "Show the current activity status of the device",
+                "nl": "Toon de huidige activiteitsstatus van het apparaat"
+            }
+        },
+        {
+            "id": "showLabel",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Show descriptions",
+                "nl": "Toon beschrijvingen"
+            },
+            "hint": {
+                "en": "Shows the descriptions of the values",
+                "nl": "Toont de beschrijvingen van de waarden"
+            }
+        },
+        {
             "id": "showUpdateTimestamp",
             "type": "checkbox",
             "value": false,

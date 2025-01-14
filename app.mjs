@@ -74,13 +74,14 @@ class DeviceUsageCalculatorApp extends Homey.App {
             }
 
             // this.log('[setupWidget] - Autocomplete query:', query, devices);
-            // this.log('[Widget] Get devices', devices[0]);
+            // this.log('[Widget] Get devices', devices[0].driver.manifest.id);
 
             const foundDevices = devices
                 .map((device) => {
                     return {
                         name: device.getName(),
-                        id: device.getData().id
+                        id: device.getData().id,
+                        driverId: device.driver.manifest.id
                     };
                 })
                 .sort((a, b) => a.name.localeCompare(b.name));

@@ -1,6 +1,6 @@
 'use strict';
 
-async function getDevice({ homey, deviceId }) {
+async function getDevice({ homey, deviceId, driverId }) {
     if (!homey) {
         throw new Error('Missing Homey');
     }
@@ -8,18 +8,10 @@ async function getDevice({ homey, deviceId }) {
     if (!deviceId) {
         throw new Error('Missing Device deviceId');
     }
-    // ToDo: refactor to simplified variant with provided driverId
-    let devices = [];
-    const drivers = await homey.drivers.getDrivers();
 
-    for await (const driverKey of Object.keys(drivers)) {
-        const driver = await homey.drivers.getDriver(driverKey);
-        const newDevice = driver.getDevices();
+    const driver = await homey.drivers.getDriver(driverId);
+    const selectedDevice = driver.getDevices().find((device) => device.getData().id === deviceId);
 
-        devices = [...devices, ...newDevice];
-    }
-
-    const selectedDevice = devices.find((device) => device.getData().id === deviceId);
     if (!selectedDevice) {
         throw new Error('[Widget API] [getDevice] Power Price device Not Found');
     }
@@ -80,11 +72,11 @@ async function getTimestamp({ i18n }) {
 
 module.exports = {
     async getDeviceCapabilities({ homey, query }) {
-        console.log('[getDeviceCapabilities] - ', query);
-        const { deviceId } = query;
-        const device = await getDevice({ homey, deviceId });
+        // console.log('[getDeviceCapabilities] - ', query);
+        const { deviceId, driverId } = query;
+        const device = await getDevice({ homey, deviceId, driverId });
 
-        // console.log('[getDeviceCapabilities] - ', device);
+        // console.log('[getDeviceCapabilities] - ', device.driver.manifest.icon);
         const deviceSettings = device.getSettings();
         const i18n = homey.i18n.getLanguage();
 
@@ -95,13 +87,19 @@ module.exports = {
 
         const usage = device.getCapabilityValue(usageCapability).toFixed(2);
 
+        const driverIcon = device.driver.manifest.icon;
+
         return {
+            driverId,
+            icon: driverIcon,
             lastUpdate: timestamp,
             name: device.getName(),
-            usage,
             unit,
-            duration: device.getCapabilityValue('measure_duration'),
-            costs: formattedCosts,
+            results: {
+                usage,
+                duration: device.getCapabilityValue('measure_duration'),
+                costs: formattedCosts
+            },
             isRunning: device.getCapabilityValue('alarm_running')
         };
     }
