@@ -46,17 +46,27 @@ async function getUsageCapability({ device }) {
     return getusageCapability;
 }
 
-async function getFormattedMonetaryValue({ device, deviceSettings, i18n }) {
+async function getUsageCapabilityValue({ device, usageCapability, i18nLang }) {
+    const usageValue = await device.getCapabilityValue(usageCapability);
+
+    const formattedValue = new Intl.NumberFormat(i18nLang).format(usageValue);
+
+    console.log('[getUsageCapabilityValue]:', usageValue, formattedValue);
+
+    return formattedValue;
+}
+
+async function getFormattedMonetaryValue({ device, deviceSettings, i18nLang }) {
     const unit = deviceSettings.monetary_unit;
     let currencyUnit = 'EUR';
 
     if (unit.includes('.')) {
         currencyUnit = unit.split('.')[1];
     }
-    return device.getCapabilityValue('measure_monetary').toLocaleString(i18n, { style: 'currency', currency: currencyUnit });
+    return device.getCapabilityValue('measure_monetary').toLocaleString(i18nLang, { style: 'currency', currency: currencyUnit });
 }
 
-async function getTimestamp({ i18n }) {
+async function getTimestamp({ i18nLang }) {
     const date = new Date();
     const options = {
         year: 'numeric',
@@ -67,7 +77,7 @@ async function getTimestamp({ i18n }) {
         second: 'numeric'
     };
 
-    return new Intl.DateTimeFormat(i18n, options).format(date);
+    return new Intl.DateTimeFormat(i18nLang, options).format(date);
 }
 
 module.exports = {
@@ -78,14 +88,13 @@ module.exports = {
 
         // console.log('[getDeviceCapabilities] - ', device.driver.manifest.icon);
         const deviceSettings = device.getSettings();
-        const i18n = homey.i18n.getLanguage();
+        const i18nLang = homey.i18n.getLanguage();
 
-        const timestamp = await getTimestamp({ i18n });
-        const formattedCosts = await getFormattedMonetaryValue({ device, deviceSettings, i18n });
+        const timestamp = await getTimestamp({ i18nLang });
+        const formattedCosts = await getFormattedMonetaryValue({ device, deviceSettings, i18nLang });
         const usageCapability = await getUsageCapability({ device });
+        const usage = await getUsageCapabilityValue({ device, usageCapability, i18nLang });
         const unit = await getUnit({ usageCapability });
-
-        const usage = device.getCapabilityValue(usageCapability).toFixed(2);
 
         const driverIcon = device.driver.manifest.icon;
 

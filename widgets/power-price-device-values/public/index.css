@@ -32,6 +32,10 @@
     text-align: center;
 }
 
+.icon img {
+    filter: invert(1);
+}
+
 .hidden,
 .hidden::after {
     display: none;

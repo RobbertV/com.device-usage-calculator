@@ -18,11 +18,21 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async onSettings({ newSettings, changedKeys }) {
-        console.log('[Device] - onSettings =>', newSettings);
-        if (changedKeys.some((k) => k === 'monetary_unit')) {
+        console.log('[Device] - onSettings =>', this.driver.id, newSettings);
+        if (changedKeys.some((k) => k === 'monetary_unit' || 'costs_decimals')) {
+            // const newOptions = { decimals: newSettings.usage_decimals };
             const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
             await this.checkCapabilities(newSettings);
             await this.setMonetaryCapability(costs);
+        }
+        if (changedKeys.some((k) => k === 'usage_decimals')) {
+            console.log('[Device] - onSettings usage =>', newSettings.usage_decimals);
+
+            // const newOptions = { decimals: newSettings.usage_decimals };
+            const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
+
+            await this.checkCapabilities(newSettings);
+            await this.setUsageCapability(usage);
         }
     }
 
@@ -155,7 +165,7 @@ export default class BaseDevice extends Homey.Device {
 
     async formattedCosts() {
         try {
-            const i18n = this.homey.i18n.getLanguage();
+            const i18nLang = this.homey.i18n.getLanguage();
             const settings = this.getSettings();
             const deviceCapabilities = this.getCapabilities();
             const getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
@@ -167,7 +177,7 @@ export default class BaseDevice extends Homey.Device {
                 currencyUnit = unit.split('.')[1];
             }
 
-            const formattedCosts = rawCostsValue.toLocaleString(i18n, { style: 'currency', currency: currencyUnit });
+            const formattedCosts = rawCostsValue.toLocaleString(i18nLang, { style: 'currency', currency: currencyUnit });
 
             this.homey.app.log(`[Device] ${this.getName()} - formattedCosts =>`, { currencyUnit, formattedCosts });
 

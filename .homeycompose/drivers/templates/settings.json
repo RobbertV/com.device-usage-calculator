@@ -1,26 +1,32 @@
 {
   "settings": [
     {
-      "id": "reset_values",
-      "type": "checkbox",
-      "label": {
-        "en": "Reset values on start"
-      },
-      "hint": {
-        "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
-      },
-      "value": false
-    },
-    {
-      "id": "update_values",
-      "type": "checkbox",
-      "label": {
-        "en": "Update values on price change"
-      },
-      "hint": {
-        "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
-      },
-      "value": false
+      "type": "group",
+      "label": { "en": "General" },
+      "children": [
+        {
+          "id": "reset_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Reset values on start"
+          },
+          "hint": {
+            "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
+          },
+          "value": false
+        },
+        {
+          "id": "update_values",
+          "type": "checkbox",
+          "label": {
+            "en": "Update values on price change"
+          },
+          "hint": {
+            "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
+          },
+          "value": true
+        }
+      ]
     },
     {
       "id": "show_duration_seconds",
@@ -34,85 +40,115 @@
       "value": true
     },
     {
-      "id": "monetary_unit",
-      "type": "dropdown",
-      "value": "measure_monetary",
-      "label": {
-        "en": "Currency",
-        "nl": "Valuta"
+      "id": "usage_decimals",
+      "type": "number",
+      "label": { "en": "Usage decimals" },
+      "hint": {
+        "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
       },
-      "values": [
+      "value": 2,
+      "min": 0,
+      "max": 6,
+      "units": { "en": "decimals" }
+    },
+    {
+      "type": "group",
+      "label": { "en": "Costs" },
+      "children": [
         {
-          "id": "measure_monetary",
+          "id": "monetary_unit",
+          "type": "dropdown",
+          "value": "measure_monetary",
           "label": {
-            "en": "EUR (€)"
-          }
+            "en": "Currency",
+            "nl": "Valuta"
+          },
+          "values": [
+            {
+              "id": "measure_monetary",
+              "label": {
+                "en": "EUR (€)"
+              }
+            },
+            {
+              "id": "measure_monetary.USD",
+              "label": {
+                "en": "USD ($)"
+              }
+            },
+            {
+              "id": "measure_monetary.GBP",
+              "label": {
+                "en": "GBP (£)"
+              }
+            },
+            {
+              "id": "measure_monetary.CHF",
+              "label": {
+                "en": "CHF (₣)"
+              }
+            },
+            {
+              "id": "measure_monetary.PLN",
+              "label": {
+                "en": "PLN (zł)"
+              }
+            },
+            {
+              "id": "measure_monetary.DKK",
+              "label": {
+                "en": "DKK (kr)"
+              }
+            },
+            {
+              "id": "measure_monetary.NOK",
+              "label": {
+                "en": "NOK (kr)"
+              }
+            },
+            {
+              "id": "measure_monetary.SEK",
+              "label": {
+                "en": "SEK (kr)"
+              }
+            },
+            {
+              "id": "measure_monetary.RUB",
+              "label": {
+                "en": "RUB (₽)"
+              }
+            },
+            {
+              "id": "measure_monetary.KRW",
+              "label": {
+                "en": "KRW (₩)"
+              }
+            },
+            {
+              "id": "measure_monetary.AUD",
+              "label": {
+                "en": "AUD (AU$)"
+              }
+            },
+            {
+              "id": "measure_monetary.CAD",
+              "label": {
+                "en": "CAD ($)"
+              }
+            }
+          ]
         },
         {
-          "id": "measure_monetary.USD",
-          "label": {
-            "en": "USD ($)"
-          }
-        },
-        {
-          "id": "measure_monetary.GBP",
-          "label": {
-            "en": "GBP (£)"
-          }
-        },
-        {
-          "id": "measure_monetary.CHF",
-          "label": {
-            "en": "CHF (₣)"
-          }
-        },
-        {
-          "id": "measure_monetary.PLN",
-          "label": {
-            "en": "PLN (zł)"
-          }
-        },
-        {
-          "id": "measure_monetary.DKK",
-          "label": {
-            "en": "DKK (kr)"
-          }
-        },
-        {
-          "id": "measure_monetary.NOK",
-          "label": {
-            "en": "NOK (kr)"
-          }
-        },
-        {
-          "id": "measure_monetary.SEK",
-          "label": {
-            "en": "SEK (kr)"
-          }
-        },
-        {
-          "id": "measure_monetary.RUB",
-          "label": {
-            "en": "RUB (₽)"
-          }
-        },
-        {
-          "id": "measure_monetary.KRW",
-          "label": {
-            "en": "KRW (₩)"
-          }
-        },
-        {
-          "id": "measure_monetary.AUD",
-          "label": {
-            "en": "AUD (AU$)"
-          }
-        },
-        {
-          "id": "measure_monetary.CAD",
-          "label": {
-            "en": "CAD ($)"
-          }
+          "id": "costs_decimals",
+          "type": "number",
+          "label": { "en": "Decimals" },
+          "hint": {
+            "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+          },
+          "value": 2,
+          "min": 0,
+          "max": 6,
+          "units": { "en": "decimals" }
         }
       ]
     }
