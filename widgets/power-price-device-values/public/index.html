@@ -48,8 +48,10 @@
                         // results.innerHTML = JSON.stringify(deviceValues);
                         // console.log('deviceValues:', deviceValues);
 
-                        icon.classList.remove('hidden');
-                        icon.innerHTML = `<img src="../..${deviceValues.icon}" />`;
+                        if(icon.classList.contains('hidden')) {
+                            icon.classList.remove('hidden');
+                            icon.innerHTML = `<img src="../..${deviceValues.icon}" />`;
+                        }
 
                         if (widgetSettings.showActivity) {
                             isRunning.classList.remove('hidden');

@@ -9,6 +9,7 @@ export default class BaseDevice extends Homey.Device {
         this.homey.app.log('[Device] - init =>', this.getName(), this.driver.manifest.id);
 
         await this.checkCapabilities();
+        await this.resetValues();
     }
 
     async onAdded() {
@@ -45,9 +46,12 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async resetValues() {
-        const prettyDuration = formattedDuration(0, this.homey.__);
+        const settings = this.getSettings();
+        const showSecSettings = settings.show_duration_seconds;
+        const prettyDuration = formattedDuration(0, this.homey.__, showSecSettings);
 
         await this.setCapabilityValue('alarm_running', false);
+        
         await this.setCapabilityValue('measure_duration', prettyDuration);
         await this.setMonetaryCapability(0);
         await this.setUsageCapability(0);
