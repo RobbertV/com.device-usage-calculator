@@ -9,7 +9,6 @@ export default class BaseDevice extends Homey.Device {
         this.homey.app.log('[Device] - init =>', this.getName(), this.driver.manifest.id);
 
         await this.checkCapabilities();
-        await this.resetValues();
     }
 
     async onAdded() {
