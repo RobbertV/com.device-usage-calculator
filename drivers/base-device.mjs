@@ -18,21 +18,32 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async onSettings({ newSettings, changedKeys }) {
-        console.log('[Device] - onSettings =>', this.driver.id, newSettings);
-        if (changedKeys.some((k) => k === 'monetary_unit' || 'costs_decimals')) {
-            // const newOptions = { decimals: newSettings.usage_decimals };
+        // this.homey.app.log('[Device] - onSettings =>', this.driver.id, newSettings);
+
+        // Todo: fix bug where capability label gets reset.
+        if (changedKeys.some((k) => k === 'monetary_unit')) {
             const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
+
             await this.checkCapabilities(newSettings);
             await this.setMonetaryCapability(costs);
         }
-        if (changedKeys.some((k) => k === 'usage_decimals')) {
-            console.log('[Device] - onSettings usage =>', newSettings.usage_decimals);
+        if (changedKeys.some((k) => k === 'costs_decimals')) {
+            this.homey.app.log('[Device] - onSettings monetary =>', newSettings.costs_decimals);
 
-            // const newOptions = { decimals: newSettings.usage_decimals };
+            const newOptions = { decimals: newSettings.costs_decimals };
+            const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
+
+            // await this.checkCapabilities(newSettings);
+            await this.setMonetaryCapability(costs, newOptions);
+        }
+        if (changedKeys.some((k) => k === 'usage_decimals')) {
+            this.homey.app.log('[Device] - onSettings usage =>', newSettings.usage_decimals);
+
+            const newOptions = { decimals: newSettings.usage_decimals };
             const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
 
-            await this.checkCapabilities(newSettings);
-            await this.setUsageCapability(usage);
+            // await this.checkCapabilities(newSettings);
+            await this.setUsageCapability(usage, newOptions);
         }
     }
 
@@ -60,7 +71,6 @@ export default class BaseDevice extends Homey.Device {
         const prettyDuration = formattedDuration(0, this.homey.__, showSecSettings);
 
         await this.setCapabilityValue('alarm_running', false);
-        
         await this.setCapabilityValue('measure_duration', prettyDuration);
         await this.setMonetaryCapability(0);
         await this.setUsageCapability(0);
@@ -189,7 +199,7 @@ export default class BaseDevice extends Homey.Device {
 
     // ---------- Capabilities -----------
 
-    async setUsageCapability(value) {
+    async setUsageCapability(value, capabilityOptions = false) {
         try {
             const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
             let deviceCapabilities = this.getCapabilities();
@@ -203,14 +213,19 @@ export default class BaseDevice extends Homey.Device {
                 getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
             }
 
-            this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, getusageCapability, value);
+            if (capabilityOptions) {
+                this.homey.app.log(`[Device] ${this.getName()} - setCapabilityOption =>`, getusageCapability, capabilityOptions);
+                await this.setCapabilityOptions(getusageCapability, capabilityOptions);
+            }
+            this.homey.app.log(`[Device] ${this.getName()} - setUsageCapability =>`, getusageCapability, value, capabilityOptions);
+
             this.setCapabilityValue(getusageCapability, value);
         } catch (error) {
             this.homey.app.error(error);
         }
     }
 
-    async setMonetaryCapability(value) {
+    async setMonetaryCapability(value, capabilityOptions = false) {
         try {
             let deviceCapabilities = this.getCapabilities();
             let getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
@@ -223,7 +238,12 @@ export default class BaseDevice extends Homey.Device {
                 getMonetaryCapability = deviceCapabilities.find((d) => d.startsWith('measure_monetary'));
             }
 
-            this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability =>`, getMonetaryCapability, value);
+            if (capabilityOptions) {
+                this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapabilityOption =>`, getMonetaryCapability, capabilityOptions);
+                await this.setCapabilityOptions(getMonetaryCapability, capabilityOptions);
+            }
+            this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapability =>`, getMonetaryCapability, value, capabilityOptions);
+
             this.setCapabilityValue(getMonetaryCapability, value);
         } catch (error) {
             this.homey.app.error(error);
