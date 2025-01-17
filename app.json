@@ -1166,14 +1166,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -1184,7 +1186,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -1194,36 +1197,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -1313,7 +1338,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -1322,7 +1348,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -1870,14 +1897,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -1888,7 +1917,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -1898,36 +1928,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -2017,7 +2069,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -2026,7 +2079,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -2574,14 +2628,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -2592,7 +2648,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -2602,36 +2659,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -2721,7 +2800,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -2730,7 +2810,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -3278,14 +3359,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -3296,7 +3379,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -3306,36 +3390,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -3425,7 +3531,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -3434,7 +3541,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -3982,14 +4090,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -4000,7 +4110,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -4010,36 +4121,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -4129,7 +4262,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -4138,7 +4272,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -4686,14 +4821,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -4704,7 +4841,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -4714,36 +4852,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -4833,7 +4993,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -4842,7 +5003,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -5390,14 +5552,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -5408,7 +5572,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -5418,36 +5583,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -5537,7 +5724,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -5546,7 +5734,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -6094,14 +6283,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -6112,7 +6303,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -6122,36 +6314,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -6241,7 +6455,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -6250,7 +6465,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -6798,14 +7014,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -6816,7 +7034,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -6826,36 +7045,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -6945,7 +7186,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -6954,7 +7196,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -7502,14 +7745,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -7520,7 +7765,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -7530,36 +7776,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -7649,7 +7917,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -7658,7 +7927,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -8206,14 +8476,16 @@
         {
           "type": "group",
           "label": {
-            "en": "General"
+            "en": "General",
+            "nl": "Algemeen"
           },
           "children": [
             {
               "id": "reset_values",
               "type": "checkbox",
               "label": {
-                "en": "Reset values on start"
+                "en": "Reset values on session start",
+                "nl": "Reset waarden bij sessie start"
               },
               "hint": {
                 "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
@@ -8224,7 +8496,8 @@
               "id": "update_values",
               "type": "checkbox",
               "label": {
-                "en": "Update values on price change"
+                "en": "Update values on session update",
+                "nl": "Waarden bijwerken bij sessie update"
               },
               "hint": {
                 "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
@@ -8234,36 +8507,58 @@
           ]
         },
         {
-          "id": "show_duration_seconds",
-          "type": "checkbox",
+          "type": "group",
           "label": {
-            "en": "Show seconds for duration"
+            "en": "Usage",
+            "nl": "Verbruik"
           },
-          "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
-          },
-          "value": true
-        },
-        {
-          "id": "usage_decimals",
-          "type": "number",
-          "label": {
-            "en": "Usage decimals"
-          },
-          "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
-          },
-          "value": 2,
-          "min": 0,
-          "max": 6,
-          "units": {
-            "en": "decimals"
-          }
+          "children": [
+            {
+              "id": "usage_decimals",
+              "type": "number",
+              "label": {
+                "en": "Decimals",
+                "nl": "Decimalen"
+              },
+              "hint": {
+                "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+              },
+              "value": 2,
+              "min": 0,
+              "max": 6,
+              "units": {
+                "en": "decimals",
+                "nl": "decimalen"
+              }
+            }
+          ]
         },
         {
           "type": "group",
           "label": {
-            "en": "Costs"
+            "en": "Duration",
+            "nl": "Looptijd"
+          },
+          "children": [
+            {
+              "id": "show_duration_seconds",
+              "type": "checkbox",
+              "label": {
+                "en": "Show seconds",
+                "nl": "Toon seconden"
+              },
+              "hint": {
+                "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is les then 1 min it will always show seconds."
+              },
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "label": {
+            "en": "Costs",
+            "nl": "Kosten"
           },
           "children": [
             {
@@ -8353,7 +8648,8 @@
               "id": "costs_decimals",
               "type": "number",
               "label": {
-                "en": "Decimals"
+                "en": "Decimals",
+                "nl": "Decimalen"
               },
               "hint": {
                 "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
@@ -8362,7 +8658,8 @@
               "min": 0,
               "max": 6,
               "units": {
-                "en": "decimals"
+                "en": "decimals",
+                "nl": "decimalen"
               }
             }
           ]
@@ -8395,7 +8692,8 @@
   "widgets": {
     "power-price-device-values": {
       "name": {
-        "en": "Measuring device"
+        "en": "Device values",
+        "nl": "Apparaat waardes"
       },
       "transparent": false,
       "settings": [
@@ -8403,7 +8701,8 @@
           "id": "device",
           "type": "autocomplete",
           "title": {
-            "en": "Selected device"
+            "en": "Selected device",
+            "nl": "Geselecteerde apparaat"
           },
           "hint": {
             "en": "Select the device you want to show the values for"

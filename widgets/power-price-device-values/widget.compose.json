@@ -1,6 +1,7 @@
 {
     "name": {
-        "en": "Measuring device"
+        "en": "Device values",
+        "nl": "Apparaat waardes"
     },
     "transparent": false,
     "settings": [
@@ -8,7 +9,8 @@
             "id": "device",
             "type": "autocomplete",
             "title": {
-                "en": "Selected device"
+                "en": "Selected device",
+                "nl": "Geselecteerde apparaat"
             },
             "hint": {
                 "en": "Select the device you want to show the values for"
