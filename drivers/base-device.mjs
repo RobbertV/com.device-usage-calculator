@@ -18,11 +18,10 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async onSettings({ newSettings, changedKeys }) {
-        // this.homey.app.log('[Device] - onSettings =>', this.driver.id, newSettings);
+        this.homey.app.log('[Device] - onSettings =>', this.driver.id, newSettings);
 
         // Todo: fix bug where capability label gets reset.
-        if (changedKeys.some((k) => (k === 'monetary_unit') || (k === 'costs_decimals'))) {
-            this.homey.app.log('[Device] - onSettings monetary =>', newSettings.costs_decimals);
+        if (changedKeys.some((k) => k === 'monetary_unit' || k === 'costs_decimals')) {
             const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
             const newOptions = newSettings.costs_decimals ? { decimals: newSettings.costs_decimals } : false;
 
@@ -31,8 +30,6 @@ export default class BaseDevice extends Homey.Device {
         }
 
         if (changedKeys.some((k) => k === 'usage_decimals')) {
-            this.homey.app.log('[Device] - onSettings usage =>', newSettings.usage_decimals);
-
             const newOptions = newSettings.usage_decimals ? { decimals: newSettings.usage_decimals } : false;
             const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
 
@@ -213,10 +210,10 @@ export default class BaseDevice extends Homey.Device {
                 const currentCapabilityOptions = await this.getCapabilityOptions(getusageCapability);
                 const mergedCapabilityOptions = { ...currentCapabilityOptions, ...capabilityOptions };
 
-                this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapabilityOption =>`, {
-                    getusageCapability, 
-                    capabilityOptions, 
-                    currentCapabilityOptions, 
+                this.homey.app.log(`[Device] ${this.getName()} - setUsageCapabilityOption =>`, {
+                    getusageCapability,
+                    capabilityOptions,
+                    currentCapabilityOptions,
                     mergedCapabilityOptions
                 });
                 
