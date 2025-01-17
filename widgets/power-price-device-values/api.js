@@ -46,12 +46,12 @@ async function getUsageCapability({ device }) {
     return getusageCapability;
 }
 
-async function getUsageCapabilityValue({ device, usageCapability, i18nLang }) {
+async function getUsageCapabilityValue({ device, usageCapability, i18nLang, deviceSettings }) {
     const usageValue = await device.getCapabilityValue(usageCapability);
 
-    const formattedValue = new Intl.NumberFormat(i18nLang).format(usageValue);
+    const formattedValue = new Intl.NumberFormat(i18nLang, { maximumFractionDigits: deviceSettings.usage_decimals }).format(usageValue);
 
-    console.log('[getUsageCapabilityValue]:', usageValue, formattedValue);
+    console.log('[getUsageCapabilityValue]:', usageValue, deviceSettings.usage_decimals, formattedValue);
 
     return formattedValue;
 }
@@ -63,7 +63,7 @@ async function getFormattedMonetaryValue({ device, deviceSettings, i18nLang }) {
     if (unit.includes('.')) {
         currencyUnit = unit.split('.')[1];
     }
-    return device.getCapabilityValue('measure_monetary').toLocaleString(i18nLang, { style: 'currency', currency: currencyUnit });
+    return device.getCapabilityValue('measure_monetary').toLocaleString(i18nLang, { style: 'currency', currency: currencyUnit, maximumFractionDigits: deviceSettings.costs_decimals });
 }
 
 async function getTimestamp({ i18nLang }) {
@@ -93,7 +93,7 @@ module.exports = {
         const timestamp = await getTimestamp({ i18nLang });
         const formattedCosts = await getFormattedMonetaryValue({ device, deviceSettings, i18nLang });
         const usageCapability = await getUsageCapability({ device });
-        const usage = await getUsageCapabilityValue({ device, usageCapability, i18nLang });
+        const usage = await getUsageCapabilityValue({ device, usageCapability, i18nLang, deviceSettings });
         const unit = await getUnit({ usageCapability });
 
         const driverIcon = device.driver.manifest.icon;
