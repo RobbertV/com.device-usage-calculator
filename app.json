@@ -8410,6 +8410,19 @@
           }
         },
         {
+          "id": "showDeviceIcon",
+          "type": "checkbox",
+          "value": true,
+          "title": {
+            "en": "Show device icon",
+            "nl": "Toon apparaat icoon"
+          },
+          "hint": {
+            "en": "Show the icon of the device",
+            "nl": "Toon het icoon van het apparaat"
+          }
+        },
+        {
           "id": "showDeviceName",
           "type": "checkbox",
           "value": true,
@@ -8436,7 +8449,7 @@
           }
         },
         {
-          "id": "showLabel",
+          "id": "showLabels",
           "type": "checkbox",
           "value": false,
           "title": {

@@ -6,7 +6,7 @@
 
     <body class="homey-widget power-price-widget">
         <div class="error homey-text-small-light"></div>
-        <div class="container">
+        <div class="container has-icon">
             <div class="icon hidden"></div>
             <div class="device-name homey-text-small-light"></div>
             <div class="running homey-text-small-light hidden"></div>
@@ -48,9 +48,11 @@
                         // results.innerHTML = JSON.stringify(deviceValues);
                         // console.log('deviceValues:', deviceValues);
 
-                        if(icon.classList.contains('hidden')) {
+                        if (widgetSettings.showDeviceIcon && icon.classList.contains('hidden')) {
                             icon.classList.remove('hidden');
                             icon.innerHTML = `<img src="../..${deviceValues.icon}" />`;
+                        } else if (!widgetSettings.showDeviceIcon) {
+                            widgetContent.classList.remove('has-icon');
                         }
 
                         if (widgetSettings.showActivity) {
@@ -79,7 +81,7 @@
                             results.innerHTML += `
                             <div class="var-item ${key}">
                                 <div class="value homey-text-medium">${deviceValues.results[key]}${unit}</div>
-                                ${widgetSettings.showLabel ? `<div class="key homey-text-small-light">${label}</div>` : ''}
+                                ${widgetSettings.showLabels ? `<div class="key homey-text-small-light">${label}</div>` : ''}
                             </div>
                         `;
                         });

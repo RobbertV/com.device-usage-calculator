@@ -15,9 +15,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: 56px 2fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
     grid-row-gap: var(--homey-su-2);
+}
+.container.has-icon {
+    grid-template-columns: 56px 2fr 1fr;
 }
 
 .icon {
@@ -123,6 +126,10 @@
 .timestamp {
     grid-column: 2 / 4;
     font-style: italic;
+}
+
+.container:not(.has-icon) .timestamp {
+    grid-column: 1 / 4;
 }
 
 @keyframes pulse-animation {
