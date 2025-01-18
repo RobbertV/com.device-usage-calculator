@@ -19,5 +19,8 @@
   },
   "2.0.3": {
     "en": "OPT: Added support for AUD, CAD & KRW currency unit"
+  },
+  "2.1.0": {
+    "en": "NEW Dashboard widget & OPT: add device decimals option"
   }
 }
