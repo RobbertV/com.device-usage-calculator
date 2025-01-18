@@ -16,7 +16,7 @@
                 "ru": "использование сессии",
                 "ko": "세션 사용량"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_power": {
             "title": {
@@ -34,7 +34,7 @@
                 "ru": "использование сессии",
                 "ko": "세션 사용량"
             },
-            "decimals": 2
+            "decimals": 0
         },
         "meter_gas": {
             "title": {
@@ -52,7 +52,7 @@
                 "ru": "использование сессии",
                 "ko": "세션 사용량"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "meter_water": {
             "title": {
@@ -70,7 +70,7 @@
                 "ru": "использование сессии",
                 "ko": "세션 사용량"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_weight": {
             "title": {
@@ -88,7 +88,7 @@
                 "ru": "использование сессии",
                 "ko": "세션 사용량"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_content_volume": {
             "title": {
@@ -144,7 +144,7 @@
             "units": {
                 "en": "ft3"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_weight.imperial": {
             "title": {
@@ -165,7 +165,7 @@
             "units": {
                 "en": "oz"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_content_volume.imperial": {
             "title": {
@@ -207,7 +207,7 @@
             "units": {
                 "en": "gj"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "meter_water.imperial": {
             "title": {
@@ -228,7 +228,7 @@
             "units": {
                 "en": "ft3"
             },
-            "decimals": 2
+            "decimals": 3
         },
         "measure_monetary": {
             "title": {

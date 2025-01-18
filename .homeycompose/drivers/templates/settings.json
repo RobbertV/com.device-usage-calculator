@@ -58,7 +58,7 @@
           "type": "checkbox",
           "label": {
             "en": "Update on session update",
-            "nl": "Waarden bijwerken bij sessie update",
+            "nl": "Bijwerken bij sessie update",
             "de": "Aktualisieren bei Sitzungsaktualisierung",
             "fr": "Mettre à jour lors de la mise à jour de la session",
             "es": "Actualizar al actualizar la sesión",
@@ -141,7 +141,6 @@
             "ru": "Выберите максимальное количество десятичных знаков, которые вы хотите видеть в значениях использования. Это не покажет 0 в конце, например, 16.7798 = 16.78",
             "ko": "사용 값에서 보고 싶은 소수 자릿수의 최대값을 선택하세요. 이는 끝에 0을 표시하지 않습니다. 예: 16.7798 = 16.78"
           },
-          "value": 2,
           "min": 0,
           "max": 6,
           "units": {

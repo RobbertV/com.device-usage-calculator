@@ -30,7 +30,7 @@ export default class BaseDevice extends Homey.Device {
         }
 
         if (changedKeys.some((k) => k === 'usage_decimals')) {
-            const newOptions = newSettings.usage_decimals ? { decimals: newSettings.usage_decimals } : false;
+            const newOptions = { decimals: newSettings.usage_decimals };
             const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
 
             // await this.checkCapabilities(newSettings);
