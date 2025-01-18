@@ -38,6 +38,7 @@ class DeviceUsageCalculatorApp extends Homey.App {
         this.homey.app.log(`${this.homey.manifest.id} - ${this.homey.manifest.version} started...`);
 
         await flowActions(this.homey);
+        await this.setupWidget();
     }
 
     async sendNotifications() {
@@ -53,6 +54,40 @@ class DeviceUsageCalculatorApp extends Homey.App {
         } catch (error) {
             this.homey.app.error('sendNotifications - error', console.error());
         }
+    }
+
+    async setupWidget() {
+        const widget = this.homey.dashboards.getWidget('power-price-device-values');
+
+        widget.registerSettingAutocompleteListener('device', async (query) => {
+            let devices = [];
+            const drivers = await this.homey.drivers.getDrivers();
+
+            for (const driverKey of Object.keys(drivers)) {
+                const driver = await this.homey.drivers.getDriver(driverKey);
+
+                // console.log(['driver - ', driver]);
+
+                const newDevice = driver.getDevices();
+
+                devices = [...devices, ...newDevice];
+            }
+
+            // this.log('[setupWidget] - Autocomplete query:', query, devices);
+            // this.log('[Widget] Get devices', devices[0].driver.manifest.id);
+
+            const foundDevices = devices
+                .map((device) => {
+                    return {
+                        name: device.getName(),
+                        id: device.getData().id,
+                        driverId: device.driver.manifest.id
+                    };
+                })
+                .sort((a, b) => a.name.localeCompare(b.name));
+
+            return foundDevices.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()));
+        });
     }
 }
 

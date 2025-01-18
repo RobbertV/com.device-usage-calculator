@@ -3,6 +3,10 @@ Het is geoptimaliseerd om te werken met dynamische of wisselende energieprijzen 
 
 1. Maak een Power Price virtueel apparaat
 2. Kies het type meting dat u wilt (kWh, W, m3, GJ, l, g, oz, gal, ft3)
-3. In de instellingen van het apparaat kunt u optioneel de gewenste valuta instellen
+3. In de instellingen van het apparaat kunt u optioneel de gewenste valuta, decimalen en meer instellen
 4. Gebruik de apparaat actiekaarten om een verbruikssessie te starten, bij te werken en te stoppen
 5. Het resultaat van de sessie wordt opgeslagen in het apparaat en kan binnen flows worden gebruikt om de resultaten te rapporteren
+
+
+Optioneel:
+Toon apparaat sessie details op via dashboard widget

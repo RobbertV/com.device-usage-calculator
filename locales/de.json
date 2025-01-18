@@ -4,5 +4,13 @@
         "hoursShort": "h",
         "minutesShort": "m",
         "secondsShort": "s"
+    },
+    "widgets": {
+        "usage": "Verbrauch",
+        "duration": "Dauer",
+        "costs": "Kosten",
+        "lastUpdate": "Letztes Update",
+        "isRunning": "Aktiv",
+        "isNotRunning": "Inaktiv"
     }
 }

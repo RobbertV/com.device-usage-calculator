@@ -1,0 +1,235 @@
+{
+    "name": {
+        "en": "Device values",
+        "nl": "Apparaat waardes",
+        "de": "Gerätewerte",
+        "fr": "Valeurs de l'appareil",
+        "es": "Valores del dispositivo",
+        "it": "Valori del dispositivo",
+        "pt": "Valores do dispositivo",
+        "sv": "Enhetsvärden",
+        "da": "Enhedsværdier",
+        "no": "Enhetsverdier",
+        "pl": "Wartości urządzenia",
+        "ru": "Значения устройства",
+        "ko": "장치 값"
+    },
+    "transparent": false,
+    "settings": [
+        {
+            "id": "device",
+            "type": "autocomplete",
+            "title": {
+                "en": "Selected device",
+                "nl": "Geselecteerde apparaat",
+                "de": "Ausgewähltes Gerät",
+                "fr": "Appareil sélectionné",
+                "es": "Dispositivo seleccionado",
+                "it": "Dispositivo selezionato",
+                "pt": "Dispositivo selecionado",
+                "sv": "Vald enhet",
+                "da": "Valgt enhed",
+                "no": "Valgt enhet",
+                "pl": "Wybrane urządzenie",
+                "ru": "Выбранное устройство",
+                "ko": "선택된 장치"
+            },
+            "hint": {
+                "en": "Select the device you want to show the values for",
+                "nl": "Selecteer het apparaat waarvoor je de waarden wilt weergeven",
+                "de": "Wählen Sie das Gerät aus, für das Sie die Werte anzeigen möchten",
+                "fr": "Sélectionnez l'appareil pour lequel vous souhaitez afficher les valeurs",
+                "es": "Seleccione el dispositivo para el que desea mostrar los valores",
+                "it": "Seleziona il dispositivo per il quale desideri mostrare i valori",
+                "pt": "Selecione o dispositivo para o qual deseja mostrar os valores",
+                "sv": "Välj enheten du vill visa värdena för",
+                "da": "Vælg den enhed, du vil vise værdierne for",
+                "no": "Velg enheten du vil vise verdiene for",
+                "pl": "Wybierz urządzenie, dla którego chcesz wyświetlić wartości",
+                "ru": "Выберите устройство, для которого вы хотите показать значения",
+                "ko": "값을 표시할 장치를 선택하세요"
+            }
+        },
+        {
+            "id": "showDeviceIcon",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show device icon",
+                "nl": "Toon apparaat icoon",
+                "de": "Gerätesymbol anzeigen",
+                "fr": "Afficher l'icône de l'appareil",
+                "es": "Mostrar el icono del dispositivo",
+                "it": "Mostra l'icona del dispositivo",
+                "pt": "Mostrar ícone do dispositivo",
+                "sv": "Visa enhetsikon",
+                "da": "Vis enhedsikon",
+                "no": "Vis enhetsikon",
+                "pl": "Pokaż ikonę urządzenia",
+                "ru": "Показать значок устройства",
+                "ko": "장치 아이콘 표시"
+            },
+            "hint": {
+                "en": "Show the icon of the device",
+                "nl": "Toon het icoon van het apparaat",
+                "de": "Zeige das Gerätesymbol",
+                "fr": "Afficher l'icône de l'appareil",
+                "es": "Mostrar el icono del dispositivo",
+                "it": "Mostra l'icona del dispositivo",
+                "pt": "Mostrar ícone do dispositivo",
+                "sv": "Visa enhetsikon",
+                "da": "Vis enhedsikon",
+                "no": "Vis enhetsikon",
+                "pl": "Pokaż ikonę urządzenia",
+                "ru": "Показать значок устройства",
+                "ko": "장치 아이콘 표시"
+            }
+        },
+        {
+            "id": "showDeviceName",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show device name",
+                "nl": "Toon apparaatnaam",
+                "de": "Gerätenamen anzeigen",
+                "fr": "Afficher le nom de l'appareil",
+                "es": "Mostrar el nombre del dispositivo",
+                "it": "Mostra il nome del dispositivo",
+                "pt": "Mostrar o nome do dispositivo",
+                "sv": "Visa enhetsnamn",
+                "da": "Vis enhedsnavn",
+                "no": "Vis enhetsnavn",
+                "pl": "Pokaż nazwę urządzenia",
+                "ru": "Показать имя устройства",
+                "ko": "장치 이름 표시"
+            },
+            "hint": {
+                "en": "Show the name of the device",
+                "nl": "Toon de naam van het apparaat",
+                "de": "Gerätenamen anzeigen",
+                "fr": "Afficher le nom de l'appareil",
+                "es": "Mostrar el nombre del dispositivo",
+                "it": "Mostra il nome del dispositivo",
+                "pt": "Mostrar o nome do dispositivo",
+                "sv": "Visa enhetsnamn",
+                "da": "Vis enhedsnavn",
+                "no": "Vis enhetsnavn",
+                "pl": "Pokaż nazwę urządzenia",
+                "ru": "Показать имя устройства",
+                "ko": "장치 이름 표시"
+            }
+        },
+        {
+            "id": "showActivity",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show device activity",
+                "nl": "Toon apparaat activiteit",
+                "de": "Geräteaktivität anzeigen",
+                "fr": "Afficher l'activité de l'appareil",
+                "es": "Mostrar la actividad del dispositivo",
+                "it": "Mostra l'attività del dispositivo",
+                "pt": "Mostrar atividade do dispositivo",
+                "sv": "Visa enhetsaktivitet",
+                "da": "Vis enhedsaktivitet",
+                "no": "Vis enhetsaktivitet",
+                "pl": "Pokaż aktywność urządzenia",
+                "ru": "Показать активность устройства",
+                "ko": "장치 활동 표시"
+            },
+            "hint": {
+                "en": "Show the current activity status of the device",
+                "nl": "Toon de huidige activiteitsstatus van het apparaat",
+                "de": "Zeige den aktuellen Aktivitätsstatus des Geräts",
+                "fr": "Afficher l'état d'activité actuel de l'appareil",
+                "es": "Mostrar el estado de actividad actual del dispositivo",
+                "it": "Mostra lo stato di attività corrente del dispositivo",
+                "pt": "Mostrar o status atual de atividade do dispositivo",
+                "sv": "Visa enhetens aktuella aktivitetsstatus",
+                "da": "Vis den aktuelle aktivitetsstatus for enheden",
+                "no": "Vis den nåværende aktivitetsstatusen til enheten",
+                "pl": "Pokaż bieżący stan aktywności urządzenia",
+                "ru": "Показать текущий статус активности устройства",
+                "ko": "장치의 현재 활동 상태 표시"
+            }
+        },
+        {
+            "id": "showLabels",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Show descriptions",
+                "nl": "Toon beschrijvingen",
+                "de": "Beschreibungen anzeigen",
+                "fr": "Afficher les descriptions",
+                "es": "Mostrar descripciones",
+                "it": "Mostra descrizioni",
+                "pt": "Mostrar descrições",
+                "sv": "Visa beskrivningar",
+                "da": "Vis beskrivelser",
+                "no": "Vis beskrivelser",
+                "pl": "Pokaż opisy",
+                "ru": "Показать описания",
+                "ko": "설명 표시"
+            },
+            "hint": {
+                "en": "Shows the descriptions of the values",
+                "nl": "Toont de beschrijvingen van de waarden",
+                "de": "Zeigt die Beschreibungen der Werte an",
+                "fr": "Affiche les descriptions des valeurs",
+                "es": "Muestra las descripciones de los valores",
+                "it": "Mostra le descrizioni dei valori",
+                "pt": "Mostra as descrições dos valores",
+                "sv": "Visar beskrivningarna av värdena",
+                "da": "Viser beskrivelserne af værdierne",
+                "no": "Viser beskrivelsene av verdiene",
+                "pl": "Pokazuje opisy wartości",
+                "ru": "Показывает описания значений",
+                "ko": "값의 설명을 표시합니다"
+            }
+        },
+        {
+            "id": "showUpdateTimestamp",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Show update timestamp",
+                "nl": "Toon update-tijdstempel",
+                "de": "Aktualisierungszeitstempel anzeigen",
+                "fr": "Afficher l'horodatage de mise à jour",
+                "es": "Mostrar la marca de tiempo de actualización",
+                "it": "Mostra il timestamp di aggiornamento",
+                "pt": "Mostrar carimbo de data/hora da atualização",
+                "sv": "Visa uppdateringstidsstämpel",
+                "da": "Vis opdateringstidsstempel",
+                "no": "Vis oppdateringstidsstempel",
+                "pl": "Pokaż znacznik czasu aktualizacji",
+                "ru": "Показать временную метку обновления",
+                "ko": "업데이트 타임스탬프 표시"
+            },
+            "hint": {
+                "en": "Show the timestamp of the last update",
+                "nl": "Toon de tijdstempel van de laatste update",
+                "de": "Zeige den Zeitstempel des letzten Updates",
+                "fr": "Afficher l'horodatage de la dernière mise à jour",
+                "es": "Mostrar la marca de tiempo de la última actualización",
+                "it": "Mostra il timestamp dell'ultimo aggiornamento",
+                "pt": "Mostrar o carimbo de data/hora da última atualização",
+                "sv": "Visa tidsstämpeln för den senaste uppdateringen",
+                "da": "Vis tidsstemplet for den seneste opdatering",
+                "no": "Vis tidsstempelet for den siste oppdateringen",
+                "pl": "Pokaż znacznik czasu ostatniej aktualizacji",
+                "ru": "Показать временную метку последнего обновления",
+                "ko": "마지막 업데이트 타임스탬프 표시"
+            }
+        }
+    ],
+    "api": {
+        "getDeviceCapabilities": {
+            "method": "GET",
+            "path": "/"
+        }
+    }
+}

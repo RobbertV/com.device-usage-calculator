@@ -4,5 +4,13 @@
         "hoursShort": "시",
         "minutesShort": "분",
         "secondsShort": "초"
+    },
+    "widgets": {
+        "usage": "사용량",
+        "duration": "지속 시간",
+        "costs": "비용",
+        "lastUpdate": "마지막 업데이트",
+        "isRunning": "활성",
+        "isNotRunning": "비활성"
     }
 }

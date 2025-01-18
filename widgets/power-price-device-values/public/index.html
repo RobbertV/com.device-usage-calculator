@@ -1,0 +1,106 @@
+<html>
+
+    <head>
+        <link rel="stylesheet" crossorigin href="./index.css">
+    </head>
+
+    <body class="homey-widget power-price-widget">
+        <div class="error homey-text-small-light"></div>
+        <div class="container has-icon">
+            <div class="icon hidden"></div>
+            <div class="device-name homey-text-small-light"></div>
+            <div class="running homey-text-small-light hidden"></div>
+            <div class="results">Loading...</div>
+            <div class="timestamp homey-text-small-light hidden"></div>
+        </div>
+        <script type="text/javascript">
+            function onHomeyReady(Homey) {
+                // add timeout to wait for app devices to be ready
+                setTimeout(() => {
+                    init(Homey);
+                }, 1000);
+                
+                Homey.on('updateDevice', () => {
+                    init(Homey);
+                });
+            }
+
+            function init(Homey) {
+                const widgetSettings = Homey.getSettings();
+                const widgetContainer = document.querySelector('.power-price-widget');
+                const widgetError = document.querySelector('.error');
+                const widgetContent = document.querySelector('.container');
+                console.log('[Widget Settings] - ', widgetSettings);
+
+                if (!widgetSettings.device) {
+                    widgetContent.innerHTML = '';
+                    widgetError.innerText = 'Please select your Power Price device from the widget\'s settings.';
+                    return;
+                }
+
+                Homey.api('GET', `/?deviceId=${widgetSettings.device.id}&driverId=${widgetSettings.device.driverId}`)
+                    .then(deviceValues => {
+                        const icon = document.querySelector('.icon');
+                        const isRunning = document.querySelector('.running');
+                        const deviceName = document.querySelector('.device-name');
+                        const results = document.querySelector('.results');
+                        const timestamp = document.querySelector('.timestamp');
+                        // results.innerHTML = JSON.stringify(deviceValues);
+                        // console.log('deviceValues:', deviceValues);
+
+                        if (widgetSettings.showDeviceIcon && icon.classList.contains('hidden')) {
+                            icon.classList.remove('hidden');
+                            icon.innerHTML = `<img src="../..${deviceValues.icon}" />`;
+                        } else if (!widgetSettings.showDeviceIcon) {
+                            widgetContent.classList.remove('has-icon');
+                        }
+
+                        if (widgetSettings.showActivity) {
+                            isRunning.classList.remove('hidden');
+                            if (deviceValues.isRunning) {
+                                isRunning.classList.add('is-running');
+                                isRunning.innerText = Homey.__(`widgets.isRunning`);
+                            } else {
+                                isRunning.classList.remove('is-running');
+                                isRunning.innerText = Homey.__(`widgets.isNotRunning`);
+                            }
+                        }
+
+                        if (widgetSettings.showDeviceName) {
+                            deviceName.innerText = deviceValues.name;
+                        }
+
+                        results.innerHTML = '';
+
+                        Object.keys(deviceValues.results).forEach((key) => {
+                            const label = Homey.__(`widgets.${key}`) || key;
+                            let unit = '';
+                            if (key === 'usage') {
+                                unit = `<span class="homey-text-small"> ${deviceValues.unit}</span>`;
+                            }
+                            results.innerHTML += `
+                            <div class="var-item ${key}">
+                                <div class="value homey-text-medium">${deviceValues.results[key]}${unit}</div>
+                                ${widgetSettings.showLabels ? `<div class="key homey-text-small-light">${label}</div>` : ''}
+                            </div>
+                        `;
+                        });
+
+                        if (widgetSettings.showUpdateTimestamp) {
+                            timestamp.classList.remove('hidden');
+                            timestamp.innerHTML = `${Homey.__(`widgets.lastUpdate`)}: ${deviceValues.lastUpdate}`;
+                        }
+                    })
+                    .then(() => {
+                        Homey.ready({ height: widgetContainer.offsetHeight });
+                    })
+                    .catch(err => {
+                        widgetError.innerHTML = err;
+                    })
+
+                return;
+            }
+        </script>
+    </body>
+
+</html>
