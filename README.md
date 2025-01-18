@@ -3,6 +3,10 @@ It's optmized to work with dynamic or switching energy prices based on time of d
 
 1. Create a Power Price virtual device 
 2. Choose the type of measuring you would like (kWh, W, m3, GJ, l, g, oz, gal, ft3)
-3. In settings of the device you can optionally set the prefered currency
+3. In settings of the device you can optionally set the prefered currency, decimals and more...
 4. Use the device action cards to start, update & stop measuring of a usage session
 5. The session outcome will be stored in the device and can be used inside flows to report the outcomes
+
+
+Optional:
+Show session details per device on your dashboard widget

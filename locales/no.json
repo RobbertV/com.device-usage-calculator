@@ -4,5 +4,13 @@
         "hoursShort": "t",
         "minutesShort": "m",
         "secondsShort": "s"
+    },
+    "widgets": {
+        "usage": "Bruk",
+        "duration": "Varighet",
+        "costs": "Kostnader",
+        "lastUpdate": "Siste oppdatering",
+        "isRunning": "Aktiv",
+        "isNotRunning": "Inaktiv"
     }
 }

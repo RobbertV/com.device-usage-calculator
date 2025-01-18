@@ -4,5 +4,13 @@
         "hoursShort": "ч",
         "minutesShort": "м",
         "secondsShort": "с"
+    },
+    "widgets": {
+        "usage": "Использование",
+        "duration": "Продолжительность",
+        "costs": "Затраты",
+        "lastUpdate": "Последнее обновление",
+        "isRunning": "Активный",
+        "isNotRunning": "Неактивный"
     }
 }

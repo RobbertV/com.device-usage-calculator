@@ -4,5 +4,13 @@
         "hoursShort": "t",
         "minutesShort": "m",
         "secondsShort": "s"
+    },
+    "widgets": {
+        "usage": "Forbrug",
+        "duration": "Varighed",
+        "costs": "Omkostninger",
+        "lastUpdate": "Sidste opdatering",
+        "isRunning": "Aktiv",
+        "isNotRunning": "Inaktiv"
     }
 }

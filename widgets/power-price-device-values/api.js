@@ -51,7 +51,7 @@ async function getUsageCapabilityValue({ device, usageCapability, i18nLang, devi
 
     const formattedValue = new Intl.NumberFormat(i18nLang, { maximumFractionDigits: deviceSettings.usage_decimals }).format(usageValue);
 
-    console.log('[getUsageCapabilityValue]:', usageValue, deviceSettings.usage_decimals, formattedValue);
+    // console.log('[getUsageCapabilityValue]:', usageValue, deviceSettings.usage_decimals, formattedValue);
 
     return formattedValue;
 }
@@ -85,8 +85,6 @@ module.exports = {
         // console.log('[getDeviceCapabilities] - ', query);
         const { deviceId, driverId } = query;
         const device = await getDevice({ homey, deviceId, driverId });
-
-        // console.log('[getDeviceCapabilities] - ', device.driver.manifest.icon);
         const deviceSettings = device.getSettings();
         const i18nLang = homey.i18n.getLanguage();
 
