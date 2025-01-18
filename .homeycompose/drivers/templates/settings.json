@@ -3,19 +3,53 @@
     {
       "type": "group",
       "label": {
-        "en": "General",
-        "nl": "Algemeen"
+        "en": "Device values",
+        "nl": "Apparaatwaarden",
+        "de": "Gerätewerte",
+        "fr": "Valeurs de l'appareil",
+        "es": "Valores del dispositivo",
+        "it": "Valori del dispositivo",
+        "pt": "Valores do dispositivo",
+        "sv": "Enhetsvärden",
+        "da": "Enhedsværdier",
+        "no": "Enhetsverdier",
+        "pl": "Wartości urządzenia",
+        "ru": "Значения устройства",
+        "ko": "장치 값"
       },
       "children": [
         {
           "id": "reset_values",
           "type": "checkbox",
           "label": {
-            "en": "Reset values on session start",
-            "nl": "Reset waarden bij sessie start"
+            "en": "Reset on session start",
+            "nl": "Reset bij sessie start",
+            "de": "Zurücksetzen beim Sitzungsstart",
+            "fr": "Réinitialiser au démarrage de la session",
+            "es": "Restablecer al iniciar la sesión",
+            "it": "Reimposta all'avvio della sessione",
+            "pt": "Redefinir no início da sessão",
+            "sv": "Återställ vid sessionsstart",
+            "da": "Nulstil ved sessionstart",
+            "no": "Tilbakestill ved sesjonsstart",
+            "pl": "Resetuj przy starcie sesji",
+            "ru": "Сброс при запуске сессии",
+            "ko": "세션 시작 시 재설정"
           },
           "hint": {
-            "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights."
+            "en": "When enabled, the values will be reset to 0 when the device is started. This will allow you to see bars in the insights.",
+            "nl": "Wanneer ingeschakeld, worden de waarden teruggezet naar 0 wanneer het apparaat wordt gestart. Dit stelt je in staat om balken in de inzichten te zien.",
+            "de": "Wenn aktiviert, werden die Werte beim Starten des Geräts auf 0 zurückgesetzt. Dadurch können Sie Balken in den Einblicken sehen.",
+            "fr": "Lorsqu'elle est activée, les valeurs seront réinitialisées à 0 lorsque l'appareil est démarré. Cela vous permettra de voir des barres dans les aperçus.",
+            "es": "Cuando está habilitado, los valores se restablecerán a 0 cuando se inicie el dispositivo. Esto le permitirá ver barras en los insights.",
+            "it": "Quando abilitato, i valori verranno reimpostati a 0 all'avvio del dispositivo. Questo ti permetterà di vedere le barre negli approfondimenti.",
+            "pt": "Quando ativado, os valores serão redefinidos para 0 quando o dispositivo for iniciado. Isso permitirá que você veja barras nos insights.",
+            "sv": "När aktiverat kommer värdena att återställas till 0 när enheten startas. Detta gör att du kan se staplar i insikterna.",
+            "da": "Når aktiveret, vil værdierne blive nulstillet til 0, når enheden startes. Dette giver dig mulighed for at se søjler i indsigterne.",
+            "no": "Når aktivert, vil verdiene bli tilbakestilt til 0 når enheten startes. Dette lar deg se stolper i innsiktene.",
+            "pl": "Po włączeniu wartości zostaną zresetowane do 0 po uruchomieniu urządzenia. Pozwoli to zobaczyć słupki w wglądach.",
+            "ru": "При включении значения будут сброшены до 0 при запуске устройства. Это позволит вам видеть столбцы в аналитике.",
+            "ko": "활성화되면 장치가 시작될 때 값이 0으로 재설정됩니다. 이를 통해 인사이트에서 막대를 볼 수 있습니다."
           },
           "value": false
         },
@@ -23,11 +57,34 @@
           "id": "update_values",
           "type": "checkbox",
           "label": {
-            "en": "Update values on session update",
-            "nl": "Waarden bijwerken bij sessie update"
+            "en": "Update on session update",
+            "nl": "Waarden bijwerken bij sessie update",
+            "de": "Aktualisieren bei Sitzungsaktualisierung",
+            "fr": "Mettre à jour lors de la mise à jour de la session",
+            "es": "Actualizar al actualizar la sesión",
+            "it": "Aggiorna all'aggiornamento della sessione",
+            "pt": "Atualizar na atualização da sessão",
+            "sv": "Uppdatera vid sessionsuppdatering",
+            "da": "Opdater ved sessionsopdatering",
+            "no": "Oppdater ved sesjonsoppdatering",
+            "pl": "Aktualizuj przy aktualizacji sesji",
+            "ru": "Обновить при обновлении сессии",
+            "ko": "세션 업데이트 시 업데이트"
           },
           "hint": {
-            "en": "When enabled, the values will be updated in the device when the price changes. You can use these values in flows."
+            "en": "When enabled, the values will be updated in the device & widget when the price changes. You can use these values in flows.",
+            "nl": "Wanneer ingeschakeld, worden de waarden bijgewerkt in het apparaat en de widget wanneer de prijs verandert. Je kunt deze waarden gebruiken in flows.",
+            "de": "Wenn aktiviert, werden die Werte im Gerät und Widget aktualisiert, wenn sich der Preis ändert. Sie können diese Werte in Flows verwenden.",
+            "fr": "Lorsqu'elle est activée, les valeurs seront mises à jour dans l'appareil et le widget lorsque le prix change. Vous pouvez utiliser ces valeurs dans les flux.",
+            "es": "Cuando está habilitado, los valores se actualizarán en el dispositivo y el widget cuando cambie el precio. Puede usar estos valores en flujos.",
+            "it": "Quando abilitato, i valori verranno aggiornati nel dispositivo e nel widget quando il prezzo cambia. Puoi usare questi valori nei flussi.",
+            "pt": "Quando ativado, os valores serão atualizados no dispositivo e no widget quando o preço mudar. Você pode usar esses valores em fluxos.",
+            "sv": "När aktiverat kommer värdena att uppdateras i enheten och widgeten när priset ändras. Du kan använda dessa värden i flöden.",
+            "da": "Når aktiveret, vil værdierne blive opdateret i enheden og widgeten, når prisen ændres. Du kan bruge disse værdier i flows.",
+            "no": "Når aktivert, vil verdiene bli oppdatert i enheten og widgeten når prisen endres. Du kan bruke disse verdiene i flyter.",
+            "pl": "Po włączeniu wartości zostaną zaktualizowane w urządzeniu i widżecie, gdy cena się zmieni. Możesz użyć tych wartości w przepływach.",
+            "ru": "При включении значения будут обновлены в устройстве и виджете при изменении цены. Вы можете использовать эти значения в потоках.",
+            "ko": "활성화되면 가격이 변경될 때 장치 및 위젯의 값이 업데이트됩니다. 이러한 값을 흐름에서 사용할 수 있습니다."
           },
           "value": true
         }
@@ -37,7 +94,18 @@
       "type": "group",
       "label": {
         "en": "Usage",
-        "nl": "Verbruik"
+        "nl": "Verbruik",
+        "de": "Verbrauch",
+        "fr": "Utilisation",
+        "es": "Uso",
+        "it": "Utilizzo",
+        "pt": "Uso",
+        "sv": "Användning",
+        "da": "Forbrug",
+        "no": "Bruk",
+        "pl": "Zużycie",
+        "ru": "Использование",
+        "ko": "사용"
       },
       "children": [
         {
@@ -45,17 +113,51 @@
           "type": "number",
           "label": {
             "en": "Decimals",
-            "nl": "Decimalen"
+            "nl": "Decimalen",
+            "de": "Dezimalstellen",
+            "fr": "Décimales",
+            "es": "Decimales",
+            "it": "Decimali",
+            "pt": "Decimais",
+            "sv": "Decimaler",
+            "da": "Decimaler",
+            "no": "Desimaler",
+            "pl": "Miejsca dziesiętne",
+            "ru": "Десятичные",
+            "ko": "소수점"
           },
           "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+            "en": "Choose the maximum number of decimals you want to see in the usage values. This will not show 0 at the end, f.e. 16.7798 = 16.78",
+            "nl": "Kies het maximale aantal decimalen dat je wilt zien in de gebruikswaarden. Dit zal geen 0 aan het einde tonen, bijv. 16.7798 = 16.78",
+            "de": "Wählen Sie die maximale Anzahl von Dezimalstellen, die Sie in den Nutzungswerten sehen möchten. Dies zeigt keine 0 am Ende an, z.B. 16.7798 = 16.78",
+            "fr": "Choisissez le nombre maximum de décimales que vous souhaitez voir dans les valeurs d'utilisation. Cela ne montrera pas 0 à la fin, par exemple 16.7798 = 16.78",
+            "es": "Elija el número máximo de decimales que desea ver en los valores de uso. Esto no mostrará 0 al final, por ejemplo, 16.7798 = 16.78",
+            "it": "Scegli il numero massimo di decimali che desideri vedere nei valori di utilizzo. Questo non mostrerà 0 alla fine, ad es. 16.7798 = 16.78",
+            "pt": "Escolha o número máximo de decimais que deseja ver nos valores de uso. Isso não mostrará 0 no final, por exemplo, 16.7798 = 16.78",
+            "sv": "Välj det maximala antalet decimaler du vill se i användningsvärdena. Detta kommer inte att visa 0 i slutet, t.ex. 16.7798 = 16.78",
+            "da": "Vælg det maksimale antal decimaler, du vil se i brugsværdierne. Dette vil ikke vise 0 i slutningen, f.eks. 16.7798 = 16.78",
+            "no": "Velg det maksimale antallet desimaler du vil se i bruksverdiene. Dette vil ikke vise 0 på slutten, f.eks. 16.7798 = 16.78",
+            "pl": "Wybierz maksymalną liczbę miejsc dziesiętnych, które chcesz zobaczyć w wartościach użytkowania. Nie pokaże to 0 na końcu, np. 16.7798 = 16.78",
+            "ru": "Выберите максимальное количество десятичных знаков, которые вы хотите видеть в значениях использования. Это не покажет 0 в конце, например, 16.7798 = 16.78",
+            "ko": "사용 값에서 보고 싶은 소수 자릿수의 최대값을 선택하세요. 이는 끝에 0을 표시하지 않습니다. 예: 16.7798 = 16.78"
           },
           "value": 2,
           "min": 0,
           "max": 6,
           "units": {
             "en": "decimals",
-            "nl": "decimalen"
+            "nl": "decimalen",
+            "de": "Dezimalstellen",
+            "fr": "décimales",
+            "es": "decimales",
+            "it": "decimali",
+            "pt": "decimais",
+            "sv": "decimaler",
+            "da": "decimaler",
+            "no": "desimaler",
+            "pl": "miejsca dziesiętne",
+            "ru": "десятичные",
+            "ko": "소수점"
           }
         }
       ]
@@ -64,7 +166,18 @@
       "type": "group",
       "label": {
         "en": "Duration",
-        "nl": "Looptijd"
+        "nl": "Looptijd",
+        "de": "Dauer",
+        "fr": "Durée",
+        "es": "Duración",
+        "it": "Durata",
+        "pt": "Duração",
+        "sv": "Varaktighet",
+        "da": "Varighed",
+        "no": "Varighet",
+        "pl": "Czas trwania",
+        "ru": "Продолжительность",
+        "ko": "지속 시간"
       },
       "children": [
         {
@@ -72,10 +185,33 @@
           "type": "checkbox",
           "label": {
             "en": "Show seconds",
-            "nl": "Toon seconden"
+            "nl": "Toon seconden",
+            "de": "Sekunden anzeigen",
+            "fr": "Afficher les secondes",
+            "es": "Mostrar segundos",
+            "it": "Mostra secondi",
+            "pt": "Mostrar segundos",
+            "sv": "Visa sekunder",
+            "da": "Vis sekunder",
+            "no": "Vis sekunder",
+            "pl": "Pokaż sekundy",
+            "ru": "Показать секунды",
+            "ko": "초 표시"
           },
           "hint": {
-            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is less then 1 minute, it will always show seconds."
+            "en": "Choose if you want to display duration seconds, when days/hours/minutes are applicable. If duration is less than 1 minute, it will always show seconds.",
+            "nl": "Kies of je de duur in seconden wilt weergeven, wanneer dagen/uren/minuten van toepassing zijn. Als de duur minder dan 1 minuut is, worden de seconden altijd weergegeven.",
+            "de": "Wählen Sie, ob Sie die Dauer in Sekunden anzeigen möchten, wenn Tage/Stunden/Minuten zutreffen. Wenn die Dauer weniger als 1 Minute beträgt, werden immer Sekunden angezeigt.",
+            "fr": "Choisissez si vous souhaitez afficher la durée en secondes, lorsque des jours/heures/minutes sont applicables. Si la durée est inférieure à 1 minute, elle affichera toujours les secondes.",
+            "es": "Elija si desea mostrar la duración en segundos, cuando sean aplicables días/horas/minutos. Si la duración es inferior a 1 minuto, siempre mostrará los segundos.",
+            "it": "Scegli se visualizzare la durata in secondi, quando sono applicabili giorni/ore/minuti. Se la durata è inferiore a 1 minuto, mostrerà sempre i secondi.",
+            "pt": "Escolha se deseja exibir a duração em segundos, quando dias/horas/minutos forem aplicáveis. Se a duração for inferior a 1 minuto, sempre mostrará os segundos.",
+            "sv": "Välj om du vill visa varaktigheten i sekunder, när dagar/timmar/minuter är tillämpliga. Om varaktigheten är mindre än 1 minut, kommer det alltid att visa sekunder.",
+            "da": "Vælg om du vil vise varigheden i sekunder, når dage/timer/minutter er gældende. Hvis varigheden er mindre end 1 minut, vil det altid vise sekunder.",
+            "no": "Velg om du vil vise varigheten i sekunder, når dager/timer/minutter er aktuelle. Hvis varigheten er mindre enn 1 minutt, vil det alltid vise sekunder.",
+            "pl": "Wybierz, czy chcesz wyświetlać czas trwania w sekundach, gdy mają zastosowanie dni/godziny/minuty. Jeśli czas trwania jest krótszy niż 1 minuta, zawsze będą wyświetlane sekundy.",
+            "ru": "Выберите, хотите ли вы отображать продолжительность в секундах, когда применимы дни/часы/минуты. Если продолжительность менее 1 минуты, всегда будут отображаться секунды.",
+            "ko": "일/시간/분이 적용될 때 지속 시간을 초 단위로 표시할지 선택하세요. 지속 시간이 1분 미만인 경우 항상 초를 표시합니다."
           },
           "value": true
         }
@@ -85,7 +221,18 @@
       "type": "group",
       "label": {
         "en": "Costs",
-        "nl": "Kosten"
+        "nl": "Kosten",
+        "de": "Kosten",
+        "fr": "Coûts",
+        "es": "Costos",
+        "it": "Costi",
+        "pt": "Custos",
+        "sv": "Kostnader",
+        "da": "Omkostninger",
+        "no": "Kostnader",
+        "pl": "Koszty",
+        "ru": "Затраты",
+        "ko": "비용"
       },
       "children": [
         {
@@ -94,7 +241,18 @@
           "value": "measure_monetary",
           "label": {
             "en": "Currency",
-            "nl": "Valuta"
+            "nl": "Valuta",
+            "de": "Währung",
+            "fr": "Devise",
+            "es": "Moneda",
+            "it": "Valuta",
+            "pt": "Moeda",
+            "sv": "Valuta",
+            "da": "Valuta",
+            "no": "Valuta",
+            "pl": "Waluta",
+            "ru": "Валюта",
+            "ko": "통화"
           },
           "values": [
             {
@@ -176,17 +334,51 @@
           "type": "number",
           "label": {
             "en": "Decimals",
-            "nl": "Decimalen"
+            "nl": "Decimalen",
+            "de": "Dezimalstellen",
+            "fr": "Décimales",
+            "es": "Decimales",
+            "it": "Decimali",
+            "pt": "Decimais",
+            "sv": "Decimaler",
+            "da": "Decimaler",
+            "no": "Desimaler",
+            "pl": "Miejsca dziesiętne",
+            "ru": "Десятичные",
+            "ko": "소수점"
           },
           "hint": {
-            "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78"
+            "en": "Choose the maximum number of decimals you want to see in the cost values. This will not show 0 at the end, f.e. 16.7798 = 16.78",
+            "nl": "Kies het maximale aantal decimalen dat je wilt zien in de kostwaarden. Dit zal geen 0 aan het einde tonen, bijv. 16.7798 = 16.78",
+            "de": "Wählen Sie die maximale Anzahl von Dezimalstellen, die Sie in den Kostenwerten sehen möchten. Dies zeigt keine 0 am Ende an, z.B. 16.7798 = 16.78",
+            "fr": "Choisissez le nombre maximum de décimales que vous souhaitez voir dans les valeurs de coût. Cela ne montrera pas 0 à la fin, par exemple 16.7798 = 16.78",
+            "es": "Elija el número máximo de decimales que desea ver en los valores de costo. Esto no mostrará 0 al final, por ejemplo, 16.7798 = 16.78",
+            "it": "Scegli il numero massimo di decimali che desideri vedere nei valori di costo. Questo non mostrerà 0 alla fine, ad es. 16.7798 = 16.78",
+            "pt": "Escolha o número máximo de decimais que deseja ver nos valores de custo. Isso não mostrará 0 no final, por exemplo, 16.7798 = 16.78",
+            "sv": "Välj det maximala antalet decimaler du vill se i kostnadsvärdena. Detta kommer inte att visa 0 i slutet, t.ex. 16.7798 = 16.78",
+            "da": "Vælg det maksimale antal decimaler, du vil se i kostværdierne. Dette vil ikke vise 0 i slutningen, f.eks. 16.7798 = 16.78",
+            "no": "Velg det maksimale antallet desimaler du vil se i kostnadsverdiene. Dette vil ikke vise 0 på slutten, f.eks. 16.7798 = 16.78",
+            "pl": "Wybierz maksymalną liczbę miejsc dziesiętnych, które chcesz zobaczyć w wartościach kosztów. Nie pokaże to 0 na końcu, np. 16.7798 = 16.78",
+            "ru": "Выберите максимальное количество десятичных знаков, которые вы хотите видеть в значениях стоимости. Это не покажет 0 в конце, например, 16.7798 = 16.78",
+            "ko": "비용 값에서 보고 싶은 소수 자릿수의 최대값을 선택하세요. 이는 끝에 0을 표시하지 않습니다. 예: 16.7798 = 16.78"
           },
           "value": 2,
           "min": 0,
           "max": 6,
           "units": {
             "en": "decimals",
-            "nl": "decimalen"
+            "nl": "decimalen",
+            "de": "Dezimalstellen",
+            "fr": "décimales",
+            "es": "decimales",
+            "it": "decimali",
+            "pt": "decimais",
+            "sv": "decimaler",
+            "da": "decimaler",
+            "no": "desimaler",
+            "pl": "miejsca dziesiętne",
+            "ru": "десятичные",
+            "ko": "소수점"
           }
         }
       ]
