@@ -22,5 +22,8 @@
   },
   "2.1.0": {
     "en": "NEW Dashboard widget & OPT: add device decimals option"
+  },
+  "2.1.1": {
+    "en": "FIX: widget timestamp to last session, OPT: change widget styling & add loader style"
   }
 }
