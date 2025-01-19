@@ -1,0 +1,6 @@
+- [x] Add device widget
+- [ ] Add different design widgets
+- [x] Add device usage & costs decimal settings
+- [ ] Action card for usage local format
+- [ ] Add device tag for duration in seconds
+- [ ] Widget timestamp show last session update/end time
