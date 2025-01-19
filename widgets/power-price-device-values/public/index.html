@@ -4,14 +4,15 @@
         <link rel="stylesheet" crossorigin href="./index.css">
     </head>
 
-    <body class="homey-widget power-price-widget">
+    <body class="homey-widget-small power-price-widget">
         <div class="error homey-text-small-light"></div>
+        <div class="loader"><span>Loading...</span></div>
         <div class="container has-icon">
             <div class="icon hidden"></div>
             <div class="device-name homey-text-small-light"></div>
             <div class="running homey-text-small-light hidden"></div>
-            <div class="results">Loading...</div>
-            <div class="timestamp homey-text-small-light hidden"></div>
+            <div class="results"></div>
+            <div class="timestamp hidden"></div>
         </div>
         <script type="text/javascript">
             function onHomeyReady(Homey) {
@@ -29,6 +30,7 @@
                 const widgetSettings = Homey.getSettings();
                 const widgetContainer = document.querySelector('.power-price-widget');
                 const widgetError = document.querySelector('.error');
+                const widgetLoader = document.querySelector('.loader');
                 const widgetContent = document.querySelector('.container');
                 console.log('[Widget Settings] - ', widgetSettings);
 
@@ -68,6 +70,10 @@
 
                         if (widgetSettings.showDeviceName) {
                             deviceName.innerText = deviceValues.name;
+                        }
+
+                        if (!widgetLoader.classList.contains('hidden')) {
+                            widgetLoader.classList.add('hidden');
                         }
 
                         results.innerHTML = '';

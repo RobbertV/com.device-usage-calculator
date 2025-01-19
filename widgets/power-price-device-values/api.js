@@ -70,7 +70,7 @@ async function getTimestamp({ homey, i18nLang, device }) {
     const store = await device.getStoreValue('support-values');
     const timezone = await homey.clock.getTimezone();
 
-    console.log('[Widget API] - [getTimestamp] - ', { store });
+    // console.log('[Widget API] - [getTimestamp] - ', { store });
 
     const date = store?.lastDurationEndTime ? new Date(store.lastDurationEndTime) : new Date();
     const options = {
@@ -79,7 +79,6 @@ async function getTimestamp({ homey, i18nLang, device }) {
         day: '2-digit',
         hour: 'numeric',
         minute: 'numeric',
-        second: 'numeric',
         timeZone: timezone
     };
 
