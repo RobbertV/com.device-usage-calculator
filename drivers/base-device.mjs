@@ -44,7 +44,7 @@ export default class BaseDevice extends Homey.Device {
 
     // ---------- Store Values -----------
 
-    async setStoreValues(price = 0, meter = 0) {
+    async setStoreValues({ price = 0, meter = 0, sessionStart = false }) {
         this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`, { price, meter });
 
         this.setStoreValue('usage', { value: 0 });
@@ -54,6 +54,12 @@ export default class BaseDevice extends Homey.Device {
             meter,
             starttime: new Date()
         });
+        if (!sessionStart) {
+            this.setStoreValue('support-values', {
+                lastDurationEndTime: null,
+                lastDurationInSeconds: 0
+            });
+        }
     }
 
     async resetValues() {
@@ -72,7 +78,7 @@ export default class BaseDevice extends Homey.Device {
     async startUsage(price, meter) {
         const settings = this.getSettings();
 
-        this.setStoreValues(price, meter);
+        this.setStoreValues({ price, meter, sessionStart: true });
 
         if (settings.resetValues) {
             await this.resetValues();
@@ -155,6 +161,11 @@ export default class BaseDevice extends Homey.Device {
 
             this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration, showSecSettings });
 
+            this.setStoreValue('support-values', {
+                lastDurationEndTime: endTime,
+                lastDurationInSeconds: Math.floor(diffMs / 1000)
+            });
+
             this.setCapabilityValue('measure_duration', prettyDuration);
             this.setCapabilityValue('alarm_running', isRunning);
             this.setMonetaryCapability(costs.value);
@@ -216,7 +227,6 @@ export default class BaseDevice extends Homey.Device {
                     currentCapabilityOptions,
                     mergedCapabilityOptions
                 });
-                
 
                 await this.setCapabilityOptions(getusageCapability, mergedCapabilityOptions);
             }
@@ -246,12 +256,11 @@ export default class BaseDevice extends Homey.Device {
                 const mergedCapabilityOptions = { ...currentCapabilityOptions, ...capabilityOptions };
 
                 this.homey.app.log(`[Device] ${this.getName()} - setMonetaryCapabilityOption =>`, {
-                    getMonetaryCapability, 
-                    capabilityOptions, 
-                    currentCapabilityOptions, 
+                    getMonetaryCapability,
+                    capabilityOptions,
+                    currentCapabilityOptions,
                     mergedCapabilityOptions
                 });
-                
 
                 await this.setCapabilityOptions(getMonetaryCapability, mergedCapabilityOptions);
             }

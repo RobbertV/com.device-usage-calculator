@@ -66,15 +66,21 @@ async function getFormattedMonetaryValue({ device, deviceSettings, i18nLang }) {
     return device.getCapabilityValue('measure_monetary').toLocaleString(i18nLang, { style: 'currency', currency: currencyUnit, maximumFractionDigits: deviceSettings.costs_decimals });
 }
 
-async function getTimestamp({ i18nLang }) {
-    const date = new Date();
+async function getTimestamp({ homey, i18nLang, device }) {
+    const store = await device.getStoreValue('support-values');
+    const timezone = await homey.clock.getTimezone();
+
+    console.log('[Widget API] - [getTimestamp] - ', { store });
+
+    const date = store?.lastDurationEndTime ? new Date(store.lastDurationEndTime) : new Date();
     const options = {
         year: 'numeric',
         month: '2-digit',
         day: '2-digit',
         hour: 'numeric',
         minute: 'numeric',
-        second: 'numeric'
+        second: 'numeric',
+        timeZone: timezone
     };
 
     return new Intl.DateTimeFormat(i18nLang, options).format(date);
@@ -88,7 +94,7 @@ module.exports = {
         const deviceSettings = device.getSettings();
         const i18nLang = homey.i18n.getLanguage();
 
-        const timestamp = await getTimestamp({ i18nLang });
+        const timestamp = await getTimestamp({ homey, i18nLang, device });
         const formattedCosts = await getFormattedMonetaryValue({ device, deviceSettings, i18nLang });
         const usageCapability = await getUsageCapability({ device });
         const usage = await getUsageCapabilityValue({ device, usageCapability, i18nLang, deviceSettings });
