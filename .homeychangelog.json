@@ -25,5 +25,8 @@
   },
   "2.1.1": {
     "en": "FIX: widget timestamp to last session, OPT: change widget styling & add loader style"
+  },
+  "2.1.2": {
+    "en": "OPT: Add improved error reporting for devices"
   }
 }
