@@ -18,23 +18,26 @@ export default class BaseDevice extends Homey.Device {
     }
 
     async onSettings({ newSettings, changedKeys }) {
-        this.homey.app.log('[Device] - onSettings =>', this.driver.id, newSettings);
+        try {
+            this.homey.app.log('[Device] - onSettings =>', this.driver.id, newSettings);
 
-        // Todo: fix bug where capability label gets reset.
-        if (changedKeys.some((k) => k === 'monetary_unit' || k === 'costs_decimals')) {
-            const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
-            const newOptions = newSettings.costs_decimals ? { decimals: newSettings.costs_decimals } : false;
+            if (changedKeys.some((k) => k === 'monetary_unit' || k === 'costs_decimals')) {
+                const costs = (this.getStoreValue('costs') && this.getStoreValue('costs').value) || 0;
+                const newOptions = newSettings.costs_decimals ? { decimals: newSettings.costs_decimals } : false;
 
-            await this.checkCapabilities(newSettings);
-            await this.setMonetaryCapability(costs, newOptions);
-        }
+                await this.checkCapabilities(newSettings);
+                await this.setMonetaryCapability(costs, newOptions);
+            }
 
-        if (changedKeys.some((k) => k === 'usage_decimals')) {
-            const newOptions = { decimals: newSettings.usage_decimals };
-            const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
+            if (changedKeys.some((k) => k === 'usage_decimals')) {
+                const newOptions = { decimals: newSettings.usage_decimals };
+                const usage = (this.getStoreValue('usage') && this.getStoreValue('usage').value) || 0;
 
-            // await this.checkCapabilities(newSettings);
-            await this.setUsageCapability(usage, newOptions);
+                // await this.checkCapabilities(newSettings);
+                await this.setUsageCapability(usage, newOptions);
+            }
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] onSettings =>`, error);
         }
     }
 
@@ -45,104 +48,132 @@ export default class BaseDevice extends Homey.Device {
     // ---------- Store Values -----------
 
     async setStoreValues({ price = 0, meter = 0, sessionStart = false }) {
-        this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`, { price, meter });
+        try {
+            this.homey.app.log(`[Device] ${this.getName()} - setStoreValues`, { price, meter });
 
-        this.setStoreValue('usage', { value: 0 });
-        this.setStoreValue('costs', { value: 0 });
-        this.setStoreValue('calculation-values', {
-            price,
-            meter,
-            starttime: new Date()
-        });
-        if (!sessionStart) {
-            this.setStoreValue('support-values', {
-                lastDurationEndTime: null,
-                lastDurationInSeconds: 0
+            this.setStoreValue('usage', { value: 0 });
+            this.setStoreValue('costs', { value: 0 });
+            this.setStoreValue('calculation-values', {
+                price,
+                meter,
+                starttime: new Date()
             });
+            if (!sessionStart) {
+                this.setStoreValue('support-values', {
+                    lastDurationEndTime: null,
+                    lastDurationInSeconds: 0
+                });
+            }
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] setStoreValues =>`, error);
         }
     }
 
     async resetValues() {
-        const settings = this.getSettings();
-        const showSecSettings = settings.show_duration_seconds;
-        const prettyDuration = formattedDuration(0, this.homey.__, showSecSettings);
+        try {
+            const settings = this.getSettings();
+            const showSecSettings = settings.show_duration_seconds;
+            const prettyDuration = formattedDuration(0, this.homey.__, showSecSettings);
 
-        await this.setCapabilityValue('alarm_running', false);
-        await this.setCapabilityValue('measure_duration', prettyDuration);
-        await this.setMonetaryCapability(0);
-        await this.setUsageCapability(0);
+            await this.setCapabilityValue('alarm_running', false);
+            await this.setCapabilityValue('measure_duration', prettyDuration);
+            await this.setMonetaryCapability(0);
+            await this.setUsageCapability(0);
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] resetValues =>`, error);
+        }
     }
 
     // ---------- Usage Calculation -----------
 
     async startUsage(price, meter) {
-        const settings = this.getSettings();
+        try {
+            const settings = this.getSettings();
 
-        this.setStoreValues({ price, meter, sessionStart: true });
+            this.setStoreValues({ price, meter, sessionStart: true });
 
-        if (settings.resetValues) {
-            await this.resetValues();
+            if (settings.resetValues) {
+                await this.resetValues();
+            }
+
+            await this.setCapabilityValue('alarm_running', true);
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] startUsage =>`, error);
         }
-
-        await this.setCapabilityValue('alarm_running', true);
     }
 
     async endUsage(price, meter) {
-        if (this.getCapabilityValue('alarm_running') === false) {
-            throw new Error('Theres no session running');
-        }
+        try {
+            if (this.getCapabilityValue('alarm_running') === false) {
+                throw new Error('Theres no session running');
+            }
 
-        await this.updatePriceAndMeter(price, meter);
-        await this.calculateTotals();
+            await this.updatePriceAndMeter(price, meter);
+            await this.calculateTotals();
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] endUsage =>`, error);
+        }
     }
 
     async updatePriceAndMeter(price, meter) {
-        if (this.getCapabilityValue('alarm_running') === false) {
-            throw new Error('Theres no session running');
+        try {
+            if (this.getCapabilityValue('alarm_running') === false) {
+                throw new Error('Theres no session running');
+            }
+
+            const calculationValues = this.getStoreValue('calculation-values');
+
+            this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter, calculationValues });
+
+            const diffMeter = meter - calculationValues.meter;
+
+            await this.updateUsage(diffMeter);
+            await this.updateCosts(diffMeter);
+
+            this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] updatePriceAndMeter =>`, error);
         }
-
-        const calculationValues = this.getStoreValue('calculation-values');
-
-        this.homey.app.log(`[Device] ${this.getName()} - updatePriceAndMeter =>`, { price, meter, calculationValues });
-
-        const diffMeter = meter - calculationValues.meter;
-
-        await this.updateUsage(diffMeter);
-        await this.updateCosts(diffMeter);
-
-        this.setStoreValue('calculation-values', { ...calculationValues, price, meter });
     }
 
     async updateUsage(newValue) {
-        const oldUsage = this.getStoreValue('usage');
-        const previousValue = oldUsage.value || 0;
+        try {
+            const oldUsage = this.getStoreValue('usage');
+            const previousValue = oldUsage.value || 0;
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { previousValue, newValue });
+            this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { previousValue, newValue });
 
-        // Set new usage value and update the timestamp
-        await this.setStoreValue('usage', { value: previousValue + newValue });
+            // Set new usage value and update the timestamp
+            await this.setStoreValue('usage', { value: previousValue + newValue });
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { value: previousValue + newValue });
+            this.homey.app.log(`[Device] ${this.getName()} - updateUsage =>`, { value: previousValue + newValue });
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] updateUsage =>`, error);
+        }
     }
 
     async updateCosts(usage) {
-        const settings = this.getSettings();
-        const calculationValues = this.getStoreValue('calculation-values');
-        const price = calculationValues.price;
-        const oldCosts = this.getStoreValue('costs');
-        const previousCosts = oldCosts.value || 0;
+        try {
+            const settings = this.getSettings();
+            const calculationValues = this.getStoreValue('calculation-values');
+            const price = calculationValues.price;
+            const oldCosts = this.getStoreValue('costs');
+            const previousCosts = oldCosts.value || 0;
 
-        // Calculate the costs
-        const costs = price * usage;
+            // Calculate the costs
+            const costs = price * usage;
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
+            this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
 
-        await this.setStoreValue('costs', { value: previousCosts + costs });
+            await this.setStoreValue('costs', { value: previousCosts + costs });
 
-        this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
+            this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { value: previousCosts + costs });
 
-        if (settings.update_values) {
-            this.calculateTotals(true);
+            if (settings.update_values) {
+                this.calculateTotals(true);
+            }
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] updateCosts =>`, error);
         }
     }
 
@@ -171,7 +202,7 @@ export default class BaseDevice extends Homey.Device {
             this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);
         } catch (error) {
-            this.homey.app.error(error);
+            this.homey.app.error(`[Device][Error] calculateTotals =>`, error);
         }
     }
 
@@ -195,7 +226,7 @@ export default class BaseDevice extends Homey.Device {
 
             return formattedCosts;
         } catch (error) {
-            this.homey.app.error(error);
+            this.homey.app.error(`[Device][Error] formattedCosts =>`, error);
         }
     }
 
@@ -234,7 +265,7 @@ export default class BaseDevice extends Homey.Device {
 
             this.setCapabilityValue(getusageCapability, value);
         } catch (error) {
-            this.homey.app.error(error);
+            this.homey.app.error(`[Device][Error] setUsageCapability =>`, error);
         }
     }
 
@@ -268,20 +299,24 @@ export default class BaseDevice extends Homey.Device {
 
             this.setCapabilityValue(getMonetaryCapability, value);
         } catch (error) {
-            this.homey.app.error(error);
+            this.homey.app.error(`[Device][Error] setMonetaryCapability =>`, error);
         }
     }
 
     async checkCapabilities(overrideSettings = false) {
-        const settings = overrideSettings || this.getSettings();
-        const driverCapabilities = this.driver.manifest.capabilities.filter((c) => c !== 'measure_monetary');
-        const deviceCapabilities = this.getCapabilities();
-        const settingsCapabilities = [settings.monetary_unit];
-        const combinedCapabilities = [...new Set([...driverCapabilities, ...settingsCapabilities])];
+        try {
+            const settings = overrideSettings || this.getSettings();
+            const driverCapabilities = this.driver.manifest.capabilities.filter((c) => c !== 'measure_monetary');
+            const deviceCapabilities = this.getCapabilities();
+            const settingsCapabilities = [settings.monetary_unit];
+            const combinedCapabilities = [...new Set([...driverCapabilities, ...settingsCapabilities])];
 
-        this.homey.app.log(`[Device] ${this.getName()} - Found capabilities =>`, deviceCapabilities);
+            this.homey.app.log(`[Device] ${this.getName()} - Found capabilities =>`, deviceCapabilities);
 
-        await this.updateCapabilities(combinedCapabilities, deviceCapabilities);
+            await this.updateCapabilities(combinedCapabilities, deviceCapabilities);
+        } catch (error) {
+            this.homey.app.error(`[Device][Error] checkCapabilities =>`, error);
+        }
     }
 
     async updateCapabilities(driverCapabilities, deviceCapabilities) {
@@ -303,7 +338,7 @@ export default class BaseDevice extends Homey.Device {
             });
             await sleep(500);
         } catch (error) {
-            this.homey.app.error(error);
+            this.homey.app.error(`[Device][Error] updateCapabilities =>`, error);
         }
     }
 }
