@@ -77,6 +77,7 @@ export default class BaseDevice extends Homey.Device {
 
             await this.setCapabilityValue('alarm_running', false);
             await this.setCapabilityValue('measure_duration', prettyDuration);
+            await this.setCapabilityValue('measure_duration_seconds', 0);
             await this.setMonetaryCapability(0);
             await this.setUsageCapability(0);
         } catch (error) {
@@ -188,16 +189,18 @@ export default class BaseDevice extends Homey.Device {
 
             const diffMs = differenceInMilliseconds(endTime, calculationValues.starttime);
             const duration = diffMs / (1000 * 60); // If minite is lower than 1, it will show 0.5 for example
+            const durationInSeconds = Math.floor(diffMs / 1000);
             const prettyDuration = formattedDuration(diffMs, this.homey.__, showSecSettings);
 
             this.homey.app.log(`[Device] ${this.getName()} - calculateTotals =>`, { usage, costs, duration, prettyDuration, showSecSettings });
 
             this.setStoreValue('support-values', {
                 lastDurationEndTime: endTime,
-                lastDurationInSeconds: Math.floor(diffMs / 1000)
+                lastDurationInSeconds: durationInSeconds
             });
 
             this.setCapabilityValue('measure_duration', prettyDuration);
+            this.setCapabilityValue('measure_duration_seconds', durationInSeconds);
             this.setCapabilityValue('alarm_running', isRunning);
             this.setMonetaryCapability(costs.value);
             this.setUsageCapability(usage.value);
@@ -234,7 +237,7 @@ export default class BaseDevice extends Homey.Device {
 
     async setUsageCapability(value, capabilityOptions = false) {
         try {
-            const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
+            const arrayToFilter = ['measure_monetary', 'measure_duration', 'measure_duration_seconds', 'alarm_running'];
             let deviceCapabilities = this.getCapabilities();
             let getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
 

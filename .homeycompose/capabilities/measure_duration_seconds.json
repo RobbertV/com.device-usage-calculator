@@ -1,0 +1,39 @@
+{
+  "platforms": ["local"],
+  "type": "number",
+  "title": {
+    "en": "Session duration (seconds)",
+    "nl": "Sessieduur (seconden)",
+    "de": "Sitzungsdauer (Sekunden)",
+    "fr": "Durée de la session (secondes)",
+    "it": "Durata dell' sessione (secondi)",
+    "sv": "Sessionens varaktighet (sekunder)",
+    "no": "Øktvarighet (sekunder)",
+    "da": "Sessionens varighed (sekunder)",
+    "es": "Duración de la sesión (segundos)",
+    "pt": "Duração da sessão (segundos)",
+    "pl": "Czas trwania sesji (sekundy)",
+    "ru": "Продолжительность сессии (секунды)",
+    "ko": "세션 지속 시간 (초)"
+  },
+  "insights": false,
+  "desc": {
+    "en": "Session duration in seconds",
+    "nl": "Sessieduur in seconden",
+    "de": "Sitzungsdauer in Sekunden",
+    "fr": "Durée de la session en secondes",
+    "it": "Durata dell' sessione in secondi",
+    "sv": "Sessionens varaktighet i sekunder",
+    "no": "Øktvarighet i sekunder",
+    "da": "Sessionens varighed i sekunder",
+    "es": "Duración de la sesión en segundos",
+    "pt": "Duração da sessão em segundos",
+    "pl": "Czas trwania sesji w sekundach",
+    "ru": "Продолжительность сессии в секундах",
+    "ko": "세션 지속 시간 (초)"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": null,
+  "icon": "assets/icons/stopwatch.svg"
+}

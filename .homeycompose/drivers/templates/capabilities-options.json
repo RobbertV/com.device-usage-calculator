@@ -1,5 +1,23 @@
 {
     "capabilitiesOptions": {
+        "measure_duration_seconds": {
+            "title": {
+                "en": "Session duration in seconds",
+                "nl": "Sessieduur in seconden",
+                "de": "Sitzungsdauer in Sekunden",
+                "fr": "Durée de la session en secondes",
+                "es": "Duración de la sesión en segundos",
+                "it": "Durata della sessione in secondi",
+                "pt": "Duração da sessão em segundos",
+                "sv": "Sessionens varaktighet i sekunder",
+                "no": "Øktvarighet i sekunder",
+                "da": "Sessionens varighed i sekunder",
+                "pl": "Czas trwania sesji w sekundach",
+                "ru": "Продолжительность сессии в секундах",
+                "ko": "세션 지속 시간 (초)"
+            },
+            "decimals": 0
+        },
         "meter_power": {
             "title": {
                 "en": "Session usage",

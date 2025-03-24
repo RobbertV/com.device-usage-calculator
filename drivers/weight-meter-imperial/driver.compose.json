@@ -17,6 +17,7 @@
   "capabilities": [
     "alarm_running",
     "measure_duration",
+    "measure_duration_seconds",
     "measure_weight.imperial",
     "measure_monetary"
   ],

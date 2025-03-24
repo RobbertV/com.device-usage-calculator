@@ -17,6 +17,7 @@
   "capabilities": [
     "measure_content_volume.gj",
     "measure_duration",
+    "measure_duration_seconds",
     "alarm_running",
     "measure_monetary"
   ],

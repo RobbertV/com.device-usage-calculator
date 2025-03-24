@@ -37,7 +37,7 @@ async function getUnit({ usageCapability }) {
 }
 
 async function getUsageCapability({ device }) {
-    const arrayToFilter = ['measure_monetary', 'measure_duration', 'alarm_running'];
+    const arrayToFilter = ['measure_monetary', 'measure_duration', 'measure_duration_seconds', 'alarm_running'];
     let deviceCapabilities = device.getCapabilities();
     let getusageCapability = deviceCapabilities.find((d) => !arrayToFilter.some((atf) => d.startsWith(atf)));
 
