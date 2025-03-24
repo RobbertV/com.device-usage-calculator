@@ -28,5 +28,8 @@
   },
   "2.1.2": {
     "en": "OPT: Add improved error reporting for devices"
+  },
+  "2.1.3": {
+    "en": "NEW: Add duration in seconds capability"
   }
 }
