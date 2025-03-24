@@ -661,6 +661,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -1564,6 +1582,7 @@
       "capabilities": [
         "meter_gas",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -1583,6 +1602,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -2486,6 +2523,7 @@
       "capabilities": [
         "meter_gas.imperial",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -2505,6 +2543,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -3408,6 +3464,7 @@
       "capabilities": [
         "measure_content_volume.gj",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -3427,6 +3484,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -4330,6 +4405,7 @@
       "capabilities": [
         "meter_power",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -4349,6 +4425,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -5252,6 +5346,7 @@
       "capabilities": [
         "measure_content_volume",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -5271,6 +5366,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -6174,6 +6287,7 @@
       "capabilities": [
         "measure_content_volume.imperial",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -6193,6 +6307,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -7096,6 +7228,7 @@
       "capabilities": [
         "meter_water",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -7115,6 +7248,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -8018,6 +8169,7 @@
       "capabilities": [
         "meter_water.imperial",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -8037,6 +8189,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -8940,6 +9110,7 @@
       "capabilities": [
         "measure_power",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -8959,6 +9130,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -9862,6 +10051,7 @@
       "capabilities": [
         "measure_weight",
         "measure_duration",
+        "measure_duration_seconds",
         "alarm_running",
         "measure_monetary"
       ],
@@ -9881,6 +10071,24 @@
         "local"
       ],
       "capabilitiesOptions": {
+        "measure_duration_seconds": {
+          "title": {
+            "en": "Session duration in seconds",
+            "nl": "Sessieduur in seconden",
+            "de": "Sitzungsdauer in Sekunden",
+            "fr": "Durée de la session en secondes",
+            "es": "Duración de la sesión en segundos",
+            "it": "Durata della sessione in secondi",
+            "pt": "Duração da sessão em segundos",
+            "sv": "Sessionens varaktighet i sekunder",
+            "no": "Øktvarighet i sekunder",
+            "da": "Sessionens varighed i sekunder",
+            "pl": "Czas trwania sesji w sekundach",
+            "ru": "Продолжительность сессии в секундах",
+            "ko": "세션 지속 시간 (초)"
+          },
+          "decimals": 0
+        },
         "meter_power": {
           "title": {
             "en": "Session usage",
@@ -10784,6 +10992,7 @@
       "capabilities": [
         "alarm_running",
         "measure_duration",
+        "measure_duration_seconds",
         "measure_weight.imperial",
         "measure_monetary"
       ],
@@ -11068,6 +11277,47 @@
       "getable": true,
       "setable": false,
       "uiComponent": "sensor",
+      "icon": "assets/icons/stopwatch.svg"
+    },
+    "measure_duration_seconds": {
+      "platforms": [
+        "local"
+      ],
+      "type": "number",
+      "title": {
+        "en": "Session duration (seconds)",
+        "nl": "Sessieduur (seconden)",
+        "de": "Sitzungsdauer (Sekunden)",
+        "fr": "Durée de la session (secondes)",
+        "it": "Durata dell' sessione (secondi)",
+        "sv": "Sessionens varaktighet (sekunder)",
+        "no": "Øktvarighet (sekunder)",
+        "da": "Sessionens varighed (sekunder)",
+        "es": "Duración de la sesión (segundos)",
+        "pt": "Duração da sessão (segundos)",
+        "pl": "Czas trwania sesji (sekundy)",
+        "ru": "Продолжительность сессии (секунды)",
+        "ko": "세션 지속 시간 (초)"
+      },
+      "insights": false,
+      "desc": {
+        "en": "Session duration in seconds",
+        "nl": "Sessieduur in seconden",
+        "de": "Sitzungsdauer in Sekunden",
+        "fr": "Durée de la session en secondes",
+        "it": "Durata dell' sessione in secondi",
+        "sv": "Sessionens varaktighet i sekunder",
+        "no": "Øktvarighet i sekunder",
+        "da": "Sessionens varighed i sekunder",
+        "es": "Duración de la sesión en segundos",
+        "pt": "Duração da sessão em segundos",
+        "pl": "Czas trwania sesji w sekundach",
+        "ru": "Продолжительность сессии в секундах",
+        "ko": "세션 지속 시간 (초)"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": null,
       "icon": "assets/icons/stopwatch.svg"
     }
   }

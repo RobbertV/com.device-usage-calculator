@@ -17,6 +17,7 @@
   "capabilities": [
     "meter_gas.imperial",
     "measure_duration",
+    "measure_duration_seconds",
     "alarm_running",
     "measure_monetary"
   ],
