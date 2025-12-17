@@ -155,14 +155,19 @@ export default class BaseDevice extends Homey.Device {
 
     async updateCosts(usage) {
         try {
+            const meterType = this.driver.manifest.id;
             const settings = this.getSettings();
             const calculationValues = this.getStoreValue('calculation-values');
             const price = calculationValues.price;
             const oldCosts = this.getStoreValue('costs');
             const previousCosts = oldCosts.value || 0;
 
+            let costs = price * usage;
             // Calculate the costs
-            const costs = price * usage;
+
+            if (meterType === 'watt-meter' || meterType === 'liquid-meter') {
+                costs = (price / 1000) * usage; // Convert from kWh to Wh and m3 to L
+            }
 
             this.homey.app.log(`[Device] ${this.getName()} - updateCosts =>`, { previousCosts, costs, usage });
 
