@@ -31,5 +31,8 @@
   },
   "2.1.3": {
     "en": "NEW: Add duration in seconds capability"
+  },
+  "2.1.4": {
+    "en": "FIX Watt & Liter meter type price calculation"
   }
 }
